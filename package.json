@@ -1,0 +1,17 @@
+{
+  "name": "sage-quest",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "scripts": {
+    "start": "node server/server.mjs"
+  },
+  "dependencies": {
+    "esbuild": "^0.28.2",
+    "three": "0.170.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^23.0.0"
+  }
+}

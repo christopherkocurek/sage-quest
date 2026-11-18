@@ -1,0 +1,13 @@
+# what the CLI must not upload. The build (tools/build-vercel.mjs) picks the files that ship.
+.env
+.env.*
+.server.*
+*.log
+node_modules
+dist
+shots*
+docs
+bench
+tools/*
+!tools/build-vercel.mjs
+!tools/glb-slim-build.mjs

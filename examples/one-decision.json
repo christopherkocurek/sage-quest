@@ -1,0 +1,88 @@
+{
+  "date": "2026-11-18T11:28:05.241Z",
+  "endpoint": "https://sage.levanto.ai",
+  "clientMs": 381,
+  "request": {
+    "content": "Hollow Guards are disciplined soldiers. They are destroyed for good if the intruder gets past them, so they press the attack and only guard when they are badly hurt.\n\nFacts right now:\nGroup: 1 Hollow Guard left of 2.\nThe group has lost half of its members or more: yes.\nGroup health: healthy.\nDistance to the intruder: close (2 paces).\nThe intruder is blocking.\nIntruder health: 9 of 12.\nOther allies in the fight: 1.\nThe group outnumbers the intruder.\nReinforcements available: no.",
+    "questions": [
+      {
+        "id": "tactic",
+        "kind": "choice",
+        "instructions": "These creatures guard the road against an intruder. Which tactic do they take now? Judge by the facts given. If more than one fits, the first of this list wins: feint, guard, charge.",
+        "options": [
+          {
+            "option": "feint",
+            "description": "Step in, step back, then strike to break the guard. Fits when the intruder is blocking and the distance is close."
+          },
+          {
+            "option": "guard",
+            "description": "Raise weapons, hold the line and strike back after the intruder attacks. Fits when the intruder is swinging a weapon and the distance is close, or when the group is hurt and the intruder is at full health."
+          },
+          {
+            "option": "charge",
+            "description": "Run straight at the intruder and strike. Fits when the intruder is far away, moving, dodging or hurt, and whenever no other tactic fits."
+          }
+        ]
+      }
+    ]
+  },
+  "response": {
+    "results": [
+      {
+        "answers": [
+          {
+            "ok": true,
+            "result": {
+              "id": "tactic",
+              "kind": "choice",
+              "result": {
+                "chosen": "feint",
+                "probability": 0.9811001968925206,
+                "probabilities": [
+                  {
+                    "option": "feint",
+                    "probability": 0.9811001968925206
+                  },
+                  {
+                    "option": "guard",
+                    "probability": 0.0026837137060016555
+                  },
+                  {
+                    "option": "charge",
+                    "probability": 0.01621608940147773
+                  }
+                ]
+              },
+              "meta": {
+                "model": "levanto-sage-2",
+                "usage": null,
+                "reasoning": {
+                  "ran": false,
+                  "finished": null,
+                  "tokens": null,
+                  "limited": null
+                }
+              },
+              "grounding_meta": null
+            },
+            "error": null
+          }
+        ]
+      }
+    ],
+    "meta": {
+      "model": "levanto-sage-2",
+      "request_count": 1,
+      "question_count": 1,
+      "latency_ms": 137.2,
+      "usage": {
+        "billed_input_tokens": 318,
+        "rendered_tokens": 318,
+        "image_count": 0,
+        "image_tokens": 0,
+        "input_tokens": 318,
+        "output_tokens": 0
+      }
+    }
+  }
+}

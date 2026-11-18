@@ -1,0 +1,19 @@
+{
+  "size1x": [
+    230,
+    57
+  ],
+  "drawOrder": [
+    "swordGlow",
+    "glow",
+    "sword",
+    "back",
+    "shield",
+    "face",
+    "glint"
+  ],
+  "extra": [
+    "mask"
+  ],
+  "notes": "Draw drawOrder bottom to top on one canvas. \"mask\" = white letter-face silhouette for a shine sweep clip; not drawn."
+}

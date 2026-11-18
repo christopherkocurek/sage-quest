@@ -1,0 +1,907 @@
+{
+ "name": "director",
+ "provenance": {
+  "date": "2026-11-18T13:45:18.353Z",
+  "endpoint": "https://sage.levanto.ai",
+  "node": "v25.2.1",
+  "command": "node director-latency.mjs --base http://localhost:8804 --reps 3",
+  "gameCommit": null,
+  "gameTreeMd5": "384ee18be1e80f0a63bbd872a603f74b",
+  "gameFileMd5": {
+   "game/kit.mjs": "8a934cb33142b000ea89fcf440ddc1be",
+   "game/questions.mjs": "de1d4f923c285f4b872cc0a035ac237b",
+   "game/worlds.mjs": "6c0e89cfa68ab224f3fe1367ce7a7ab4",
+   "server/sage.mjs": "bdc457bd1e898ac1ea149c40a765c353",
+   "server/server.mjs": "cac242ba7e20ba82d90c3228716a7289",
+   "web/src/fight.js": "116485eee59a6b99a5f8526edee998d5"
+  },
+  "base": "http://localhost:8804",
+  "reps": 3,
+  "scenarios": [
+   "1 waves healthy",
+   "1 waves hurt",
+   "3 waves healthy",
+   "3 waves hurt",
+   "6 waves healthy",
+   "6 waves hurt"
+  ],
+  "askTimeoutMsInGame": 6000,
+  "note": "synthetic log built from the line templates of web/src/fight.js"
+ },
+ "summary": {
+  "direct": {
+   "all": {
+    "n": 18,
+    "median": 356.9,
+    "p95": 1150.2,
+    "mean": 414.6,
+    "min": 225.9,
+    "max": 1150.2
+   },
+   "failed": 0,
+   "byScenario": {
+    "1 waves, healthy": {
+     "askToAnswerMs": {
+      "n": 3,
+      "median": 298,
+      "p95": 431.5,
+      "mean": 333.4,
+      "min": 270.7,
+      "max": 431.5
+     },
+     "logChars": 899,
+     "beats": [
+      "reinforce_guard",
+      "reinforce_guard",
+      "reinforce_guard"
+     ],
+     "pressure": [
+      1.04,
+      1.04,
+      1.04
+     ]
+    },
+    "1 waves, hurt": {
+     "askToAnswerMs": {
+      "n": 3,
+      "median": 396.8,
+      "p95": 458.2,
+      "mean": 372.8,
+      "min": 263.4,
+      "max": 458.2
+     },
+     "logChars": 1070,
+     "beats": [
+      "reinforce_stalkers",
+      "reinforce_stalkers",
+      "reinforce_stalkers"
+     ],
+     "pressure": [
+      2.06,
+      2.06,
+      2.06
+     ]
+    },
+    "3 waves, healthy": {
+     "askToAnswerMs": {
+      "n": 3,
+      "median": 516.1,
+      "p95": 1150.2,
+      "mean": 675.1,
+      "min": 359,
+      "max": 1150.2
+     },
+     "logChars": 2906,
+     "beats": [
+      "reinforce_guard",
+      "reinforce_guard",
+      "reinforce_guard"
+     ],
+     "pressure": [
+      1.04,
+      1.04,
+      1.04
+     ]
+    },
+    "3 waves, hurt": {
+     "askToAnswerMs": {
+      "n": 3,
+      "median": 509.8,
+      "p95": 526.4,
+      "mean": 441.3,
+      "min": 287.6,
+      "max": 526.4
+     },
+     "logChars": 3174,
+     "beats": [
+      "rest",
+      "rest",
+      "rest"
+     ],
+     "pressure": [
+      2.94,
+      2.94,
+      2.94
+     ]
+    },
+    "6 waves, healthy": {
+     "askToAnswerMs": {
+      "n": 3,
+      "median": 354.7,
+      "p95": 480.7,
+      "mean": 382.3,
+      "min": 311.6,
+      "max": 480.7
+     },
+     "logChars": 6826,
+     "beats": [
+      "reinforce_guard",
+      "reinforce_guard",
+      "reinforce_guard"
+     ],
+     "pressure": [
+      1.06,
+      1.06,
+      1.06
+     ]
+    },
+    "6 waves, hurt": {
+     "askToAnswerMs": {
+      "n": 3,
+      "median": 307.3,
+      "p95": 315.2,
+      "mean": 282.8,
+      "min": 225.9,
+      "max": 315.2
+     },
+     "logChars": 7061,
+     "beats": [
+      "rest",
+      "rest",
+      "rest"
+     ],
+     "pressure": [
+      2.95,
+      2.95,
+      2.95
+     ]
+    }
+   }
+  },
+  "relay": {
+   "all": {
+    "n": 18,
+    "median": 360.6,
+    "p95": 648.4,
+    "mean": 368.8,
+    "min": 225.1,
+    "max": 648.4
+   },
+   "failed": 0,
+   "byScenario": {
+    "1 waves, healthy": {
+     "askToAnswerMs": {
+      "n": 3,
+      "median": 327.6,
+      "p95": 385.6,
+      "mean": 343,
+      "min": 315.7,
+      "max": 385.6
+     },
+     "logChars": null,
+     "beats": [
+      "reinforce_guard",
+      "reinforce_guard",
+      "reinforce_guard"
+     ],
+     "pressure": [
+      1.04,
+      1.04,
+      1.04
+     ]
+    },
+    "1 waves, hurt": {
+     "askToAnswerMs": {
+      "n": 3,
+      "median": 301.4,
+      "p95": 648.4,
+      "mean": 410.9,
+      "min": 283,
+      "max": 648.4
+     },
+     "logChars": null,
+     "beats": [
+      "reinforce_stalkers",
+      "reinforce_stalkers",
+      "reinforce_stalkers"
+     ],
+     "pressure": [
+      2.06,
+      2.06,
+      2.06
+     ]
+    },
+    "3 waves, healthy": {
+     "askToAnswerMs": {
+      "n": 3,
+      "median": 403.9,
+      "p95": 410.6,
+      "mean": 385.5,
+      "min": 342.1,
+      "max": 410.6
+     },
+     "logChars": null,
+     "beats": [
+      "reinforce_guard",
+      "reinforce_guard",
+      "reinforce_guard"
+     ],
+     "pressure": [
+      1.04,
+      1.04,
+      1.04
+     ]
+    },
+    "3 waves, hurt": {
+     "askToAnswerMs": {
+      "n": 3,
+      "median": 467.6,
+      "p95": 511.3,
+      "mean": 401.3,
+      "min": 225.1,
+      "max": 511.3
+     },
+     "logChars": null,
+     "beats": [
+      "rest",
+      "rest",
+      "rest"
+     ],
+     "pressure": [
+      2.94,
+      2.94,
+      2.94
+     ]
+    },
+    "6 waves, healthy": {
+     "askToAnswerMs": {
+      "n": 3,
+      "median": 368.4,
+      "p95": 408.2,
+      "mean": 343.2,
+      "min": 253.1,
+      "max": 408.2
+     },
+     "logChars": null,
+     "beats": [
+      "reinforce_guard",
+      "reinforce_guard",
+      "reinforce_guard"
+     ],
+     "pressure": [
+      1.06,
+      1.06,
+      1.06
+     ]
+    },
+    "6 waves, hurt": {
+     "askToAnswerMs": {
+      "n": 3,
+      "median": 353,
+      "p95": 368.1,
+      "mean": 328.6,
+      "min": 264.7,
+      "max": 368.1
+     },
+     "logChars": null,
+     "beats": [
+      "rest",
+      "rest",
+      "rest"
+     ],
+     "pressure": [
+      2.95,
+      2.95,
+      2.95
+     ]
+    }
+   }
+  }
+ },
+ "rows": [
+  {
+   "path": "direct",
+   "waves": 1,
+   "hero": "healthy",
+   "lines": 18,
+   "rep": 0,
+   "ok": true,
+   "askToAnswerMs": 270.7,
+   "serverMs": 118.2,
+   "readyMs": 647.2,
+   "logChars": 899,
+   "inTok": 400,
+   "outTok": 332,
+   "beat": "reinforce_guard",
+   "beatP": 0.61,
+   "pressure": 1.04,
+   "errors": []
+  },
+  {
+   "path": "direct",
+   "waves": 1,
+   "hero": "healthy",
+   "lines": 18,
+   "rep": 1,
+   "ok": true,
+   "askToAnswerMs": 298,
+   "serverMs": 169.8,
+   "readyMs": 519.2,
+   "logChars": 899,
+   "inTok": 400,
+   "outTok": 332,
+   "beat": "reinforce_guard",
+   "beatP": 0.61,
+   "pressure": 1.04,
+   "errors": []
+  },
+  {
+   "path": "direct",
+   "waves": 1,
+   "hero": "healthy",
+   "lines": 18,
+   "rep": 2,
+   "ok": true,
+   "askToAnswerMs": 431.5,
+   "serverMs": 313.8,
+   "readyMs": 472.8,
+   "logChars": 899,
+   "inTok": 400,
+   "outTok": 332,
+   "beat": "reinforce_guard",
+   "beatP": 0.61,
+   "pressure": 1.04,
+   "errors": []
+  },
+  {
+   "path": "relay",
+   "waves": 1,
+   "hero": "healthy",
+   "lines": 18,
+   "rep": 0,
+   "ok": true,
+   "askToAnswerMs": 327.6,
+   "serverMs": 200,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "reinforce_guard",
+   "beatP": 0.61,
+   "pressure": 1.04
+  },
+  {
+   "path": "relay",
+   "waves": 1,
+   "hero": "healthy",
+   "lines": 18,
+   "rep": 1,
+   "ok": true,
+   "askToAnswerMs": 385.6,
+   "serverMs": 268,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "reinforce_guard",
+   "beatP": 0.61,
+   "pressure": 1.04
+  },
+  {
+   "path": "relay",
+   "waves": 1,
+   "hero": "healthy",
+   "lines": 18,
+   "rep": 2,
+   "ok": true,
+   "askToAnswerMs": 315.7,
+   "serverMs": 111,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "reinforce_guard",
+   "beatP": 0.61,
+   "pressure": 1.04
+  },
+  {
+   "path": "direct",
+   "waves": 1,
+   "hero": "badly hurt",
+   "lines": 21,
+   "rep": 0,
+   "ok": true,
+   "askToAnswerMs": 458.2,
+   "serverMs": 333.9,
+   "readyMs": 500.8,
+   "logChars": 1070,
+   "inTok": 400,
+   "outTok": 346,
+   "beat": "reinforce_stalkers",
+   "beatP": 0.909,
+   "pressure": 2.06,
+   "errors": []
+  },
+  {
+   "path": "direct",
+   "waves": 1,
+   "hero": "badly hurt",
+   "lines": 21,
+   "rep": 1,
+   "ok": true,
+   "askToAnswerMs": 263.4,
+   "serverMs": 147.5,
+   "readyMs": 473.1,
+   "logChars": 1070,
+   "inTok": 400,
+   "outTok": 346,
+   "beat": "reinforce_stalkers",
+   "beatP": 0.909,
+   "pressure": 2.06,
+   "errors": []
+  },
+  {
+   "path": "direct",
+   "waves": 1,
+   "hero": "badly hurt",
+   "lines": 21,
+   "rep": 2,
+   "ok": true,
+   "askToAnswerMs": 396.8,
+   "serverMs": 198.3,
+   "readyMs": 668.8,
+   "logChars": 1070,
+   "inTok": 400,
+   "outTok": 346,
+   "beat": "reinforce_stalkers",
+   "beatP": 0.909,
+   "pressure": 2.06,
+   "errors": []
+  },
+  {
+   "path": "relay",
+   "waves": 1,
+   "hero": "badly hurt",
+   "lines": 21,
+   "rep": 0,
+   "ok": true,
+   "askToAnswerMs": 283,
+   "serverMs": 129,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "reinforce_stalkers",
+   "beatP": 0.909,
+   "pressure": 2.06
+  },
+  {
+   "path": "relay",
+   "waves": 1,
+   "hero": "badly hurt",
+   "lines": 21,
+   "rep": 1,
+   "ok": true,
+   "askToAnswerMs": 301.4,
+   "serverMs": 150,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "reinforce_stalkers",
+   "beatP": 0.909,
+   "pressure": 2.06
+  },
+  {
+   "path": "relay",
+   "waves": 1,
+   "hero": "badly hurt",
+   "lines": 21,
+   "rep": 2,
+   "ok": true,
+   "askToAnswerMs": 648.4,
+   "serverMs": 522,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "reinforce_stalkers",
+   "beatP": 0.909,
+   "pressure": 2.06
+  },
+  {
+   "path": "direct",
+   "waves": 3,
+   "hero": "healthy",
+   "lines": 61,
+   "rep": 0,
+   "ok": true,
+   "askToAnswerMs": 1150.2,
+   "serverMs": 987.8,
+   "readyMs": 651.3,
+   "logChars": 2906,
+   "inTok": 400,
+   "outTok": 342,
+   "beat": "reinforce_guard",
+   "beatP": 0.766,
+   "pressure": 1.04,
+   "errors": []
+  },
+  {
+   "path": "direct",
+   "waves": 3,
+   "hero": "healthy",
+   "lines": 61,
+   "rep": 1,
+   "ok": true,
+   "askToAnswerMs": 359,
+   "serverMs": 192,
+   "readyMs": 520.9,
+   "logChars": 2906,
+   "inTok": 400,
+   "outTok": 342,
+   "beat": "reinforce_guard",
+   "beatP": 0.766,
+   "pressure": 1.04,
+   "errors": []
+  },
+  {
+   "path": "direct",
+   "waves": 3,
+   "hero": "healthy",
+   "lines": 61,
+   "rep": 2,
+   "ok": true,
+   "askToAnswerMs": 516.1,
+   "serverMs": 393.2,
+   "readyMs": 486,
+   "logChars": 2906,
+   "inTok": 400,
+   "outTok": 342,
+   "beat": "reinforce_guard",
+   "beatP": 0.766,
+   "pressure": 1.04,
+   "errors": []
+  },
+  {
+   "path": "relay",
+   "waves": 3,
+   "hero": "healthy",
+   "lines": 61,
+   "rep": 0,
+   "ok": true,
+   "askToAnswerMs": 403.9,
+   "serverMs": 226,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "reinforce_guard",
+   "beatP": 0.766,
+   "pressure": 1.04
+  },
+  {
+   "path": "relay",
+   "waves": 3,
+   "hero": "healthy",
+   "lines": 61,
+   "rep": 1,
+   "ok": true,
+   "askToAnswerMs": 410.6,
+   "serverMs": 293,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "reinforce_guard",
+   "beatP": 0.766,
+   "pressure": 1.04
+  },
+  {
+   "path": "relay",
+   "waves": 3,
+   "hero": "healthy",
+   "lines": 61,
+   "rep": 2,
+   "ok": true,
+   "askToAnswerMs": 342.1,
+   "serverMs": 223,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "reinforce_guard",
+   "beatP": 0.766,
+   "pressure": 1.04
+  },
+  {
+   "path": "direct",
+   "waves": 3,
+   "hero": "badly hurt",
+   "lines": 66,
+   "rep": 0,
+   "ok": true,
+   "askToAnswerMs": 287.6,
+   "serverMs": 115.6,
+   "readyMs": 433.3,
+   "logChars": 3174,
+   "inTok": 400,
+   "outTok": 341,
+   "beat": "rest",
+   "beatP": 0.992,
+   "pressure": 2.94,
+   "errors": []
+  },
+  {
+   "path": "direct",
+   "waves": 3,
+   "hero": "badly hurt",
+   "lines": 66,
+   "rep": 1,
+   "ok": true,
+   "askToAnswerMs": 526.4,
+   "serverMs": 400.7,
+   "readyMs": 492.9,
+   "logChars": 3174,
+   "inTok": 400,
+   "outTok": 341,
+   "beat": "rest",
+   "beatP": 0.992,
+   "pressure": 2.94,
+   "errors": []
+  },
+  {
+   "path": "direct",
+   "waves": 3,
+   "hero": "badly hurt",
+   "lines": 66,
+   "rep": 2,
+   "ok": true,
+   "askToAnswerMs": 509.8,
+   "serverMs": 279.5,
+   "readyMs": 477.7,
+   "logChars": 3174,
+   "inTok": 400,
+   "outTok": 341,
+   "beat": "rest",
+   "beatP": 0.992,
+   "pressure": 2.94,
+   "errors": []
+  },
+  {
+   "path": "relay",
+   "waves": 3,
+   "hero": "badly hurt",
+   "lines": 66,
+   "rep": 0,
+   "ok": true,
+   "askToAnswerMs": 467.6,
+   "serverMs": 307,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "rest",
+   "beatP": 0.992,
+   "pressure": 2.94
+  },
+  {
+   "path": "relay",
+   "waves": 3,
+   "hero": "badly hurt",
+   "lines": 66,
+   "rep": 1,
+   "ok": true,
+   "askToAnswerMs": 511.3,
+   "serverMs": 389,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "rest",
+   "beatP": 0.992,
+   "pressure": 2.94
+  },
+  {
+   "path": "relay",
+   "waves": 3,
+   "hero": "badly hurt",
+   "lines": 66,
+   "rep": 2,
+   "ok": true,
+   "askToAnswerMs": 225.1,
+   "serverMs": 67,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "rest",
+   "beatP": 0.992,
+   "pressure": 2.94
+  },
+  {
+   "path": "direct",
+   "waves": 6,
+   "hero": "healthy",
+   "lines": 148,
+   "rep": 0,
+   "ok": true,
+   "askToAnswerMs": 480.7,
+   "serverMs": 347.4,
+   "readyMs": 473,
+   "logChars": 6826,
+   "inTok": 400,
+   "outTok": 342,
+   "beat": "reinforce_guard",
+   "beatP": 0.802,
+   "pressure": 1.06,
+   "errors": []
+  },
+  {
+   "path": "direct",
+   "waves": 6,
+   "hero": "healthy",
+   "lines": 148,
+   "rep": 1,
+   "ok": true,
+   "askToAnswerMs": 311.6,
+   "serverMs": 141.9,
+   "readyMs": 664.2,
+   "logChars": 6826,
+   "inTok": 400,
+   "outTok": 342,
+   "beat": "reinforce_guard",
+   "beatP": 0.802,
+   "pressure": 1.06,
+   "errors": []
+  },
+  {
+   "path": "direct",
+   "waves": 6,
+   "hero": "healthy",
+   "lines": 148,
+   "rep": 2,
+   "ok": true,
+   "askToAnswerMs": 354.7,
+   "serverMs": 230.4,
+   "readyMs": 484.3,
+   "logChars": 6826,
+   "inTok": 400,
+   "outTok": 342,
+   "beat": "reinforce_guard",
+   "beatP": 0.802,
+   "pressure": 1.06,
+   "errors": []
+  },
+  {
+   "path": "relay",
+   "waves": 6,
+   "hero": "healthy",
+   "lines": 148,
+   "rep": 0,
+   "ok": true,
+   "askToAnswerMs": 408.2,
+   "serverMs": 239,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "reinforce_guard",
+   "beatP": 0.802,
+   "pressure": 1.06
+  },
+  {
+   "path": "relay",
+   "waves": 6,
+   "hero": "healthy",
+   "lines": 148,
+   "rep": 1,
+   "ok": true,
+   "askToAnswerMs": 253.1,
+   "serverMs": 64,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "reinforce_guard",
+   "beatP": 0.802,
+   "pressure": 1.06
+  },
+  {
+   "path": "relay",
+   "waves": 6,
+   "hero": "healthy",
+   "lines": 148,
+   "rep": 2,
+   "ok": true,
+   "askToAnswerMs": 368.4,
+   "serverMs": 240,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "reinforce_guard",
+   "beatP": 0.802,
+   "pressure": 1.06
+  },
+  {
+   "path": "direct",
+   "waves": 6,
+   "hero": "badly hurt",
+   "lines": 153,
+   "rep": 0,
+   "ok": true,
+   "askToAnswerMs": 315.2,
+   "serverMs": 148.6,
+   "readyMs": 762.4,
+   "logChars": 7061,
+   "inTok": 400,
+   "outTok": 343,
+   "beat": "rest",
+   "beatP": 0.993,
+   "pressure": 2.95,
+   "errors": []
+  },
+  {
+   "path": "direct",
+   "waves": 6,
+   "hero": "badly hurt",
+   "lines": 153,
+   "rep": 1,
+   "ok": true,
+   "askToAnswerMs": 307.3,
+   "serverMs": 147.6,
+   "readyMs": 671.2,
+   "logChars": 7061,
+   "inTok": 400,
+   "outTok": 343,
+   "beat": "rest",
+   "beatP": 0.993,
+   "pressure": 2.95,
+   "errors": []
+  },
+  {
+   "path": "direct",
+   "waves": 6,
+   "hero": "badly hurt",
+   "lines": 153,
+   "rep": 2,
+   "ok": true,
+   "askToAnswerMs": 225.9,
+   "serverMs": 69.9,
+   "readyMs": 780.7,
+   "logChars": 7061,
+   "inTok": 400,
+   "outTok": 343,
+   "beat": "rest",
+   "beatP": 0.993,
+   "pressure": 2.95,
+   "errors": []
+  },
+  {
+   "path": "relay",
+   "waves": 6,
+   "hero": "badly hurt",
+   "lines": 153,
+   "rep": 0,
+   "ok": true,
+   "askToAnswerMs": 264.7,
+   "serverMs": 62,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "rest",
+   "beatP": 0.993,
+   "pressure": 2.95
+  },
+  {
+   "path": "relay",
+   "waves": 6,
+   "hero": "badly hurt",
+   "lines": 153,
+   "rep": 1,
+   "ok": true,
+   "askToAnswerMs": 368.1,
+   "serverMs": 243,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "rest",
+   "beatP": 0.993,
+   "pressure": 2.95
+  },
+  {
+   "path": "relay",
+   "waves": 6,
+   "hero": "badly hurt",
+   "lines": 153,
+   "rep": 2,
+   "ok": true,
+   "askToAnswerMs": 353,
+   "serverMs": 227,
+   "timedOutOrEmpty": false,
+   "errors": [],
+   "beat": "rest",
+   "beatP": 0.993,
+   "pressure": 2.95
+  }
+ ]
+}

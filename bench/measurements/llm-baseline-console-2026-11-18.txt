@@ -1,0 +1,19 @@
+408 calls
+20/408
+40/408
+60/408
+80/408
+100/408
+120/408
+140/408
+160/408
+180/408
+200/408
+220/408
+240/408
+260/408
+wrote bench/measurements/llm-baseline-2026-11-18.json
+claude-haiku-5-5|tactics: calls 86 valid 86 unparseable 0 invalid 0 errors 0 | api ms median 1580.5 p95 2369 | wall median 2653.8 | $0.00017/decision | agree w/ Sage2 86% | repeat 100%
+claude-haiku-5-5|world: calls 118 valid 118 unparseable 0 invalid 0 errors 0 | api ms median 1662.5 p95 2457 | wall median 2704.6 | $0.00022/decision | agree w/ Sage2 96.6% | repeat 100% | world clear 97.5% hard 100% nofit 100%
+claude-fable-5-2|tactics: calls 86 valid 86 unparseable 0 invalid 0 errors 0 | api ms median 2484 p95 3747 | wall median 3569.7 | $0.00993/decision | agree w/ Sage2 86% | repeat 100%
+claude-fable-5-2|world: calls 118 valid 118 unparseable 0 invalid 0 errors 0 | api ms median 2465 p95 4429 | wall median 3507.6 | $0.01347/decision | agree w/ Sage2 98.3% | repeat 100% | world clear 100% hard 100% nofit 80%

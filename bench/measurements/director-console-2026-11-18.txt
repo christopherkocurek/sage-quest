@@ -1,0 +1,15 @@
+wrote bench/measurements/director-2026-11-18.json
+direct: ask->answer median 356.9 p95 1150.2 max 1150.2 ms (n 18, failed 0)
+  1 waves, healthy: median 298 p95 431.5 | log 899 chars | beats reinforce_guard,reinforce_guard,reinforce_guard | pressure 1.04,1.04,1.04
+  1 waves, hurt: median 396.8 p95 458.2 | log 1070 chars | beats reinforce_stalkers,reinforce_stalkers,reinforce_stalkers | pressure 2.06,2.06,2.06
+  3 waves, healthy: median 516.1 p95 1150.2 | log 2906 chars | beats reinforce_guard,reinforce_guard,reinforce_guard | pressure 1.04,1.04,1.04
+  3 waves, hurt: median 509.8 p95 526.4 | log 3174 chars | beats rest,rest,rest | pressure 2.94,2.94,2.94
+  6 waves, healthy: median 354.7 p95 480.7 | log 6826 chars | beats reinforce_guard,reinforce_guard,reinforce_guard | pressure 1.06,1.06,1.06
+  6 waves, hurt: median 307.3 p95 315.2 | log 7061 chars | beats rest,rest,rest | pressure 2.95,2.95,2.95
+relay: ask->answer median 360.6 p95 648.4 max 648.4 ms (n 18, failed 0)
+  1 waves, healthy: median 327.6 p95 385.6 | log null chars | beats reinforce_guard,reinforce_guard,reinforce_guard | pressure 1.04,1.04,1.04
+  1 waves, hurt: median 301.4 p95 648.4 | log null chars | beats reinforce_stalkers,reinforce_stalkers,reinforce_stalkers | pressure 2.06,2.06,2.06
+  3 waves, healthy: median 403.9 p95 410.6 | log null chars | beats reinforce_guard,reinforce_guard,reinforce_guard | pressure 1.04,1.04,1.04
+  3 waves, hurt: median 467.6 p95 511.3 | log null chars | beats rest,rest,rest | pressure 2.94,2.94,2.94
+  6 waves, healthy: median 368.4 p95 408.2 | log null chars | beats reinforce_guard,reinforce_guard,reinforce_guard | pressure 1.06,1.06,1.06
+  6 waves, hurt: median 353 p95 368.1 | log null chars | beats rest,rest,rest | pressure 2.95,2.95,2.95

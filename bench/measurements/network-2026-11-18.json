@@ -1,0 +1,618 @@
+{
+ "name": "network",
+ "provenance": {
+  "date": "2026-11-18T13:26:10.813Z",
+  "endpoint": "https://sage.levanto.ai",
+  "node": "v25.2.1",
+  "command": "node network-rtt.mjs",
+  "gameCommit": null,
+  "gameTreeMd5": "384ee18be1e80f0a63bbd872a603f74b",
+  "gameFileMd5": {
+   "game/kit.mjs": "8a934cb33142b000ea89fcf440ddc1be",
+   "game/questions.mjs": "de1d4f923c285f4b872cc0a035ac237b",
+   "game/worlds.mjs": "6c0e89cfa68ab224f3fe1367ce7a7ab4",
+   "server/sage.mjs": "bdc457bd1e898ac1ea149c40a765c353",
+   "server/server.mjs": "cac242ba7e20ba82d90c3228716a7289",
+   "web/src/fight.js": "116485eee59a6b99a5f8526edee998d5"
+  },
+  "n": 30,
+  "getUrl": "https://sage.levanto.ai/"
+ },
+ "curlNewConnection": {
+  "httpCodes": [
+   "404"
+  ],
+  "dns": {
+   "n": 30,
+   "median": 3.4,
+   "p95": 4.7,
+   "mean": 3.5,
+   "min": 2.3,
+   "max": 4.7
+  },
+  "connect": {
+   "n": 30,
+   "median": 21.5,
+   "p95": 29.1,
+   "mean": 21.8,
+   "min": 17.2,
+   "max": 31.5
+  },
+  "tlsDone": {
+   "n": 30,
+   "median": 44.6,
+   "p95": 54,
+   "mean": 44.1,
+   "min": 35.2,
+   "max": 57.6
+  },
+  "firstByte": {
+   "n": 30,
+   "median": 204.6,
+   "p95": 494.9,
+   "mean": 226,
+   "min": 151.7,
+   "max": 510.4
+  },
+  "firstByteMinusTlsMs": 159.7
+ },
+ "fetchKeepAliveGet": {
+  "httpCodes": [
+   404
+  ],
+  "ms": {
+   "n": 30,
+   "median": 165.2,
+   "p95": 328.7,
+   "mean": 175.7,
+   "min": 120,
+   "max": 332.5
+  }
+ },
+ "batchCalls": {
+  "n": 30,
+  "clientMs": {
+   "n": 30,
+   "median": 266.1,
+   "p95": 745.4,
+   "mean": 368.9,
+   "min": 210.1,
+   "max": 1376.6
+  },
+  "serverMs": {
+   "n": 30,
+   "median": 89.6,
+   "p95": 267.3,
+   "mean": 120.3,
+   "min": 61.6,
+   "max": 298.4
+  },
+  "clientMinusServerMs": {
+   "n": 30,
+   "median": 166.1,
+   "p95": 627.3,
+   "mean": 248.6,
+   "min": 122.8,
+   "max": 1312.8
+  }
+ },
+ "reading": "connect = one network round trip to the front door (TCP). A kept-alive GET is one round trip plus the front door. The batch client-minus-server gap is that round trip plus the front door, TLS reuse and JSON handling; the model time sits inside serverMs.",
+ "rows": {
+  "curl": [
+   {
+    "dnsMs": 4.169,
+    "connectMs": 18.48,
+    "tlsMs": 38.259,
+    "firstByteMs": 510.36499999999995,
+    "totalMs": 510.52200000000005,
+    "code": "404"
+   },
+   {
+    "dnsMs": 2.712,
+    "connectMs": 24.495,
+    "tlsMs": 50.8,
+    "firstByteMs": 178.87,
+    "totalMs": 179.07,
+    "code": "404"
+   },
+   {
+    "dnsMs": 3.534,
+    "connectMs": 21.544,
+    "tlsMs": 43.208000000000006,
+    "firstByteMs": 166.706,
+    "totalMs": 167.043,
+    "code": "404"
+   },
+   {
+    "dnsMs": 4.033,
+    "connectMs": 26.157,
+    "tlsMs": 53.808,
+    "firstByteMs": 181.44299999999998,
+    "totalMs": 181.563,
+    "code": "404"
+   },
+   {
+    "dnsMs": 3.035,
+    "connectMs": 21.645,
+    "tlsMs": 45.955999999999996,
+    "firstByteMs": 227.06699999999998,
+    "totalMs": 227.19400000000002,
+    "code": "404"
+   },
+   {
+    "dnsMs": 3.0599999999999996,
+    "connectMs": 17.723,
+    "tlsMs": 36.58,
+    "firstByteMs": 164.156,
+    "totalMs": 164.415,
+    "code": "404"
+   },
+   {
+    "dnsMs": 2.26,
+    "connectMs": 21.000999999999998,
+    "tlsMs": 43.992999999999995,
+    "firstByteMs": 168.929,
+    "totalMs": 169.095,
+    "code": "404"
+   },
+   {
+    "dnsMs": 3.7729999999999997,
+    "connectMs": 23.465,
+    "tlsMs": 45.821,
+    "firstByteMs": 356.16700000000003,
+    "totalMs": 356.359,
+    "code": "404"
+   },
+   {
+    "dnsMs": 4.087000000000001,
+    "connectMs": 22.481,
+    "tlsMs": 44.523,
+    "firstByteMs": 214.147,
+    "totalMs": 214.38,
+    "code": "404"
+   },
+   {
+    "dnsMs": 2.888,
+    "connectMs": 18.37,
+    "tlsMs": 37.928999999999995,
+    "firstByteMs": 158.108,
+    "totalMs": 158.274,
+    "code": "404"
+   },
+   {
+    "dnsMs": 4.447,
+    "connectMs": 26.765,
+    "tlsMs": 54.04,
+    "firstByteMs": 182.88,
+    "totalMs": 183.042,
+    "code": "404"
+   },
+   {
+    "dnsMs": 3.568,
+    "connectMs": 23.271,
+    "tlsMs": 46.521,
+    "firstByteMs": 206.704,
+    "totalMs": 206.829,
+    "code": "404"
+   },
+   {
+    "dnsMs": 4.563000000000001,
+    "connectMs": 31.461999999999996,
+    "tlsMs": 50.967,
+    "firstByteMs": 206.574,
+    "totalMs": 206.71800000000002,
+    "code": "404"
+   },
+   {
+    "dnsMs": 3.4290000000000003,
+    "connectMs": 21.682,
+    "tlsMs": 45.878,
+    "firstByteMs": 491.969,
+    "totalMs": 492.392,
+    "code": "404"
+   },
+   {
+    "dnsMs": 3.198,
+    "connectMs": 17.162,
+    "tlsMs": 35.778,
+    "firstByteMs": 197.657,
+    "totalMs": 197.791,
+    "code": "404"
+   },
+   {
+    "dnsMs": 3.249,
+    "connectMs": 22.291999999999998,
+    "tlsMs": 46.167,
+    "firstByteMs": 171.654,
+    "totalMs": 171.86399999999998,
+    "code": "404"
+   },
+   {
+    "dnsMs": 4.706,
+    "connectMs": 29.11,
+    "tlsMs": 57.571999999999996,
+    "firstByteMs": 219.59699999999998,
+    "totalMs": 219.89000000000001,
+    "code": "404"
+   },
+   {
+    "dnsMs": 4.664,
+    "connectMs": 23.129,
+    "tlsMs": 46.434000000000005,
+    "firstByteMs": 206.953,
+    "totalMs": 207.10600000000002,
+    "code": "404"
+   },
+   {
+    "dnsMs": 3.5010000000000003,
+    "connectMs": 22.943,
+    "tlsMs": 45.788000000000004,
+    "firstByteMs": 208.665,
+    "totalMs": 208.793,
+    "code": "404"
+   },
+   {
+    "dnsMs": 3.17,
+    "connectMs": 19.185000000000002,
+    "tlsMs": 41.31,
+    "firstByteMs": 207.294,
+    "totalMs": 207.37900000000002,
+    "code": "404"
+   },
+   {
+    "dnsMs": 2.5149999999999997,
+    "connectMs": 20.818,
+    "tlsMs": 43.516,
+    "firstByteMs": 206.24,
+    "totalMs": 206.343,
+    "code": "404"
+   },
+   {
+    "dnsMs": 2.72,
+    "connectMs": 21.15,
+    "tlsMs": 44.686,
+    "firstByteMs": 203.83599999999998,
+    "totalMs": 204.064,
+    "code": "404"
+   },
+   {
+    "dnsMs": 4.058,
+    "connectMs": 26.791,
+    "tlsMs": 52.467,
+    "firstByteMs": 216.34,
+    "totalMs": 216.434,
+    "code": "404"
+   },
+   {
+    "dnsMs": 4.460000000000001,
+    "connectMs": 20.587999999999997,
+    "tlsMs": 38.169000000000004,
+    "firstByteMs": 154.702,
+    "totalMs": 154.808,
+    "code": "404"
+   },
+   {
+    "dnsMs": 2.73,
+    "connectMs": 20.852,
+    "tlsMs": 42.858,
+    "firstByteMs": 162.05,
+    "totalMs": 162.185,
+    "code": "404"
+   },
+   {
+    "dnsMs": 3.421,
+    "connectMs": 21.405,
+    "tlsMs": 44.872,
+    "firstByteMs": 164.515,
+    "totalMs": 164.698,
+    "code": "404"
+   },
+   {
+    "dnsMs": 3.137,
+    "connectMs": 17.39,
+    "tlsMs": 37.362,
+    "firstByteMs": 193.95200000000003,
+    "totalMs": 194.166,
+    "code": "404"
+   },
+   {
+    "dnsMs": 3.666,
+    "connectMs": 17.742,
+    "tlsMs": 35.234,
+    "firstByteMs": 494.85200000000003,
+    "totalMs": 494.981,
+    "code": "404"
+   },
+   {
+    "dnsMs": 3.136,
+    "connectMs": 17.683999999999997,
+    "tlsMs": 36.143,
+    "firstByteMs": 151.71699999999998,
+    "totalMs": 151.85100000000003,
+    "code": "404"
+   },
+   {
+    "dnsMs": 2.855,
+    "connectMs": 17.407,
+    "tlsMs": 36.036,
+    "firstByteMs": 205.288,
+    "totalMs": 206.17,
+    "code": "404"
+   }
+  ],
+  "keep": [
+   {
+    "ms": 200.07345799999894,
+    "code": 404
+   },
+   {
+    "ms": 123.09766599999966,
+    "code": 404
+   },
+   {
+    "ms": 164.67679099999987,
+    "code": 404
+   },
+   {
+    "ms": 122.25237500000003,
+    "code": 404
+   },
+   {
+    "ms": 165.66549999999916,
+    "code": 404
+   },
+   {
+    "ms": 168.82029200000034,
+    "code": 404
+   },
+   {
+    "ms": 165.86074999999983,
+    "code": 404
+   },
+   {
+    "ms": 163.64270899999974,
+    "code": 404
+   },
+   {
+    "ms": 332.4878750000007,
+    "code": 404
+   },
+   {
+    "ms": 163.4969170000004,
+    "code": 404
+   },
+   {
+    "ms": 168.17704200000117,
+    "code": 404
+   },
+   {
+    "ms": 167.25612499999988,
+    "code": 404
+   },
+   {
+    "ms": 157.805957999999,
+    "code": 404
+   },
+   {
+    "ms": 122.09112500000083,
+    "code": 404
+   },
+   {
+    "ms": 120.27308300000004,
+    "code": 404
+   },
+   {
+    "ms": 201.15058399999907,
+    "code": 404
+   },
+   {
+    "ms": 185.12325000000055,
+    "code": 404
+   },
+   {
+    "ms": 321.3453750000008,
+    "code": 404
+   },
+   {
+    "ms": 120.45241700000042,
+    "code": 404
+   },
+   {
+    "ms": 191.7938749999994,
+    "code": 404
+   },
+   {
+    "ms": 121.01095799999894,
+    "code": 404
+   },
+   {
+    "ms": 328.6660000000011,
+    "code": 404
+   },
+   {
+    "ms": 185.18399999999747,
+    "code": 404
+   },
+   {
+    "ms": 184.88708300000144,
+    "code": 404
+   },
+   {
+    "ms": 316.51537499999904,
+    "code": 404
+   },
+   {
+    "ms": 120.33895799999664,
+    "code": 404
+   },
+   {
+    "ms": 122.20045799999934,
+    "code": 404
+   },
+   {
+    "ms": 119.96233399999983,
+    "code": 404
+   },
+   {
+    "ms": 124.81058299999859,
+    "code": 404
+   },
+   {
+    "ms": 120.73320899999817,
+    "code": 404
+   }
+  ],
+  "batch": [
+   {
+    "clientMs": 214.28379100000166,
+    "serverMs": 88.8,
+    "overheadMs": 125.48379100000166
+   },
+   {
+    "clientMs": 455.7180420000004,
+    "serverMs": 61.6,
+    "overheadMs": 394.1180420000004
+   },
+   {
+    "clientMs": 519.2225419999995,
+    "serverMs": 202.2,
+    "overheadMs": 317.02254199999953
+   },
+   {
+    "clientMs": 262.0385410000017,
+    "serverMs": 95.7,
+    "overheadMs": 166.33854100000173
+   },
+   {
+    "clientMs": 578.7032500000023,
+    "serverMs": 99,
+    "overheadMs": 479.7032500000023
+   },
+   {
+    "clientMs": 229.79208300000028,
+    "serverMs": 64.7,
+    "overheadMs": 165.0920830000003
+   },
+   {
+    "clientMs": 259.848750000001,
+    "serverMs": 89.6,
+    "overheadMs": 170.24875000000102
+   },
+   {
+    "clientMs": 270.06616700000086,
+    "serverMs": 100.9,
+    "overheadMs": 169.16616700000085
+   },
+   {
+    "clientMs": 365.1701669999966,
+    "serverMs": 200.5,
+    "overheadMs": 164.67016699999658
+   },
+   {
+    "clientMs": 272.07624999999825,
+    "serverMs": 106.2,
+    "overheadMs": 165.87624999999827
+   },
+   {
+    "clientMs": 230.73679099999936,
+    "serverMs": 62.4,
+    "overheadMs": 168.33679099999935
+   },
+   {
+    "clientMs": 544.1516249999986,
+    "serverMs": 204.3,
+    "overheadMs": 339.8516249999986
+   },
+   {
+    "clientMs": 393.1523750000015,
+    "serverMs": 267.3,
+    "overheadMs": 125.85237500000147
+   },
+   {
+    "clientMs": 251.00679200000013,
+    "serverMs": 86.7,
+    "overheadMs": 164.30679200000014
+   },
+   {
+    "clientMs": 232.18316700000287,
+    "serverMs": 64.9,
+    "overheadMs": 167.28316700000286
+   },
+   {
+    "clientMs": 251.99145800000042,
+    "serverMs": 87.2,
+    "overheadMs": 164.79145800000043
+   },
+   {
+    "clientMs": 394.7095420000005,
+    "serverMs": 63.2,
+    "overheadMs": 331.5095420000005
+   },
+   {
+    "clientMs": 490.2295000000013,
+    "serverMs": 173.2,
+    "overheadMs": 317.0295000000013
+   },
+   {
+    "clientMs": 462.0758330000026,
+    "serverMs": 298.4,
+    "overheadMs": 163.67583300000263
+   },
+   {
+    "clientMs": 211.6233749999992,
+    "serverMs": 88,
+    "overheadMs": 123.62337499999921
+   },
+   {
+    "clientMs": 254.49754200000098,
+    "serverMs": 74.1,
+    "overheadMs": 180.39754200000098
+   },
+   {
+    "clientMs": 427.74420800000007,
+    "serverMs": 258.7,
+    "overheadMs": 169.04420800000008
+   },
+   {
+    "clientMs": 1376.5945420000025,
+    "serverMs": 63.8,
+    "overheadMs": 1312.7945420000026
+   },
+   {
+    "clientMs": 745.3570409999993,
+    "serverMs": 118.1,
+    "overheadMs": 627.2570409999993
+   },
+   {
+    "clientMs": 271.9142909999973,
+    "serverMs": 144.9,
+    "overheadMs": 127.01429099999731
+   },
+   {
+    "clientMs": 215.17987500000163,
+    "serverMs": 89.6,
+    "overheadMs": 125.57987500000164
+   },
+   {
+    "clientMs": 213.51466699999946,
+    "serverMs": 85.2,
+    "overheadMs": 128.31466699999947
+   },
+   {
+    "clientMs": 210.10004200000185,
+    "serverMs": 87.3,
+    "overheadMs": 122.80004200000185
+   },
+   {
+    "clientMs": 239.35295899999983,
+    "serverMs": 82.1,
+    "overheadMs": 157.25295899999983
+   },
+   {
+    "clientMs": 224.8016659999994,
+    "serverMs": 100.6,
+    "overheadMs": 124.20166599999939
+   }
+  ]
+ }
+}

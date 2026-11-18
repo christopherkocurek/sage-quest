@@ -1,0 +1,32 @@
+{
+  "name": "pricing",
+  "date": "2026-11-18",
+  "source": "https://levanto.ai/pricing (read on 2026-11-18; the page shows no pricing date)",
+  "page_text_summary": {
+    "input_per_1M_tokens_by_plan": {
+      "Free": 0.05,
+      "Developer": 0.05,
+      "Starter": 0.046,
+      "Pro": 0.042,
+      "Growth": 0.038
+    },
+    "output_per_1M_tokens": 1.0,
+    "free_plan": "$0 with $1 of usage a month",
+    "page_examples_at_developer_rates": {
+      "short question": "$0.00002/call",
+      "long document (8000 tokens)": "$0.00042/call",
+      "five tags": "$0.0001/call",
+      "invoice (four fields)": "$0.00045/call",
+      "live call (two questions, four updates)": "$0.0013/call",
+      "web search": "$0.10 each"
+    }
+  },
+  "game_constants": {
+    "file": "server/sage.mjs",
+    "line": 24,
+    "input_per_1M": 0.05,
+    "output_per_1M": 1.0,
+    "comment": "levanto.ai/pricing, read 2026-11-10"
+  },
+  "match": "The game constants equal the Free and Developer plan rates. Paid plans list lower input prices (0.038 to 0.046)."
+}

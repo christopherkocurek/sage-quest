@@ -1,0 +1,5 @@
+wrote bench/measurements/stream-direct-changes-2026-11-18.json
+all: n 57 | settle vs last word: median -2587.4 ms p95 244.7 (before end 54, after end 3, after-end median 257.6 p95 274.8) | settled at 26.3% of words (median) | final = batch 57/57 | batch client ms median 309.4 p95 509.4 server 92.6
+origin: n 40 | settle vs last word: median -2335.8 ms p95 244.7 (before end 37, after end 3, after-end median 257.6 p95 274.8) | settled at 18.4% of words (median) | final = batch 40/40 | batch client ms median 312 p95 494.8 server 94.2
+heart: n 17 | settle vs last word: median -3362.1 ms p95 -413.8 (before end 17, after end 0) | settled at 40% of words (median) | final = batch 17/17 | batch client ms median 252.4 p95 682.6 server 88.8
+failed 0, with errors 0

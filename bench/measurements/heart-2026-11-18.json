@@ -1,0 +1,1262 @@
+{
+ "name": "heart",
+ "provenance": {
+  "date": "2026-11-18T13:09:05.537Z",
+  "endpoint": "https://sage.levanto.ai",
+  "node": "v25.2.1",
+  "command": "node heart-eval.mjs --base http://localhost:8804 --runs 2",
+  "gameCommit": null,
+  "gameTreeMd5": "384ee18be1e80f0a63bbd872a603f74b",
+  "gameFileMd5": {
+   "game/kit.mjs": "8a934cb33142b000ea89fcf440ddc1be",
+   "game/questions.mjs": "de1d4f923c285f4b872cc0a035ac237b",
+   "game/worlds.mjs": "6c0e89cfa68ab224f3fe1367ce7a7ab4",
+   "server/sage.mjs": "bdc457bd1e898ac1ea149c40a765c353",
+   "server/server.mjs": "cac242ba7e20ba82d90c3228716a7289",
+   "web/src/fight.js": "116485eee59a6b99a5f8526edee998d5"
+  },
+  "base": "http://localhost:8804",
+  "runs": 2,
+  "setSize": 17
+ },
+ "perRun": [
+  {
+   "named": 15,
+   "hit": 15,
+   "accuracyPct": 100,
+   "perMotive": {
+    "protect": {
+     "n": 3,
+     "right": 3
+    },
+    "revenge": {
+     "n": 3,
+     "right": 3
+    },
+    "glory": {
+     "n": 3,
+     "right": 3
+    },
+    "freedom": {
+     "n": 3,
+     "right": 3
+    },
+    "wonder": {
+     "n": 3,
+     "right": 3
+    }
+   },
+   "motivesReached": [
+    "protect",
+    "revenge",
+    "glory",
+    "freedom",
+    "wonder"
+   ],
+   "apiNulls": 0,
+   "failed": 0,
+   "noneItems": [
+    {
+     "text": "Nobody. Just the open road and no one telling me what to do.",
+     "got": "freedom",
+     "leadP": 0.999
+    },
+    {
+     "text": "Myself, I guess. I want to see how far I can go.",
+     "got": "wonder",
+     "leadP": 0.6189
+    }
+   ],
+   "misses": [],
+   "stepMs": {
+    "n": 17,
+    "median": 306.9,
+    "p95": 497,
+    "mean": 321.9,
+    "min": 218.3,
+    "max": 497
+   }
+  },
+  {
+   "named": 15,
+   "hit": 15,
+   "accuracyPct": 100,
+   "perMotive": {
+    "protect": {
+     "n": 3,
+     "right": 3
+    },
+    "revenge": {
+     "n": 3,
+     "right": 3
+    },
+    "glory": {
+     "n": 3,
+     "right": 3
+    },
+    "freedom": {
+     "n": 3,
+     "right": 3
+    },
+    "wonder": {
+     "n": 3,
+     "right": 3
+    }
+   },
+   "motivesReached": [
+    "protect",
+    "revenge",
+    "glory",
+    "freedom",
+    "wonder"
+   ],
+   "apiNulls": 0,
+   "failed": 0,
+   "noneItems": [
+    {
+     "text": "Nobody. Just the open road and no one telling me what to do.",
+     "got": "freedom",
+     "leadP": 0.999
+    },
+    {
+     "text": "Myself, I guess. I want to see how far I can go.",
+     "got": "wonder",
+     "leadP": 0.6189
+    }
+   ],
+   "misses": [],
+   "stepMs": {
+    "n": 17,
+    "median": 329.9,
+    "p95": 559,
+    "mean": 349.8,
+    "min": 222.6,
+    "max": 559
+   }
+  }
+ ],
+ "repeat": {
+  "pairs": 17,
+  "samePick": 17
+ },
+ "rows": [
+  [
+   {
+    "expect": "protect",
+    "text": "My brother Wren. He is all I have left, and I keep him safe.",
+    "ok": true,
+    "got": "protect",
+    "lead": "protect",
+    "leadP": 0.9896,
+    "apiChosen": "protect",
+    "names": [
+     "Wren"
+    ],
+    "desire": "keep him safe",
+    "ms": 376.9,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 311,
+      "serverMs": 69,
+      "inTok": 394,
+      "outTok": 0,
+      "cost": 0.000019700000000000005
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 302,
+      "serverMs": 97,
+      "inTok": 213,
+      "outTok": 176,
+      "cost": 0.00018665
+     }
+    ]
+   },
+   {
+    "expect": "protect",
+    "text": "My little girl Ada. Nobody touches her while I am around.",
+    "ok": true,
+    "got": "protect",
+    "lead": "protect",
+    "leadP": 0.9991,
+    "apiChosen": "protect",
+    "names": [
+     "Ada"
+    ],
+    "desire": null,
+    "ms": 226.2,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 220,
+      "serverMs": 63,
+      "inTok": 389,
+      "outTok": 0,
+      "cost": 0.000019450000000000002
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 223,
+      "serverMs": 96,
+      "inTok": 208,
+      "outTok": 136,
+      "cost": 0.0001464
+     }
+    ]
+   },
+   {
+    "expect": "protect",
+    "text": "My mom. She is sick and somebody has to look after her.",
+    "ok": true,
+    "got": "protect",
+    "lead": "protect",
+    "leadP": 0.9996,
+    "apiChosen": "protect",
+    "names": [
+     "My mom"
+    ],
+    "desire": "her",
+    "ms": 271.6,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 217,
+      "serverMs": 96,
+      "inTok": 390,
+      "outTok": 0,
+      "cost": 0.0000195
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 269,
+      "serverMs": 61,
+      "inTok": 209,
+      "outTok": 224,
+      "cost": 0.00023444999999999998
+     }
+    ]
+   },
+   {
+    "expect": "revenge",
+    "text": "My brother Wren. They took everything from him and I want them to pay.",
+    "ok": true,
+    "got": "revenge",
+    "lead": "revenge",
+    "leadP": 0.9995,
+    "apiChosen": "revenge",
+    "names": [
+     "Wren"
+    ],
+    "desire": "them to pay",
+    "ms": 290.4,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 268,
+      "serverMs": 145,
+      "inTok": 393,
+      "outTok": 0,
+      "cost": 0.000019650000000000003
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 287,
+      "serverMs": 121,
+      "inTok": 212,
+      "outTok": 176,
+      "cost": 0.00018659999999999998
+     }
+    ]
+   },
+   {
+    "expect": "revenge",
+    "text": "My dad. The man who hurt him is still out there walking free.",
+    "ok": true,
+    "got": "revenge",
+    "lead": "revenge",
+    "leadP": 0.9987,
+    "apiChosen": "revenge",
+    "names": [
+     "My dad"
+    ],
+    "desire": null,
+    "ms": 362.3,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 360,
+      "serverMs": 237,
+      "inTok": 391,
+      "outTok": 0,
+      "cost": 0.00001955
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 314,
+      "serverMs": 60,
+      "inTok": 210,
+      "outTok": 139,
+      "cost": 0.0001495
+     }
+    ]
+   },
+   {
+    "expect": "revenge",
+    "text": "For Mara. She was betrayed by people she trusted and I will settle it.",
+    "ok": true,
+    "got": "revenge",
+    "lead": "revenge",
+    "leadP": 0.9989,
+    "apiChosen": "revenge",
+    "names": [
+     "Mara"
+    ],
+    "desire": null,
+    "ms": 411.1,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 252,
+      "serverMs": 89,
+      "inTok": 392,
+      "outTok": 0,
+      "cost": 0.000019600000000000002
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 407,
+      "serverMs": 93,
+      "inTok": 211,
+      "outTok": 165,
+      "cost": 0.00017555
+     }
+    ]
+   },
+   {
+    "expect": "glory",
+    "text": "For my dad. I want him to see me win, just once.",
+    "ok": true,
+    "got": "glory",
+    "lead": "glory",
+    "leadP": 0.9944,
+    "apiChosen": "glory",
+    "names": [
+     "dad"
+    ],
+    "desire": "him to see me win, just once",
+    "ms": 497,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 494,
+      "serverMs": 68,
+      "inTok": 391,
+      "outTok": 0,
+      "cost": 0.00001955
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 217,
+      "serverMs": 92,
+      "inTok": 210,
+      "outTok": 198,
+      "cost": 0.0002085
+     }
+    ]
+   },
+   {
+    "expect": "glory",
+    "text": "My coach Vic. I want to be the best there is and make him proud.",
+    "ok": true,
+    "got": "glory",
+    "lead": "glory",
+    "leadP": 0.9986,
+    "apiChosen": "glory",
+    "names": [
+     "Vic"
+    ],
+    "desire": "be the best there is",
+    "ms": 227.9,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 214,
+      "serverMs": 65,
+      "inTok": 393,
+      "outTok": 0,
+      "cost": 0.000019650000000000003
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 225,
+      "serverMs": 96,
+      "inTok": 212,
+      "outTok": 183,
+      "cost": 0.0001936
+     }
+    ]
+   },
+   {
+    "expect": "glory",
+    "text": "My sister Lou. Everyone back home will know my name.",
+    "ok": true,
+    "got": "glory",
+    "lead": "glory",
+    "leadP": 0.978,
+    "apiChosen": "glory",
+    "names": [
+     "Lou"
+    ],
+    "desire": "Everyone back home will know my name",
+    "ms": 218.3,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 209,
+      "serverMs": 87,
+      "inTok": 388,
+      "outTok": 0,
+      "cost": 0.0000194
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 216,
+      "serverMs": 57,
+      "inTok": 207,
+      "outTok": 190,
+      "cost": 0.00020035
+     }
+    ]
+   },
+   {
+    "expect": "freedom",
+    "text": "For Wren. We are getting out of this town and nobody will own us again.",
+    "ok": true,
+    "got": "freedom",
+    "lead": "freedom",
+    "leadP": 0.9977,
+    "apiChosen": "freedom",
+    "names": [
+     "Wren"
+    ],
+    "desire": "getting out of this town and nobody will own us again",
+    "ms": 306.9,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 305,
+      "serverMs": 185,
+      "inTok": 394,
+      "outTok": 0,
+      "cost": 0.000019700000000000005
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 276,
+      "serverMs": 60,
+      "inTok": 213,
+      "outTok": 216,
+      "cost": 0.00022665
+     }
+    ]
+   },
+   {
+    "expect": "freedom",
+    "text": "My wife Noor. We quit, sell everything and take the open road.",
+    "ok": true,
+    "got": "freedom",
+    "lead": "freedom",
+    "leadP": 0.99,
+    "apiChosen": "freedom",
+    "names": [
+     "Noor"
+    ],
+    "desire": "We quit, sell everything and take the open road",
+    "ms": 312.8,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 214,
+      "serverMs": 92,
+      "inTok": 391,
+      "outTok": 0,
+      "cost": 0.00001955
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 309,
+      "serverMs": 61,
+      "inTok": 210,
+      "outTok": 211,
+      "cost": 0.0002215
+     }
+    ]
+   },
+   {
+    "expect": "freedom",
+    "text": "For my friend Eli. He is stuck in a job that is killing him and I want us both free.",
+    "ok": true,
+    "got": "freedom",
+    "lead": "freedom",
+    "leadP": 0.9976,
+    "apiChosen": "freedom",
+    "names": [
+     "Eli"
+    ],
+    "desire": "us both free",
+    "ms": 222.6,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 220,
+      "serverMs": 67,
+      "inTok": 398,
+      "outTok": 0,
+      "cost": 0.000019900000000000003
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 219,
+      "serverMs": 94,
+      "inTok": 217,
+      "outTok": 173,
+      "cost": 0.00018385
+     }
+    ]
+   },
+   {
+    "expect": "wonder",
+    "text": "For Wren. I want to show him what is past the edge of the map.",
+    "ok": true,
+    "got": "wonder",
+    "lead": "wonder",
+    "leadP": 0.9982,
+    "apiChosen": "wonder",
+    "names": [
+     "Wren"
+    ],
+    "desire": "show him what is past the edge of the map",
+    "ms": 492.2,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 215,
+      "serverMs": 94,
+      "inTok": 394,
+      "outTok": 0,
+      "cost": 0.000019700000000000005
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 489,
+      "serverMs": 65,
+      "inTok": 213,
+      "outTok": 207,
+      "cost": 0.00021765
+     }
+    ]
+   },
+   {
+    "expect": "wonder",
+    "text": "My daughter Bea. We want to see every strange place out there and learn how it works.",
+    "ok": true,
+    "got": "wonder",
+    "lead": "wonder",
+    "leadP": 0.9988,
+    "apiChosen": "wonder",
+    "names": [
+     "Bea"
+    ],
+    "desire": "see every strange place out there",
+    "ms": 309.1,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 308,
+      "serverMs": 66,
+      "inTok": 395,
+      "outTok": 0,
+      "cost": 0.00001975
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 220,
+      "serverMs": 96,
+      "inTok": 214,
+      "outTok": 191,
+      "cost": 0.0002017
+     }
+    ]
+   },
+   {
+    "expect": "wonder",
+    "text": "For my grandpa. He taught me to wonder what is beyond the stars and I want to find out.",
+    "ok": true,
+    "got": "wonder",
+    "lead": "wonder",
+    "leadP": 0.9991,
+    "apiChosen": "wonder",
+    "names": [
+     "grandpa"
+    ],
+    "desire": "find out",
+    "ms": 226.7,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 211,
+      "serverMs": 91,
+      "inTok": 398,
+      "outTok": 0,
+      "cost": 0.000019900000000000003
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 224,
+      "serverMs": 64,
+      "inTok": 217,
+      "outTok": 199,
+      "cost": 0.00020985
+     }
+    ]
+   },
+   {
+    "expect": "none",
+    "text": "Nobody. Just the open road and no one telling me what to do.",
+    "ok": true,
+    "got": "freedom",
+    "lead": "freedom",
+    "leadP": 0.999,
+    "apiChosen": "freedom",
+    "names": [],
+    "desire": "the open road and no one telling me what to do",
+    "ms": 492.9,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 310,
+      "serverMs": 67,
+      "inTok": 391,
+      "outTok": 0,
+      "cost": 0.00001955
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 491,
+      "serverMs": 60,
+      "inTok": 210,
+      "outTok": 213,
+      "cost": 0.0002235
+     }
+    ]
+   },
+   {
+    "expect": "none",
+    "text": "Myself, I guess. I want to see how far I can go.",
+    "ok": true,
+    "got": "wonder",
+    "lead": "wonder",
+    "leadP": 0.6189,
+    "apiChosen": null,
+    "names": [],
+    "desire": "to see how far I can go",
+    "ms": 227.3,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 225,
+      "serverMs": 66,
+      "inTok": 391,
+      "outTok": 0,
+      "cost": 0.00001955
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 221,
+      "serverMs": 96,
+      "inTok": 211,
+      "outTok": 196,
+      "cost": 0.00020655
+     }
+    ]
+   }
+  ],
+  [
+   {
+    "expect": "protect",
+    "text": "My brother Wren. He is all I have left, and I keep him safe.",
+    "ok": true,
+    "got": "protect",
+    "lead": "protect",
+    "leadP": 0.9896,
+    "apiChosen": "protect",
+    "names": [
+     "Wren"
+    ],
+    "desire": "keep him safe",
+    "ms": 260.6,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 258,
+      "serverMs": 100,
+      "inTok": 394,
+      "outTok": 0,
+      "cost": 0.000019700000000000005
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 258,
+      "serverMs": 77,
+      "inTok": 213,
+      "outTok": 176,
+      "cost": 0.00018665
+     }
+    ]
+   },
+   {
+    "expect": "protect",
+    "text": "My little girl Ada. Nobody touches her while I am around.",
+    "ok": true,
+    "got": "protect",
+    "lead": "protect",
+    "leadP": 0.9991,
+    "apiChosen": "protect",
+    "names": [
+     "Ada"
+    ],
+    "desire": null,
+    "ms": 276.2,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 274,
+      "serverMs": 113,
+      "inTok": 389,
+      "outTok": 0,
+      "cost": 0.000019450000000000002
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 275,
+      "serverMs": 102,
+      "inTok": 208,
+      "outTok": 136,
+      "cost": 0.0001464
+     }
+    ]
+   },
+   {
+    "expect": "protect",
+    "text": "My mom. She is sick and somebody has to look after her.",
+    "ok": true,
+    "got": "protect",
+    "lead": "protect",
+    "leadP": 0.9996,
+    "apiChosen": "protect",
+    "names": [
+     "My mom"
+    ],
+    "desire": "her",
+    "ms": 222.6,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 221,
+      "serverMs": 64,
+      "inTok": 390,
+      "outTok": 0,
+      "cost": 0.0000195
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 220,
+      "serverMs": 95,
+      "inTok": 209,
+      "outTok": 224,
+      "cost": 0.00023444999999999998
+     }
+    ]
+   },
+   {
+    "expect": "revenge",
+    "text": "My brother Wren. They took everything from him and I want them to pay.",
+    "ok": true,
+    "got": "revenge",
+    "lead": "revenge",
+    "leadP": 0.9995,
+    "apiChosen": "revenge",
+    "names": [
+     "Wren"
+    ],
+    "desire": "them to pay",
+    "ms": 329.9,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 298,
+      "serverMs": 177,
+      "inTok": 393,
+      "outTok": 0,
+      "cost": 0.000019650000000000003
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 327,
+      "serverMs": 197,
+      "inTok": 212,
+      "outTok": 176,
+      "cost": 0.00018659999999999998
+     }
+    ]
+   },
+   {
+    "expect": "revenge",
+    "text": "My dad. The man who hurt him is still out there walking free.",
+    "ok": true,
+    "got": "revenge",
+    "lead": "revenge",
+    "leadP": 0.9987,
+    "apiChosen": "revenge",
+    "names": [
+     "My dad"
+    ],
+    "desire": null,
+    "ms": 231.1,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 229,
+      "serverMs": 67,
+      "inTok": 391,
+      "outTok": 0,
+      "cost": 0.00001955
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 221,
+      "serverMs": 97,
+      "inTok": 210,
+      "outTok": 139,
+      "cost": 0.0001495
+     }
+    ]
+   },
+   {
+    "expect": "revenge",
+    "text": "For Mara. She was betrayed by people she trusted and I will settle it.",
+    "ok": true,
+    "got": "revenge",
+    "lead": "revenge",
+    "leadP": 0.9989,
+    "apiChosen": "revenge",
+    "names": [
+     "Mara"
+    ],
+    "desire": null,
+    "ms": 491.7,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 302,
+      "serverMs": 183,
+      "inTok": 392,
+      "outTok": 0,
+      "cost": 0.000019600000000000002
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 489,
+      "serverMs": 61,
+      "inTok": 211,
+      "outTok": 165,
+      "cost": 0.00017555
+     }
+    ]
+   },
+   {
+    "expect": "glory",
+    "text": "For my dad. I want him to see me win, just once.",
+    "ok": true,
+    "got": "glory",
+    "lead": "glory",
+    "leadP": 0.9944,
+    "apiChosen": "glory",
+    "names": [
+     "dad"
+    ],
+    "desire": "him to see me win, just once",
+    "ms": 559,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 555,
+      "serverMs": 125,
+      "inTok": 391,
+      "outTok": 0,
+      "cost": 0.00001955
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 216,
+      "serverMs": 93,
+      "inTok": 210,
+      "outTok": 198,
+      "cost": 0.0002085
+     }
+    ]
+   },
+   {
+    "expect": "glory",
+    "text": "My coach Vic. I want to be the best there is and make him proud.",
+    "ok": true,
+    "got": "glory",
+    "lead": "glory",
+    "leadP": 0.9986,
+    "apiChosen": "glory",
+    "names": [
+     "Vic"
+    ],
+    "desire": "be the best there is",
+    "ms": 323.1,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 260,
+      "serverMs": 139,
+      "inTok": 393,
+      "outTok": 0,
+      "cost": 0.000019650000000000003
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 321,
+      "serverMs": 198,
+      "inTok": 212,
+      "outTok": 183,
+      "cost": 0.0001936
+     }
+    ]
+   },
+   {
+    "expect": "glory",
+    "text": "My sister Lou. Everyone back home will know my name.",
+    "ok": true,
+    "got": "glory",
+    "lead": "glory",
+    "leadP": 0.978,
+    "apiChosen": "glory",
+    "names": [
+     "Lou"
+    ],
+    "desire": "Everyone back home will know my name",
+    "ms": 345.6,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 344,
+      "serverMs": 97,
+      "inTok": 388,
+      "outTok": 0,
+      "cost": 0.0000194
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 334,
+      "serverMs": 91,
+      "inTok": 207,
+      "outTok": 190,
+      "cost": 0.00020035
+     }
+    ]
+   },
+   {
+    "expect": "freedom",
+    "text": "For Wren. We are getting out of this town and nobody will own us again.",
+    "ok": true,
+    "got": "freedom",
+    "lead": "freedom",
+    "leadP": 0.9977,
+    "apiChosen": "freedom",
+    "names": [
+     "Wren"
+    ],
+    "desire": "getting out of this town and nobody will own us again",
+    "ms": 263.4,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 262,
+      "serverMs": 105,
+      "inTok": 394,
+      "outTok": 0,
+      "cost": 0.000019700000000000005
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 223,
+      "serverMs": 96,
+      "inTok": 213,
+      "outTok": 216,
+      "cost": 0.00022665
+     }
+    ]
+   },
+   {
+    "expect": "freedom",
+    "text": "My wife Noor. We quit, sell everything and take the open road.",
+    "ok": true,
+    "got": "freedom",
+    "lead": "freedom",
+    "leadP": 0.99,
+    "apiChosen": "freedom",
+    "names": [
+     "Noor"
+    ],
+    "desire": "We quit, sell everything and take the open road",
+    "ms": 501,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 499,
+      "serverMs": 76,
+      "inTok": 391,
+      "outTok": 0,
+      "cost": 0.00001955
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 238,
+      "serverMs": 60,
+      "inTok": 210,
+      "outTok": 211,
+      "cost": 0.0002215
+     }
+    ]
+   },
+   {
+    "expect": "freedom",
+    "text": "For my friend Eli. He is stuck in a job that is killing him and I want us both free.",
+    "ok": true,
+    "got": "freedom",
+    "lead": "freedom",
+    "leadP": 0.9976,
+    "apiChosen": "freedom",
+    "names": [
+     "Eli"
+    ],
+    "desire": "us both free",
+    "ms": 371.5,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 301,
+      "serverMs": 182,
+      "inTok": 398,
+      "outTok": 0,
+      "cost": 0.000019900000000000003
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 370,
+      "serverMs": 250,
+      "inTok": 217,
+      "outTok": 173,
+      "cost": 0.00018385
+     }
+    ]
+   },
+   {
+    "expect": "wonder",
+    "text": "For Wren. I want to show him what is past the edge of the map.",
+    "ok": true,
+    "got": "wonder",
+    "lead": "wonder",
+    "leadP": 0.9982,
+    "apiChosen": "wonder",
+    "names": [
+     "Wren"
+    ],
+    "desire": "show him what is past the edge of the map",
+    "ms": 359,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 358,
+      "serverMs": 112,
+      "inTok": 394,
+      "outTok": 0,
+      "cost": 0.000019700000000000005
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 356,
+      "serverMs": 90,
+      "inTok": 213,
+      "outTok": 207,
+      "cost": 0.00021765
+     }
+    ]
+   },
+   {
+    "expect": "wonder",
+    "text": "My daughter Bea. We want to see every strange place out there and learn how it works.",
+    "ok": true,
+    "got": "wonder",
+    "lead": "wonder",
+    "leadP": 0.9988,
+    "apiChosen": "wonder",
+    "names": [
+     "Bea"
+    ],
+    "desire": "see every strange place out there",
+    "ms": 285.7,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 262,
+      "serverMs": 141,
+      "inTok": 395,
+      "outTok": 0,
+      "cost": 0.00001975
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 285,
+      "serverMs": 159,
+      "inTok": 214,
+      "outTok": 191,
+      "cost": 0.0002017
+     }
+    ]
+   },
+   {
+    "expect": "wonder",
+    "text": "For my grandpa. He taught me to wonder what is beyond the stars and I want to find out.",
+    "ok": true,
+    "got": "wonder",
+    "lead": "wonder",
+    "leadP": 0.9991,
+    "apiChosen": "wonder",
+    "names": [
+     "grandpa"
+    ],
+    "desire": "find out",
+    "ms": 360.4,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 359,
+      "serverMs": 109,
+      "inTok": 398,
+      "outTok": 0,
+      "cost": 0.000019900000000000003
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 222,
+      "serverMs": 99,
+      "inTok": 217,
+      "outTok": 199,
+      "cost": 0.00020985
+     }
+    ]
+   },
+   {
+    "expect": "none",
+    "text": "Nobody. Just the open road and no one telling me what to do.",
+    "ok": true,
+    "got": "freedom",
+    "lead": "freedom",
+    "leadP": 0.999,
+    "apiChosen": "freedom",
+    "names": [],
+    "desire": "the open road and no one telling me what to do",
+    "ms": 281.5,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 259,
+      "serverMs": 137,
+      "inTok": 391,
+      "outTok": 0,
+      "cost": 0.00001955
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 280,
+      "serverMs": 152,
+      "inTok": 210,
+      "outTok": 213,
+      "cost": 0.0002235
+     }
+    ]
+   },
+   {
+    "expect": "none",
+    "text": "Myself, I guess. I want to see how far I can go.",
+    "ok": true,
+    "got": "wonder",
+    "lead": "wonder",
+    "leadP": 0.6189,
+    "apiChosen": null,
+    "names": [],
+    "desire": "to see how far I can go",
+    "ms": 485,
+    "tries": 1,
+    "logMs": [
+     {
+      "label": "decide: motive",
+      "ms": 484,
+      "serverMs": 58,
+      "inTok": 391,
+      "outTok": 0,
+      "cost": 0.00001955
+     },
+     {
+      "label": "extract: companions, desire",
+      "ms": 311,
+      "serverMs": 60,
+      "inTok": 211,
+      "outTok": 196,
+      "cost": 0.00020655
+     }
+    ]
+   }
+  ]
+ ]
+}

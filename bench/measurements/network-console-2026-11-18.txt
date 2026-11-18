@@ -1,0 +1,4 @@
+wrote bench/measurements/network-2026-11-18.json
+curl new connection (n 30, codes 404): connect median 21.5 p95 29.1 ms | TLS done median 44.6 | first byte median 204.6 p95 494.9
+kept-alive GET: median 165.2 p95 328.7 ms
+batch: client median 266.1 p95 745.4 | server median 89.6 p95 267.3 | client minus server median 166.1 p95 627.3

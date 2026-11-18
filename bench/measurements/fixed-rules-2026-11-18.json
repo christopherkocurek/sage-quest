@@ -1,0 +1,2649 @@
+{
+ "name": "fixed-rules",
+ "provenance": {
+  "date": "2026-11-18T13:08:23.519Z",
+  "endpoint": "https://sage.levanto.ai",
+  "node": "v25.2.1",
+  "command": "node fixed-rules.mjs --sage bench/measurements/tactics-2026-11-18.json",
+  "gameCommit": null,
+  "gameTreeMd5": "384ee18be1e80f0a63bbd872a603f74b",
+  "gameFileMd5": {
+   "game/kit.mjs": "8a934cb33142b000ea89fcf440ddc1be",
+   "game/questions.mjs": "de1d4f923c285f4b872cc0a035ac237b",
+   "game/worlds.mjs": "6c0e89cfa68ab224f3fe1367ce7a7ab4",
+   "server/sage.mjs": "bdc457bd1e898ac1ea149c40a765c353",
+   "server/server.mjs": "cac242ba7e20ba82d90c3228716a7289",
+   "web/src/fight.js": "116485eee59a6b99a5f8526edee998d5"
+  },
+  "source": "web/src/fight.js:906-910",
+  "note": "localTactic reads only this.blocking; blocking = the intruder is blocking in the fact set"
+ },
+ "cases": 256,
+ "illegal": 0,
+ "spread": {
+  "call": 48,
+  "charge": 176,
+  "flank": 32
+ },
+ "distinctTactics": 3,
+ "byFoe": {
+  "warrior": {
+   "call": 16,
+   "charge": 40,
+   "flank": 8
+  },
+  "minion": {
+   "call": 16,
+   "charge": 40,
+   "flank": 8
+  },
+  "rogue": {
+   "call": 16,
+   "charge": 40,
+   "flank": 8
+  },
+  "brute": {
+   "charge": 56,
+   "flank": 8
+  }
+ },
+ "agreementWithSage2": {
+  "compared": 240,
+  "same": 156,
+  "samePct": 65
+ },
+ "rows": [
+  {
+   "key": "warrior left=1 healthy close blocking reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "warrior left=1 healthy close blocking reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=1 healthy close swinging a weapon reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "warrior left=1 healthy close swinging a weapon reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=1 healthy close standing still reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "warrior left=1 healthy close standing still reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=1 healthy close moving reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "warrior left=1 healthy close moving reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=1 healthy far away blocking reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "warrior left=1 healthy far away blocking reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=1 healthy far away swinging a weapon reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "warrior left=1 healthy far away swinging a weapon reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=1 healthy far away standing still reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "warrior left=1 healthy far away standing still reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=1 healthy far away moving reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "warrior left=1 healthy far away moving reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=1 badly hurt close blocking reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "warrior left=1 badly hurt close blocking reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=1 badly hurt close swinging a weapon reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "warrior left=1 badly hurt close swinging a weapon reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=1 badly hurt close standing still reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "warrior left=1 badly hurt close standing still reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=1 badly hurt close moving reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "warrior left=1 badly hurt close moving reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=1 badly hurt far away blocking reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "warrior left=1 badly hurt far away blocking reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=1 badly hurt far away swinging a weapon reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "warrior left=1 badly hurt far away swinging a weapon reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=1 badly hurt far away standing still reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "warrior left=1 badly hurt far away standing still reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=1 badly hurt far away moving reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "warrior left=1 badly hurt far away moving reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 healthy close blocking reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "warrior left=2 healthy close blocking reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "warrior left=2 healthy close swinging a weapon reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 healthy close swinging a weapon reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 healthy close standing still reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 healthy close standing still reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 healthy close moving reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 healthy close moving reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 healthy far away blocking reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "warrior left=2 healthy far away blocking reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "warrior left=2 healthy far away swinging a weapon reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 healthy far away swinging a weapon reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 healthy far away standing still reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 healthy far away standing still reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 healthy far away moving reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 healthy far away moving reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 badly hurt close blocking reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "warrior left=2 badly hurt close blocking reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "warrior left=2 badly hurt close swinging a weapon reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 badly hurt close swinging a weapon reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 badly hurt close standing still reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 badly hurt close standing still reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 badly hurt close moving reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 badly hurt close moving reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 badly hurt far away blocking reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "warrior left=2 badly hurt far away blocking reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "warrior left=2 badly hurt far away swinging a weapon reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 badly hurt far away swinging a weapon reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 badly hurt far away standing still reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 badly hurt far away standing still reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 badly hurt far away moving reinf=yes",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "warrior left=2 badly hurt far away moving reinf=no",
+   "foe": "warrior",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=1 healthy close blocking reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "minion left=1 healthy close blocking reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=1 healthy close swinging a weapon reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "minion left=1 healthy close swinging a weapon reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=1 healthy close standing still reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "minion left=1 healthy close standing still reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=1 healthy close moving reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "minion left=1 healthy close moving reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=1 healthy far away blocking reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "minion left=1 healthy far away blocking reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=1 healthy far away swinging a weapon reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "minion left=1 healthy far away swinging a weapon reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=1 healthy far away standing still reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "minion left=1 healthy far away standing still reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=1 healthy far away moving reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "minion left=1 healthy far away moving reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=1 badly hurt close blocking reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "minion left=1 badly hurt close blocking reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=1 badly hurt close swinging a weapon reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "minion left=1 badly hurt close swinging a weapon reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=1 badly hurt close standing still reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "minion left=1 badly hurt close standing still reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=1 badly hurt close moving reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "minion left=1 badly hurt close moving reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=1 badly hurt far away blocking reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "minion left=1 badly hurt far away blocking reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=1 badly hurt far away swinging a weapon reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "minion left=1 badly hurt far away swinging a weapon reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=1 badly hurt far away standing still reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "minion left=1 badly hurt far away standing still reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=1 badly hurt far away moving reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "minion left=1 badly hurt far away moving reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 healthy close blocking reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "minion left=2 healthy close blocking reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "minion left=2 healthy close swinging a weapon reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 healthy close swinging a weapon reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 healthy close standing still reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 healthy close standing still reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 healthy close moving reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 healthy close moving reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 healthy far away blocking reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "minion left=2 healthy far away blocking reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "minion left=2 healthy far away swinging a weapon reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 healthy far away swinging a weapon reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 healthy far away standing still reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 healthy far away standing still reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 healthy far away moving reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 healthy far away moving reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 badly hurt close blocking reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "minion left=2 badly hurt close blocking reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "minion left=2 badly hurt close swinging a weapon reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 badly hurt close swinging a weapon reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 badly hurt close standing still reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 badly hurt close standing still reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 badly hurt close moving reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 badly hurt close moving reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 badly hurt far away blocking reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "minion left=2 badly hurt far away blocking reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "minion left=2 badly hurt far away swinging a weapon reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 badly hurt far away swinging a weapon reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 badly hurt far away standing still reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 badly hurt far away standing still reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 badly hurt far away moving reinf=yes",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "minion left=2 badly hurt far away moving reinf=no",
+   "foe": "minion",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=1 healthy close blocking reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "rogue left=1 healthy close blocking reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=1 healthy close swinging a weapon reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "rogue left=1 healthy close swinging a weapon reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=1 healthy close standing still reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "rogue left=1 healthy close standing still reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=1 healthy close moving reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "rogue left=1 healthy close moving reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=1 healthy far away blocking reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "rogue left=1 healthy far away blocking reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=1 healthy far away swinging a weapon reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "rogue left=1 healthy far away swinging a weapon reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=1 healthy far away standing still reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "rogue left=1 healthy far away standing still reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=1 healthy far away moving reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "guard",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "rogue left=1 healthy far away moving reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=1 badly hurt close blocking reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "rogue left=1 badly hurt close blocking reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=1 badly hurt close swinging a weapon reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "rogue left=1 badly hurt close swinging a weapon reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=1 badly hurt close standing still reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "rogue left=1 badly hurt close standing still reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=1 badly hurt close moving reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "rogue left=1 badly hurt close moving reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "feint",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=1 badly hurt far away blocking reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "rogue left=1 badly hurt far away blocking reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=1 badly hurt far away swinging a weapon reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "rogue left=1 badly hurt far away swinging a weapon reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=1 badly hurt far away standing still reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "rogue left=1 badly hurt far away standing still reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=1 badly hurt far away moving reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat",
+    "call"
+   ],
+   "pick": "call"
+  },
+  {
+   "key": "rogue left=1 badly hurt far away moving reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "guard",
+    "retreat"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 healthy close blocking reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "rogue left=2 healthy close blocking reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "rogue left=2 healthy close swinging a weapon reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 healthy close swinging a weapon reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 healthy close standing still reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 healthy close standing still reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 healthy close moving reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 healthy close moving reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 healthy far away blocking reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "rogue left=2 healthy far away blocking reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "rogue left=2 healthy far away swinging a weapon reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 healthy far away swinging a weapon reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 healthy far away standing still reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 healthy far away standing still reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 healthy far away moving reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 healthy far away moving reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 badly hurt close blocking reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "rogue left=2 badly hurt close blocking reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "rogue left=2 badly hurt close swinging a weapon reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 badly hurt close swinging a weapon reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 badly hurt close standing still reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 badly hurt close standing still reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 badly hurt close moving reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 badly hurt close moving reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "feint",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 badly hurt far away blocking reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "rogue left=2 badly hurt far away blocking reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "rogue left=2 badly hurt far away swinging a weapon reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 badly hurt far away swinging a weapon reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 badly hurt far away standing still reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 badly hurt far away standing still reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 badly hurt far away moving reinf=yes",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "rogue left=2 badly hurt far away moving reinf=no",
+   "foe": "rogue",
+   "legal": [
+    "charge",
+    "flank",
+    "guard"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 healthy close blocking reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 healthy close blocking reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 healthy close swinging a weapon reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 healthy close swinging a weapon reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 healthy close standing still reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 healthy close standing still reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 healthy close moving reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 healthy close moving reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 healthy far away blocking reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 healthy far away blocking reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 healthy far away swinging a weapon reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 healthy far away swinging a weapon reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 healthy far away standing still reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 healthy far away standing still reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 healthy far away moving reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 healthy far away moving reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 badly hurt close blocking reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 badly hurt close blocking reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 badly hurt close swinging a weapon reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 badly hurt close swinging a weapon reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 badly hurt close standing still reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 badly hurt close standing still reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 badly hurt close moving reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 badly hurt close moving reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 badly hurt far away blocking reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 badly hurt far away blocking reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 badly hurt far away swinging a weapon reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 badly hurt far away swinging a weapon reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 badly hurt far away standing still reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 badly hurt far away standing still reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 badly hurt far away moving reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=1 badly hurt far away moving reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 healthy close blocking reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank",
+    "feint"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "brute left=2 healthy close blocking reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank",
+    "feint"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "brute left=2 healthy close swinging a weapon reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 healthy close swinging a weapon reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 healthy close standing still reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 healthy close standing still reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 healthy close moving reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 healthy close moving reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 healthy far away blocking reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "brute left=2 healthy far away blocking reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "brute left=2 healthy far away swinging a weapon reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 healthy far away swinging a weapon reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 healthy far away standing still reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 healthy far away standing still reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 healthy far away moving reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 healthy far away moving reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 badly hurt close blocking reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank",
+    "feint"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "brute left=2 badly hurt close blocking reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank",
+    "feint"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "brute left=2 badly hurt close swinging a weapon reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 badly hurt close swinging a weapon reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 badly hurt close standing still reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 badly hurt close standing still reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 badly hurt close moving reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 badly hurt close moving reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank",
+    "feint"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 badly hurt far away blocking reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "brute left=2 badly hurt far away blocking reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank"
+   ],
+   "pick": "flank"
+  },
+  {
+   "key": "brute left=2 badly hurt far away swinging a weapon reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 badly hurt far away swinging a weapon reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 badly hurt far away standing still reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 badly hurt far away standing still reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 badly hurt far away moving reinf=yes",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank"
+   ],
+   "pick": "charge"
+  },
+  {
+   "key": "brute left=2 badly hurt far away moving reinf=no",
+   "foe": "brute",
+   "legal": [
+    "charge",
+    "flank"
+   ],
+   "pick": "charge"
+  }
+ ]
+}

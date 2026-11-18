@@ -1,0 +1,4 @@
+wrote bench/measurements/heart-2026-11-18.json
+run 1: 15/15 = 100% (gate 80%) motives reached 5/5, api nulls 0, failed 0, step ms median 306.9 p95 497
+run 2: 15/15 = 100% (gate 80%) motives reached 5/5, api nulls 0, failed 0, step ms median 329.9 p95 559
+repeat: same pick 17/17

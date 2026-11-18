@@ -1,0 +1,4 @@
+wrote bench/measurements/tactics-2026-11-18.json
+run 1: cases 240 answered 240 failed 0 nulls 34 (14.2%) illegal 0 | spread {"call":40,"feint":8,"guard":19,"charge":90,"retreat":31,"flank":52} | client ms median 267.7 p95 471.1 | server ms median 115.5 p95 207.2
+run 2: cases 240 answered 240 failed 0 nulls 34 (14.2%) illegal 0 | spread {"call":40,"feint":8,"guard":19,"charge":90,"retreat":31,"flank":52} | client ms median 260.5 p95 425.4 | server ms median 112.6 p95 226.8
+repeat: same pick 240/240 (100%), same chosen 100%, max lead-p diff 0

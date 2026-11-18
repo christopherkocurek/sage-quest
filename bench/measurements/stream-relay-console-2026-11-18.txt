@@ -1,0 +1,5 @@
+wrote bench/measurements/stream-relay-2026-11-18.json
+all: n 57 | settle vs last word: median -2194.8 ms p95 209 (before end 54, after end 3, after-end median 270.4 p95 448.6) | settled at 33.3% of words (median) | final = batch 57/57 | batch client ms median 435.1 p95 886.4 server 141.5
+origin: n 40 | settle vs last word: median -1755.3 ms p95 209 (before end 37, after end 3, after-end median 270.4 p95 448.6) | settled at 23.6% of words (median) | final = batch 40/40 | batch client ms median 476.5 p95 872.1 server 111
+heart: n 17 | settle vs last word: median -3228.2 ms p95 -526.5 (before end 17, after end 0) | settled at 40% of words (median) | final = batch 17/17 | batch client ms median 371.3 p95 886.4 server 180.1
+failed 0, with errors 0

@@ -1,0 +1,63 @@
+wrote bench/measurements/world-2026-11-18.json
+run 1: clear 40/40 (100%) hard 9/9 nofit->dark 9/10 api nulls 2 (3.4%) unsettled 0 failed 0 | step ms median 433.5 p95 600.1
+run 2: clear 40/40 (100%) hard 9/9 nofit->dark 9/10 api nulls 2 (3.4%) unsettled 0 failed 0 | step ms median 383.2 p95 621.3
+repeat: same pick 59/59
+edo       -> edo        100%  I am from Kyoto, an old city of temples and quiet lanes.
+edo       -> edo        100%  Nara, Japan. The deer walk in the streets.
+edo       -> edo        99%  A small town on Shikoku island in Japan. Mild and green.
+edo       -> edo        100%  Kanazawa, Japan, a castle town by the sea.
+edo       -> edo        100%  Kagoshima, in the south of Japan. Warm, with a volcano across the bay.
+edo       -> edo        94%  A fishing port on the coast of Hokkaido, Japan.
+edo       -> edo        99%  Hiroshima, Japan, on a bay with seven rivers.
+edo       -> edo        98%  Fukuoka, Japan, a port city on the west coast.
+neon      -> neon       100%  Hong Kong. Towers, rain and lights all night.
+neon      -> neon       99%  Shanghai, a huge city of glass towers.
+neon      -> neon       100%  Singapore. Hot, wet and full of skyscrapers.
+neon      -> neon       99%  Manhattan, New York. Towers, steam and traffic.
+neon      -> neon       99%  Tokyo. I live among the towers of Shinjuku, neon on every wall.
+neon      -> neon       100%  Shenzhen, a wall of glass skyscrapers on the bay.
+neon      -> neon       100%  A city whose skyline is a wall of glass towers, lit up all night.
+neon      -> neon       100%  Kowloon, in Hong Kong. Dense towers on every side.
+frontier  -> frontier   100%  West Texas. Flat, dry and hot.
+frontier  -> frontier   100%  A ranch outside Tucson, Arizona. Cactus all around.
+frontier  -> frontier   100%  The outback of Western Australia. Red dirt and heat.
+frontier  -> frontier   100%  Sonora, Mexico. Desert heat and dust.
+frontier  -> frontier   100%  New Mexico. Mesas and open sky.
+frontier  -> frontier   100%  Chihuahua, in the north of Mexico. Dry plains and mountains.
+frontier  -> frontier   100%  A small town in the Nevada desert.
+frontier  -> frontier   100%  Alice Springs, in the Australian outback.
+storybook -> storybook  100%  A village in the Swiss Alps. Green meadows and cows with bells.
+storybook -> storybook  100%  Tyrol, Austria. Mountain meadows and wooden farmhouses.
+storybook -> storybook  98%  Rolling green hills in Devon, England. Sheep and hedgerows.
+storybook -> storybook  100%  A farm in Vermont. Green hills in summer.
+storybook -> storybook  100%  Bavaria, Germany. Villages under the Alps.
+storybook -> storybook  100%  The Dutch countryside, with green fields and windmills.
+storybook -> storybook  99%  A valley in Slovenia. Alpine meadows and a lake.
+storybook -> storybook  100%  The Cotswolds in England. Gentle green hills and stone villages.
+dark      -> dark       100%  Northern Norway, deep in a fjord. The winter is long and dark.
+dark      -> dark       100%  The north of Scotland. Moor and fog by the sea.
+dark      -> dark       100%  Siberia. Endless pine forest and cold.
+dark      -> dark       100%  Iceland. Black sand and storms off the sea.
+dark      -> dark       100%  The fens of eastern England. Flat, grey and wet.
+dark      -> dark       99%  Kamchatka. Volcanoes and ash.
+dark      -> dark       100%  Lapland in Finland. Snow forest and the polar night.
+dark      -> dark       100%  A storm-battered coast in western Ireland. Grey sea and black cliffs.
+nofit     -> dark       100%  Madrid, Spain. Old stone streets and squares.
+nofit     -> dark       99%  Lisbon, Portugal. Steep old streets of stone.
+nofit     -> dark       100%  Prague. An old city of stone streets and bridges.
+nofit     -> dark       98%  Edinburgh, an old stone city under a castle.
+nofit     -> dark       100%  Manchester, England. Cold, wet and grey.
+nofit     -> dark       91%  Nowhere special.
+nofit     -> dark       57%  A mid-size town in the middle of the country. Nothing special.
+nofit     -> dark       96%  A low-rise city with a river and a few bridges.
+nofit     -> storybook  81%  A quiet suburb. A few shops and a bus stop.
+nofit     -> dark       99%  A mid-rise city on a wide river, mostly brick and stone.
+hard      -> frontier   97%  Las Vegas, Nevada. Desert all around, the strip lit up all night.
+hard      -> frontier   100%  Phoenix, Arizona. A big desert city.
+hard      -> neon       90%  Dubai. Hot desert, with towers that touch the clouds.
+hard      -> neon       96%  Hong Kong. Hot and humid, with green hills behind the harbour.
+hard      -> storybook  95%  The Texas Hill Country. Green hills and live oaks.
+hard      -> edo        83%  A village in the Japanese Alps. Green meadows and snow peaks.
+hard      -> edo        59%  Osaka, Japan. A huge city, hot in summer.
+hard      -> edo        99%  Sapporo, Japan. Long snowy winters.
+hard      -> edo        100%  A rice-farming village in Niigata, Japan. Deep snow every winter.

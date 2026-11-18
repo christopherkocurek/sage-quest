@@ -1,0 +1,1364 @@
+{
+ "name": "step-latency",
+ "provenance": {
+  "date": "2026-11-18T13:34:48.451Z",
+  "endpoint": "https://sage.levanto.ai",
+  "node": "v25.2.1",
+  "command": "node step-latency.mjs --base http://localhost:8804",
+  "gameCommit": null,
+  "gameTreeMd5": "384ee18be1e80f0a63bbd872a603f74b",
+  "gameFileMd5": {
+   "game/kit.mjs": "8a934cb33142b000ea89fcf440ddc1be",
+   "game/questions.mjs": "de1d4f923c285f4b872cc0a035ac237b",
+   "game/worlds.mjs": "6c0e89cfa68ab224f3fe1367ce7a7ab4",
+   "server/sage.mjs": "bdc457bd1e898ac1ea149c40a765c353",
+   "server/server.mjs": "cac242ba7e20ba82d90c3228716a7289",
+   "web/src/fight.js": "116485eee59a6b99a5f8526edee998d5"
+  },
+  "base": "http://localhost:8804",
+  "note": "client wall clock of POST /api/step on a local server; the server calls Sage2 at its default endpoint; entries[].ms is the server-side wall clock of each Sage2 call (with its hedge and retries)"
+ },
+ "perStep": {
+  "name": {
+   "calls": 8,
+   "failed": 0,
+   "stepMs": {
+    "n": 8,
+    "median": 548.7,
+    "p95": 691.6,
+    "mean": 518.7,
+    "min": 231.2,
+    "max": 691.6
+   },
+   "decideBatchMs": null,
+   "extractMs": {
+    "n": 8,
+    "median": 546,
+    "p95": 656,
+    "mean": 511.5,
+    "min": 229,
+    "max": 656
+   },
+   "sage2Calls": 1,
+   "inTokMean": 166.3,
+   "outTokMean": 139.25,
+   "costPerStep": 0.00014756250000000002
+  },
+  "origin": {
+   "calls": 8,
+   "failed": 0,
+   "stepMs": {
+    "n": 8,
+    "median": 374.6,
+    "p95": 877.6,
+    "mean": 482,
+    "min": 262.3,
+    "max": 877.6
+   },
+   "decideBatchMs": {
+    "n": 8,
+    "median": 371.5,
+    "p95": 842,
+    "mean": 462,
+    "min": 259,
+    "max": 842
+   },
+   "extractMs": {
+    "n": 8,
+    "median": 274,
+    "p95": 873,
+    "mean": 359.4,
+    "min": 223,
+    "max": 873
+   },
+   "sage2Calls": 2,
+   "inTokMean": 1235.5,
+   "outTokMean": 134,
+   "costPerStep": 0.00019577500000000003
+  },
+  "born": {
+   "calls": 8,
+   "failed": 0,
+   "stepMs": {
+    "n": 8,
+    "median": 355.9,
+    "p95": 791.6,
+    "mean": 430.5,
+    "min": 234.7,
+    "max": 791.6
+   },
+   "decideBatchMs": null,
+   "extractMs": {
+    "n": 8,
+    "median": 353.5,
+    "p95": 790,
+    "mean": 428.9,
+    "min": 233,
+    "max": 790
+   },
+   "sage2Calls": 1,
+   "inTokMean": 185,
+   "outTokMean": 216.25,
+   "costPerStep": 0.00022549999999999998
+  },
+  "body": {
+   "calls": 8,
+   "failed": 0,
+   "stepMs": {
+    "n": 8,
+    "median": 481.7,
+    "p95": 1120.5,
+    "mean": 591.8,
+    "min": 332.1,
+    "max": 1120.5
+   },
+   "decideBatchMs": {
+    "n": 8,
+    "median": 440.5,
+    "p95": 1119,
+    "mean": 568.9,
+    "min": 293,
+    "max": 1119
+   },
+   "extractMs": {
+    "n": 8,
+    "median": 308.5,
+    "p95": 981,
+    "mean": 414.1,
+    "min": 225,
+    "max": 981
+   },
+   "sage2Calls": 2,
+   "inTokMean": 582.5,
+   "outTokMean": 140.75,
+   "costPerStep": 0.000169875
+  },
+  "heart": {
+   "calls": 8,
+   "failed": 0,
+   "stepMs": {
+    "n": 8,
+    "median": 437.8,
+    "p95": 1305.6,
+    "mean": 569.5,
+    "min": 227.5,
+    "max": 1305.6
+   },
+   "decideBatchMs": {
+    "n": 8,
+    "median": 397.5,
+    "p95": 959,
+    "mean": 492.4,
+    "min": 201,
+    "max": 959
+   },
+   "extractMs": {
+    "n": 8,
+    "median": 434,
+    "p95": 1303,
+    "mean": 551.8,
+    "min": 225,
+    "max": 1303
+   },
+   "sage2Calls": 2,
+   "inTokMean": 596.5,
+   "outTokMean": 176.63,
+   "costPerStep": 0.00020645
+  },
+  "enemy": {
+   "calls": 8,
+   "failed": 0,
+   "stepMs": {
+    "n": 8,
+    "median": 385.9,
+    "p95": 1634.8,
+    "mean": 576.2,
+    "min": 288.7,
+    "max": 1634.8
+   },
+   "decideBatchMs": {
+    "n": 8,
+    "median": 367,
+    "p95": 740,
+    "mean": 395.6,
+    "min": 287,
+    "max": 740
+   },
+   "extractMs": {
+    "n": 8,
+    "median": 301.5,
+    "p95": 1633,
+    "mean": 478,
+    "min": 224,
+    "max": 1633
+   },
+   "sage2Calls": 2,
+   "inTokMean": 957,
+   "outTokMean": 150.5,
+   "costPerStep": 0.00019835000000000002
+  }
+ },
+ "allSteps": {
+  "n": 48,
+  "median": 406.2,
+  "p95": 1120.5,
+  "mean": 528.1,
+  "min": 227.5,
+  "max": 1634.8
+ },
+ "onboardingTotalIfEachStepMedian": 2584.6,
+ "rows": [
+  {
+   "step": "name",
+   "text": "They call me Rowan",
+   "rep": 0,
+   "ms": 691.6,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "extract: name",
+     "ms": 650,
+     "serverMs": 60,
+     "inTok": 166,
+     "outTok": 128,
+     "cost": 0.0001363,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "name",
+   "text": "My name is Ines",
+   "rep": 0,
+   "ms": 231.2,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "extract: name",
+     "ms": 229,
+     "serverMs": 92,
+     "inTok": 167,
+     "outTok": 152,
+     "cost": 0.00016035,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "name",
+   "text": "Call me Kofi",
+   "rep": 0,
+   "ms": 498.7,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "extract: name",
+     "ms": 497,
+     "serverMs": 373,
+     "inTok": 166,
+     "outTok": 152,
+     "cost": 0.00016030000000000002,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "name",
+   "text": "I am Idris",
+   "rep": 0,
+   "ms": 335,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "extract: name",
+     "ms": 333,
+     "serverMs": 209,
+     "inTok": 166,
+     "outTok": 125,
+     "cost": 0.00013330000000000001,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "name",
+   "text": "They call me Rowan",
+   "rep": 1,
+   "ms": 577.1,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "extract: name",
+     "ms": 574,
+     "serverMs": 60,
+     "inTok": 166,
+     "outTok": 128,
+     "cost": 0.0001363,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "name",
+   "text": "My name is Ines",
+   "rep": 1,
+   "ms": 637.8,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "extract: name",
+     "ms": 635,
+     "serverMs": 471,
+     "inTok": 167,
+     "outTok": 152,
+     "cost": 0.00016035,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "name",
+   "text": "Call me Kofi",
+   "rep": 1,
+   "ms": 520.2,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "extract: name",
+     "ms": 518,
+     "serverMs": 396,
+     "inTok": 166,
+     "outTok": 152,
+     "cost": 0.00016030000000000002,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "name",
+   "text": "I am Idris",
+   "rep": 1,
+   "ms": 657.7,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "extract: name",
+     "ms": 656,
+     "serverMs": 337,
+     "inTok": 166,
+     "outTok": 125,
+     "cost": 0.00013330000000000001,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "origin",
+   "text": "Kyoto, an old city of temples and quiet lanes.",
+   "rep": 0,
+   "ms": 811.1,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: biome, world",
+     "ms": 807,
+     "serverMs": 485,
+     "inTok": 1052,
+     "outTok": 0,
+     "cost": 0.000052600000000000005,
+     "ok": true
+    },
+    {
+     "label": "extract: place",
+     "ms": 407,
+     "serverMs": 103,
+     "inTok": 179,
+     "outTok": 128,
+     "cost": 0.00013695,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "origin",
+   "text": "West Texas. Flat, dry and hot.",
+   "rep": 0,
+   "ms": 877.6,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: biome, world",
+     "ms": 842,
+     "serverMs": 498,
+     "inTok": 1048,
+     "outTok": 0,
+     "cost": 0.000052400000000000007,
+     "ok": true
+    },
+    {
+     "label": "extract: place",
+     "ms": 873,
+     "serverMs": 350,
+     "inTok": 176,
+     "outTok": 128,
+     "cost": 0.00013680000000000002,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "origin",
+   "text": "A village in the Swiss Alps. Green meadows and cows with bells.",
+   "rep": 0,
+   "ms": 376,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: biome, world",
+     "ms": 374,
+     "serverMs": 178,
+     "inTok": 1060,
+     "outTok": 0,
+     "cost": 0.000053,
+     "ok": true
+    },
+    {
+     "label": "extract: place",
+     "ms": 225,
+     "serverMs": 59,
+     "inTok": 182,
+     "outTok": 128,
+     "cost": 0.0001371,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "origin",
+   "text": "Northern Norway, deep in a fjord. The winter is long and dark.",
+   "rep": 0,
+   "ms": 262.3,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: biome, world",
+     "ms": 259,
+     "serverMs": 126,
+     "inTok": 1062,
+     "outTok": 0,
+     "cost": 0.0000531,
+     "ok": true
+    },
+    {
+     "label": "extract: place",
+     "ms": 233,
+     "serverMs": 59,
+     "inTok": 183,
+     "outTok": 152,
+     "cost": 0.00016115000000000001,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "origin",
+   "text": "Kyoto, an old city of temples and quiet lanes.",
+   "rep": 1,
+   "ms": 373.1,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: biome, world",
+     "ms": 265,
+     "serverMs": 94,
+     "inTok": 1052,
+     "outTok": 0,
+     "cost": 0.000052600000000000005,
+     "ok": true
+    },
+    {
+     "label": "extract: place",
+     "ms": 371,
+     "serverMs": 198,
+     "inTok": 179,
+     "outTok": 128,
+     "cost": 0.00013695,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "origin",
+   "text": "West Texas. Flat, dry and hot.",
+   "rep": 1,
+   "ms": 417.1,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: biome, world",
+     "ms": 415,
+     "serverMs": 93,
+     "inTok": 1048,
+     "outTok": 0,
+     "cost": 0.000052400000000000007,
+     "ok": true
+    },
+    {
+     "label": "extract: place",
+     "ms": 315,
+     "serverMs": 149,
+     "inTok": 176,
+     "outTok": 128,
+     "cost": 0.00013680000000000002,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "origin",
+   "text": "A village in the Swiss Alps. Green meadows and cows with bells.",
+   "rep": 1,
+   "ms": 366.9,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: biome, world",
+     "ms": 365,
+     "serverMs": 126,
+     "inTok": 1060,
+     "outTok": 0,
+     "cost": 0.000053,
+     "ok": true
+    },
+    {
+     "label": "extract: place",
+     "ms": 223,
+     "serverMs": 93,
+     "inTok": 182,
+     "outTok": 128,
+     "cost": 0.0001371,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "origin",
+   "text": "Northern Norway, deep in a fjord. The winter is long and dark.",
+   "rep": 1,
+   "ms": 371.8,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: biome, world",
+     "ms": 369,
+     "serverMs": 231,
+     "inTok": 1062,
+     "outTok": 0,
+     "cost": 0.0000531,
+     "ok": true
+    },
+    {
+     "label": "extract: place",
+     "ms": 228,
+     "serverMs": 58,
+     "inTok": 183,
+     "outTok": 152,
+     "cost": 0.00016115000000000001,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "born",
+   "text": "May 5th 1993",
+   "rep": 0,
+   "ms": 352.8,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "extract: birth_date, birthday",
+     "ms": 350,
+     "serverMs": 227,
+     "inTok": 184,
+     "outTok": 239,
+     "cost": 0.0002482,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "born",
+   "text": "I was born on 12 November 1987",
+   "rep": 0,
+   "ms": 358.9,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "extract: birth_date, birthday",
+     "ms": 357,
+     "serverMs": 103,
+     "inTok": 187,
+     "outTok": 193,
+     "cost": 0.00020234999999999999,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "born",
+   "text": "March 3, 2001",
+   "rep": 0,
+   "ms": 791.6,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "extract: birth_date, birthday",
+     "ms": 790,
+     "serverMs": 271,
+     "inTok": 184,
+     "outTok": 194,
+     "cost": 0.00020319999999999998,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "born",
+   "text": "The first of July, 1977",
+   "rep": 0,
+   "ms": 234.7,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "extract: birth_date, birthday",
+     "ms": 233,
+     "serverMs": 108,
+     "inTok": 185,
+     "outTok": 239,
+     "cost": 0.00024825,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "born",
+   "text": "May 5th 1993",
+   "rep": 1,
+   "ms": 339.6,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "extract: birth_date, birthday",
+     "ms": 338,
+     "serverMs": 167,
+     "inTok": 184,
+     "outTok": 239,
+     "cost": 0.0002482,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "born",
+   "text": "I was born on 12 November 1987",
+   "rep": 1,
+   "ms": 712.5,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "extract: birth_date, birthday",
+     "ms": 711,
+     "serverMs": 80,
+     "inTok": 187,
+     "outTok": 193,
+     "cost": 0.00020234999999999999,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "born",
+   "text": "March 3, 2001",
+   "rep": 1,
+   "ms": 415.4,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "extract: birth_date, birthday",
+     "ms": 415,
+     "serverMs": 148,
+     "inTok": 184,
+     "outTok": 194,
+     "cost": 0.00020319999999999998,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "born",
+   "text": "The first of July, 1977",
+   "rep": 1,
+   "ms": 238.6,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "extract: birth_date, birthday",
+     "ms": 237,
+     "serverMs": 62,
+     "inTok": 185,
+     "outTok": 239,
+     "cost": 0.00024825,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "body",
+   "text": "I write code all day and I lift weights at night.",
+   "rep": 0,
+   "ms": 628.3,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: archetype, build",
+     "ms": 626,
+     "serverMs": 118,
+     "inTok": 406,
+     "outTok": 0,
+     "cost": 0.000020300000000000002,
+     "ok": true
+    },
+    {
+     "label": "extract: trade",
+     "ms": 304,
+     "serverMs": 104,
+     "inTok": 174,
+     "outTok": 128,
+     "cost": 0.0001367,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "body",
+   "text": "I bake bread before dawn and teach a dance class in the evening.",
+   "rep": 0,
+   "ms": 522.6,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: archetype, build",
+     "ms": 520,
+     "serverMs": 273,
+     "inTok": 408,
+     "outTok": 0,
+     "cost": 0.0000204,
+     "ok": true
+    },
+    {
+     "label": "extract: trade",
+     "ms": 225,
+     "serverMs": 97,
+     "inTok": 176,
+     "outTok": 133,
+     "cost": 0.0001418,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "body",
+   "text": "I drive a truck across three states and fix my own engine.",
+   "rep": 0,
+   "ms": 440.8,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: archetype, build",
+     "ms": 293,
+     "serverMs": 159,
+     "inTok": 407,
+     "outTok": 0,
+     "cost": 0.00002035,
+     "ok": true
+    },
+    {
+     "label": "extract: trade",
+     "ms": 438,
+     "serverMs": 175,
+     "inTok": 175,
+     "outTok": 145,
+     "cost": 0.00015375,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "body",
+   "text": "I train kendo four nights a week and study at the university.",
+   "rep": 0,
+   "ms": 343.8,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: archetype, build",
+     "ms": 341,
+     "serverMs": 112,
+     "inTok": 408,
+     "outTok": 0,
+     "cost": 0.0000204,
+     "ok": true
+    },
+    {
+     "label": "extract: trade",
+     "ms": 254,
+     "serverMs": 126,
+     "inTok": 176,
+     "outTok": 157,
+     "cost": 0.00016580000000000002,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "body",
+   "text": "I write code all day and I lift weights at night.",
+   "rep": 1,
+   "ms": 332.1,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: archetype, build",
+     "ms": 330,
+     "serverMs": 200,
+     "inTok": 406,
+     "outTok": 0,
+     "cost": 0.000020300000000000002,
+     "ok": true
+    },
+    {
+     "label": "extract: trade",
+     "ms": 309,
+     "serverMs": 180,
+     "inTok": 174,
+     "outTok": 128,
+     "cost": 0.0001367,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "body",
+   "text": "I bake bread before dawn and teach a dance class in the evening.",
+   "rep": 1,
+   "ms": 1120.5,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: archetype, build",
+     "ms": 1119,
+     "serverMs": 993,
+     "inTok": 408,
+     "outTok": 0,
+     "cost": 0.0000204,
+     "ok": true
+    },
+    {
+     "label": "extract: trade",
+     "ms": 494,
+     "serverMs": 142,
+     "inTok": 176,
+     "outTok": 133,
+     "cost": 0.0001418,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "body",
+   "text": "I drive a truck across three states and fix my own engine.",
+   "rep": 1,
+   "ms": 983.2,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: archetype, build",
+     "ms": 961,
+     "serverMs": 836,
+     "inTok": 407,
+     "outTok": 0,
+     "cost": 0.00002035,
+     "ok": true
+    },
+    {
+     "label": "extract: trade",
+     "ms": 981,
+     "serverMs": 647,
+     "inTok": 175,
+     "outTok": 145,
+     "cost": 0.00015375,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "body",
+   "text": "I train kendo four nights a week and study at the university.",
+   "rep": 1,
+   "ms": 362.9,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: archetype, build",
+     "ms": 361,
+     "serverMs": 236,
+     "inTok": 408,
+     "outTok": 0,
+     "cost": 0.0000204,
+     "ok": true
+    },
+    {
+     "label": "extract: trade",
+     "ms": 308,
+     "serverMs": 54,
+     "inTok": 176,
+     "outTok": 157,
+     "cost": 0.00016580000000000002,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "heart",
+   "text": "My brother Wren and my dog Ash.",
+   "rep": 0,
+   "ms": 962.5,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: motive",
+     "ms": 959,
+     "serverMs": 798,
+     "inTok": 385,
+     "outTok": 0,
+     "cost": 0.00001925,
+     "ok": true
+    },
+    {
+     "label": "extract: companions, desire",
+     "ms": 943,
+     "serverMs": 615,
+     "inTok": 204,
+     "outTok": 174,
+     "cost": 0.00018419999999999998,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "heart",
+   "text": "My little girl Ada. Nobody touches her while I am around.",
+   "rep": 0,
+   "ms": 506.6,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: motive",
+     "ms": 477,
+     "serverMs": 306,
+     "inTok": 389,
+     "outTok": 0,
+     "cost": 0.000019450000000000002,
+     "ok": true
+    },
+    {
+     "label": "extract: companions, desire",
+     "ms": 504,
+     "serverMs": 66,
+     "inTok": 208,
+     "outTok": 136,
+     "cost": 0.0001464,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "heart",
+   "text": "Nobody. Just the open road and no one telling me what to do.",
+   "rep": 0,
+   "ms": 1305.6,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: motive",
+     "ms": 924,
+     "serverMs": 545,
+     "inTok": 391,
+     "outTok": 0,
+     "cost": 0.00001955,
+     "ok": true
+    },
+    {
+     "label": "extract: companions, desire",
+     "ms": 1303,
+     "serverMs": 1167,
+     "inTok": 210,
+     "outTok": 214,
+     "cost": 0.0002245,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "heart",
+   "text": "For my coach Vic. I want to be the best there is.",
+   "rep": 0,
+   "ms": 282.8,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: motive",
+     "ms": 281,
+     "serverMs": 118,
+     "inTok": 390,
+     "outTok": 0,
+     "cost": 0.0000195,
+     "ok": true
+    },
+    {
+     "label": "extract: companions, desire",
+     "ms": 266,
+     "serverMs": 138,
+     "inTok": 209,
+     "outTok": 183,
+     "cost": 0.00019344999999999999,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "heart",
+   "text": "My brother Wren and my dog Ash.",
+   "rep": 1,
+   "ms": 395,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: motive",
+     "ms": 302,
+     "serverMs": 56,
+     "inTok": 385,
+     "outTok": 0,
+     "cost": 0.00001925,
+     "ok": true
+    },
+    {
+     "label": "extract: companions, desire",
+     "ms": 392,
+     "serverMs": 261,
+     "inTok": 204,
+     "outTok": 174,
+     "cost": 0.00018419999999999998,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "heart",
+   "text": "My little girl Ada. Nobody touches her while I am around.",
+   "rep": 1,
+   "ms": 227.5,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: motive",
+     "ms": 201,
+     "serverMs": 79,
+     "inTok": 389,
+     "outTok": 0,
+     "cost": 0.000019450000000000002,
+     "ok": true
+    },
+    {
+     "label": "extract: companions, desire",
+     "ms": 225,
+     "serverMs": 60,
+     "inTok": 208,
+     "outTok": 136,
+     "cost": 0.0001464,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "heart",
+   "text": "Nobody. Just the open road and no one telling me what to do.",
+   "rep": 1,
+   "ms": 478.6,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: motive",
+     "ms": 400,
+     "serverMs": 281,
+     "inTok": 391,
+     "outTok": 0,
+     "cost": 0.00001955,
+     "ok": true
+    },
+    {
+     "label": "extract: companions, desire",
+     "ms": 476,
+     "serverMs": 207,
+     "inTok": 210,
+     "outTok": 213,
+     "cost": 0.0002235,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "heart",
+   "text": "For my coach Vic. I want to be the best there is.",
+   "rep": 1,
+   "ms": 397,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: motive",
+     "ms": 395,
+     "serverMs": 64,
+     "inTok": 390,
+     "outTok": 0,
+     "cost": 0.0000195,
+     "ok": true
+    },
+    {
+     "label": "extract: companions, desire",
+     "ms": 305,
+     "serverMs": 60,
+     "inTok": 209,
+     "outTok": 183,
+     "cost": 0.00019344999999999999,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "enemy",
+   "text": "A storm that keeps growing.",
+   "rep": 0,
+   "ms": 308.2,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: nemesis, tone, minions",
+     "ms": 306,
+     "serverMs": 176,
+     "inTok": 776,
+     "outTok": 0,
+     "cost": 0.0000388,
+     "ok": true
+    },
+    {
+     "label": "extract: enemy",
+     "ms": 234,
+     "serverMs": 59,
+     "inTok": 174,
+     "outTok": 143,
+     "cost": 0.0001517,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "enemy",
+   "text": "The fear of failing in front of everyone I know.",
+   "rep": 0,
+   "ms": 397,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: nemesis, tone, minions",
+     "ms": 394,
+     "serverMs": 268,
+     "inTok": 781,
+     "outTok": 0,
+     "cost": 0.00003905000000000001,
+     "ok": true
+    },
+    {
+     "label": "extract: enemy",
+     "ms": 318,
+     "serverMs": 58,
+     "inTok": 179,
+     "outTok": 168,
+     "cost": 0.00017695,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "enemy",
+   "text": "A cruel king who burned my village and his hollow soldiers.",
+   "rep": 0,
+   "ms": 500.5,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: nemesis, tone, minions",
+     "ms": 331,
+     "serverMs": 168,
+     "inTok": 782,
+     "outTok": 0,
+     "cost": 0.0000391,
+     "ok": true
+    },
+    {
+     "label": "extract: enemy",
+     "ms": 497,
+     "serverMs": 157,
+     "inTok": 180,
+     "outTok": 153,
+     "cost": 0.000162,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "enemy",
+   "text": "My own laziness, and the clock.",
+   "rep": 0,
+   "ms": 364.5,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: nemesis, tone, minions",
+     "ms": 363,
+     "serverMs": 202,
+     "inTok": 779,
+     "outTok": 0,
+     "cost": 0.000038950000000000005,
+     "ok": true
+    },
+    {
+     "label": "extract: enemy",
+     "ms": 285,
+     "serverMs": 152,
+     "inTok": 177,
+     "outTok": 138,
+     "cost": 0.00014685,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "enemy",
+   "text": "A storm that keeps growing.",
+   "rep": 1,
+   "ms": 741.5,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: nemesis, tone, minions",
+     "ms": 740,
+     "serverMs": 566,
+     "inTok": 776,
+     "outTok": 0,
+     "cost": 0.0000388,
+     "ok": true
+    },
+    {
+     "label": "extract: enemy",
+     "ms": 377,
+     "serverMs": 247,
+     "inTok": 174,
+     "outTok": 143,
+     "cost": 0.0001517,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "enemy",
+   "text": "The fear of failing in front of everyone I know.",
+   "rep": 1,
+   "ms": 288.7,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: nemesis, tone, minions",
+     "ms": 287,
+     "serverMs": 159,
+     "inTok": 781,
+     "outTok": 0,
+     "cost": 0.00003905000000000001,
+     "ok": true
+    },
+    {
+     "label": "extract: enemy",
+     "ms": 256,
+     "serverMs": 84,
+     "inTok": 179,
+     "outTok": 168,
+     "cost": 0.00017695,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "enemy",
+   "text": "A cruel king who burned my village and his hollow soldiers.",
+   "rep": 1,
+   "ms": 1634.8,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: nemesis, tone, minions",
+     "ms": 371,
+     "serverMs": 247,
+     "inTok": 782,
+     "outTok": 0,
+     "cost": 0.0000391,
+     "ok": true
+    },
+    {
+     "label": "extract: enemy",
+     "ms": 1633,
+     "serverMs": 99,
+     "inTok": 180,
+     "outTok": 153,
+     "cost": 0.000162,
+     "ok": true
+    }
+   ]
+  },
+  {
+   "step": "enemy",
+   "text": "My own laziness, and the clock.",
+   "rep": 1,
+   "ms": 374.7,
+   "tries": 1,
+   "entries": [
+    {
+     "label": "decide: nemesis, tone, minions",
+     "ms": 373,
+     "serverMs": 151,
+     "inTok": 779,
+     "outTok": 0,
+     "cost": 0.000038950000000000005,
+     "ok": true
+    },
+    {
+     "label": "extract: enemy",
+     "ms": 224,
+     "serverMs": 96,
+     "inTok": 177,
+     "outTok": 138,
+     "cost": 0.00014685,
+     "ok": true
+    }
+   ]
+  }
+ ]
+}

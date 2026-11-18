@@ -1,0 +1,155 @@
+{
+ "name": "play-cost",
+ "provenance": {
+  "date": "2026-11-18T13:09:50.665Z",
+  "endpoint": "https://sage.levanto.ai",
+  "node": "v25.2.1",
+  "command": "node play-cost.mjs --url http://localhost:8799 --drive",
+  "gameCommit": null,
+  "gameTreeMd5": "384ee18be1e80f0a63bbd872a603f74b",
+  "gameFileMd5": {
+   "game/kit.mjs": "8a934cb33142b000ea89fcf440ddc1be",
+   "game/questions.mjs": "de1d4f923c285f4b872cc0a035ac237b",
+   "game/worlds.mjs": "6c0e89cfa68ab224f3fe1367ce7a7ab4",
+   "server/sage.mjs": "bdc457bd1e898ac1ea149c40a765c353",
+   "server/server.mjs": "cac242ba7e20ba82d90c3228716a7289",
+   "web/src/fight.js": "116485eee59a6b99a5f8526edee998d5"
+  },
+  "url": "http://localhost:8799",
+  "drove": true
+ },
+ "driver": {
+  "exit": 0,
+  "tail": [
+   "shot 14-card-image",
+   "card buttons [\"Post on X\",\"Copy link\",\"Save image\",\"Play again\"]",
+   "play again 2115 ms {\"name\":null,\"weapon\":null,\"world\":\"dark\",\"feedRows\":0,\"focus\":\"typed\"}",
+   "shot 16-play-again",
+   "feed []",
+   "ERRORS none"
+  ]
+ },
+ "rows": [
+  {
+   "route": "step",
+   "calls": 6,
+   "inTok": 3709,
+   "outTok": 922,
+   "cost": 0.0011074499999999998,
+   "costPerCall": 0.00018457499999999997
+  },
+  {
+   "route": "live",
+   "calls": 4,
+   "inTok": 1400,
+   "outTok": 0,
+   "cost": 0.00007000000000000001,
+   "costPerCall": 0.000017500000000000002
+  },
+  {
+   "route": "act",
+   "calls": 1,
+   "inTok": 1454,
+   "outTok": 274,
+   "cost": 0.0003467000000000001,
+   "costPerCall": 0.0003467000000000001
+  },
+  {
+   "route": "tactics",
+   "calls": 13,
+   "inTok": 6610,
+   "outTok": 0,
+   "cost": 0.00033050000000000006,
+   "costPerCall": 0.000025423076923076928
+  },
+  {
+   "route": "director",
+   "calls": 1,
+   "inTok": 718,
+   "outTok": 0,
+   "cost": 0.0000359,
+   "costPerCall": 0.0000359
+  },
+  {
+   "route": "vow",
+   "calls": 1,
+   "inTok": 470,
+   "outTok": 182,
+   "cost": 0.00020549999999999998,
+   "costPerCall": 0.00020549999999999998
+  }
+ ],
+ "total": {
+  "calls": 26,
+  "cost": 0.00209605,
+  "inTok": 14361,
+  "outTok": 1378,
+  "costRounded": 0.002096
+ },
+ "timing": {
+  "session": {
+   "n": 2,
+   "aborted": 0,
+   "over2500": 0,
+   "max": 2,
+   "codes": {
+    "200": 2
+   }
+  },
+  "step": {
+   "n": 6,
+   "aborted": 0,
+   "over2500": 0,
+   "max": 774,
+   "codes": {
+    "200": 6
+   }
+  },
+  "live": {
+   "n": 4,
+   "aborted": 0,
+   "over2500": 0,
+   "max": 727,
+   "codes": {
+    "200": 4
+   }
+  },
+  "act": {
+   "n": 1,
+   "aborted": 0,
+   "over2500": 0,
+   "max": 449,
+   "codes": {
+    "200": 1
+   }
+  },
+  "tactics": {
+   "n": 13,
+   "aborted": 0,
+   "over2500": 0,
+   "max": 768,
+   "codes": {
+    "200": 13
+   }
+  },
+  "director": {
+   "n": 1,
+   "aborted": 0,
+   "over2500": 0,
+   "max": 487,
+   "codes": {
+    "200": 1
+   }
+  },
+  "vow": {
+   "n": 1,
+   "aborted": 0,
+   "over2500": 0,
+   "max": 307,
+   "codes": {
+    "200": 1
+   }
+  }
+ },
+ "notFound": []
+}

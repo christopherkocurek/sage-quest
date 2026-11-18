@@ -1,0 +1,5 @@
+wrote bench/measurements/stream-direct-all-2026-11-18.json
+all: n 57 | settle vs last word: median -2527.7 ms p95 -190.1 (before end 55, after end 2, after-end median 228.9 p95 233.1) | settled at 33.3% of words (median) | final = batch 57/57 | batch client ms median 322.9 p95 601.3 server 88.7 | last word -> covering frame median 231 p95 386; per-word update median 230.1 p95 359.7
+origin: n 40 | settle vs last word: median -2160.1 ms p95 -190.1 (before end 38, after end 2, after-end median 228.9 p95 233.1) | settled at 22.2% of words (median) | final = batch 40/40 | batch client ms median 339.5 p95 601.3 server 89 | last word -> covering frame median 230.1 p95 386; per-word update median 226.8 p95 341.7
+heart: n 17 | settle vs last word: median -3364.5 ms p95 -558.4 (before end 17, after end 0) | settled at 40% of words (median) | final = batch 17/17 | batch client ms median 258.9 p95 586.8 server 88.7 | last word -> covering frame median 234.6 p95 356.9; per-word update median 238.7 p95 390.1
+failed 0, with errors 0

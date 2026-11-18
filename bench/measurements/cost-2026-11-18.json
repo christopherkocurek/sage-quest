@@ -1,0 +1,113 @@
+{
+  "name": "cost",
+  "provenance": {
+    "date": "2026-11-18T13:45:18.465Z",
+    "endpoint": "https://sage.levanto.ai",
+    "node": "v25.2.1",
+    "command": "node cost-summary.mjs --pricing bench/measurements/pricing-2026-11-18.json",
+    "gameCommit": null,
+    "gameTreeMd5": "384ee18be1e80f0a63bbd872a603f74b",
+    "gameFileMd5": {
+      "game/kit.mjs": "8a934cb33142b000ea89fcf440ddc1be",
+      "game/questions.mjs": "de1d4f923c285f4b872cc0a035ac237b",
+      "game/worlds.mjs": "6c0e89cfa68ab224f3fe1367ce7a7ab4",
+      "server/sage.mjs": "bdc457bd1e898ac1ea149c40a765c353",
+      "server/server.mjs": "cac242ba7e20ba82d90c3228716a7289",
+      "web/src/fight.js": "116485eee59a6b99a5f8526edee998d5"
+    },
+    "priceConstantsInGame": {
+      "input": 0.05,
+      "output": 1
+    },
+    "unit": "USD per 1M tokens"
+  },
+  "tacticsCall": {
+    "what": "one tactic request (one foe group)",
+    "inputTokens": {
+      "n": 240,
+      "mean": 323.65,
+      "median": 324.5,
+      "p95": 360,
+      "max": 384
+    },
+    "outputTokens": {
+      "n": 240,
+      "mean": 0,
+      "median": 0,
+      "p95": 0,
+      "max": 0
+    },
+    "costUsd": {
+      "n": 240,
+      "mean": 1.6182499999999996e-05,
+      "median": 1.6225e-05,
+      "p95": 1.8e-05,
+      "max": 1.9200000000000003e-05
+    }
+  },
+  "originStep": {
+    "what": "batch of 2 requests (biome, world), input and output tokens of the batch",
+    "inputTokens": {
+      "n": 59,
+      "mean": 1054.1694915254238,
+      "median": 1054,
+      "p95": 1064,
+      "max": 1068
+    },
+    "outputTokens": {
+      "n": 59,
+      "mean": 0,
+      "median": 0,
+      "p95": 0,
+      "max": 0
+    },
+    "batchCostUsd": {
+      "n": 59,
+      "mean": 5.2708474576271196e-05,
+      "median": 5.27e-05,
+      "p95": 5.3200000000000006e-05,
+      "max": 5.3400000000000004e-05
+    }
+  },
+  "steps": {
+    "name": {
+      "sage2Calls": 1,
+      "inTokMean": 166.3,
+      "outTokMean": 139.25,
+      "costPerStepUsd": 0.00014756250000000002
+    },
+    "origin": {
+      "sage2Calls": 2,
+      "inTokMean": 1235.5,
+      "outTokMean": 134,
+      "costPerStepUsd": 0.00019577500000000003
+    },
+    "born": {
+      "sage2Calls": 1,
+      "inTokMean": 185,
+      "outTokMean": 216.25,
+      "costPerStepUsd": 0.00022549999999999998
+    },
+    "body": {
+      "sage2Calls": 2,
+      "inTokMean": 582.5,
+      "outTokMean": 140.75,
+      "costPerStepUsd": 0.000169875
+    },
+    "heart": {
+      "sage2Calls": 2,
+      "inTokMean": 596.5,
+      "outTokMean": 176.63,
+      "costPerStepUsd": 0.00020645
+    },
+    "enemy": {
+      "sage2Calls": 2,
+      "inTokMean": 957,
+      "outTokMean": 150.5,
+      "costPerStepUsd": 0.00019835000000000002
+    }
+  },
+  "onboardingSixStepsUsd": 0.0011435125,
+  "note": "Extract calls bill output tokens (the extracted words); Choice and Scale calls in the batch bill input only. Prices: see pricing-2026-11-18.json.",
+  "pricingPageText": "{\n \"name\": \"pricing\",\n \"date\": \"2026-11-18\",\n \"source\": \"https://levanto.ai/pricing (read on 2026-11-18; the page shows no pricing date)\",\n \"page_text_summary\": {\n  \"input_per_1M_tokens_by_plan\": {\n   \"Free\": 0.05,\n   \"Developer\": 0.05,\n   \"Starter\": 0.046,\n   \"Pro\": 0.042,\n   \"Growth\": 0.038\n  },\n  \"output_per_1M_tokens\": 1.0,\n  \"free_plan\": \"$0 with $1 of usage a month\",\n  \"page_examples_at_developer_rates\": {\n   \"short question\": \"$0.00002/call\",\n   \"long document (8000 tokens)\": \"$0.00042/call\",\n   \"five tags\": \"$0.0001/call\",\n   \"invoice (four fields)\": \"$0.00045/call\",\n   \"live call (two questions, four updates)\": \"$0.0013/call\",\n   \"web search\": \"$0.10 each\"\n  }\n },\n \"game_constants\": {\n  \"file\": \"server/sage.mjs\",\n  \"line\": 24,\n  \"input_per_1M\": 0.05,\n  \"output_per_1M\": 1.0,\n  \"comment\": \"levanto.ai/pricing, read 2026-11-10\"\n },\n \"match\": \"The game constants equal the Free and Developer plan rates. Paid plans list lower input prices (0.038 to 0.046).\"\n}"
+}

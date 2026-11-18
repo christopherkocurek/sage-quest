@@ -1,0 +1,5180 @@
+{
+ "name": "stream-direct-changes",
+ "provenance": {
+  "date": "2026-11-18T13:13:39.497Z",
+  "endpoint": "https://sage.levanto.ai",
+  "node": "v25.2.1",
+  "command": "node stream-latency.mjs --path direct-changes",
+  "gameCommit": null,
+  "gameTreeMd5": "384ee18be1e80f0a63bbd872a603f74b",
+  "gameFileMd5": {
+   "game/kit.mjs": "8a934cb33142b000ea89fcf440ddc1be",
+   "game/questions.mjs": "de1d4f923c285f4b872cc0a035ac237b",
+   "game/worlds.mjs": "6c0e89cfa68ab224f3fe1367ce7a7ab4",
+   "server/sage.mjs": "bdc457bd1e898ac1ea149c40a765c353",
+   "server/server.mjs": "cac242ba7e20ba82d90c3228716a7289",
+   "web/src/fight.js": "116485eee59a6b99a5f8526edee998d5"
+  },
+  "path": "direct-changes",
+  "base": null,
+  "paceMsPerWord": 400,
+  "wordsPerMinute": 150,
+  "concurrency": 3,
+  "setSize": 57,
+  "setDescription": "40 clear origin answers (live question: biome) + 17 heart answers (live question: motive)",
+  "note": "the origin step streams only the biome question; the world question is asked in the final batch only"
+ },
+ "summary": {
+  "all": {
+   "answers": 57,
+   "words": {
+    "n": 57,
+    "median": 9,
+    "p95": 17,
+    "mean": 10.3,
+    "min": 4,
+    "max": 20
+   },
+   "settleMsFromLastAppend": {
+    "n": 57,
+    "median": -2587.4,
+    "p95": 244.7,
+    "mean": -2534.6,
+    "min": -5383.6,
+    "max": 274.8
+   },
+   "settledBeforeEnd": 54,
+   "settledAfterEnd": 3,
+   "settleAfterEndMs": {
+    "n": 3,
+    "median": 257.6,
+    "p95": 274.8,
+    "mean": 259,
+    "min": 244.7,
+    "max": 274.8
+   },
+   "wordsAtSettlePctOfAnswer": {
+    "n": 57,
+    "median": 26.3,
+    "p95": 100,
+    "mean": 33,
+    "min": 7.1,
+    "max": 100
+   },
+   "finalEqualsBatch": 57,
+   "finalDiffersFromBatch": 0,
+   "batchClientMs": {
+    "n": 57,
+    "median": 309.4,
+    "p95": 509.4,
+    "mean": 327.6,
+    "min": 206.9,
+    "max": 682.6
+   },
+   "batchServerMs": {
+    "n": 57,
+    "median": 92.6,
+    "p95": 304.2,
+    "mean": 119.7,
+    "min": 56,
+    "max": 371
+   },
+   "readyMs": {
+    "n": 57,
+    "median": 480.9,
+    "p95": 659.9,
+    "mean": 510.6,
+    "min": 443.3,
+    "max": 772.8
+   },
+   "framesPerAnswer": {
+    "n": 57,
+    "median": 2,
+    "p95": 6,
+    "mean": 2.7,
+    "min": 1,
+    "max": 6
+   }
+  },
+  "origin": {
+   "answers": 40,
+   "words": {
+    "n": 40,
+    "median": 8.5,
+    "p95": 12,
+    "mean": 8.7,
+    "min": 4,
+    "max": 14
+   },
+   "settleMsFromLastAppend": {
+    "n": 40,
+    "median": -2335.8,
+    "p95": 244.7,
+    "mean": -2201.3,
+    "min": -5034.4,
+    "max": 274.8
+   },
+   "settledBeforeEnd": 37,
+   "settledAfterEnd": 3,
+   "settleAfterEndMs": {
+    "n": 3,
+    "median": 257.6,
+    "p95": 274.8,
+    "mean": 259,
+    "min": 244.7,
+    "max": 274.8
+   },
+   "wordsAtSettlePctOfAnswer": {
+    "n": 40,
+    "median": 18.4,
+    "p95": 100,
+    "mean": 31.5,
+    "min": 7.1,
+    "max": 100
+   },
+   "finalEqualsBatch": 40,
+   "finalDiffersFromBatch": 0,
+   "batchClientMs": {
+    "n": 40,
+    "median": 312,
+    "p95": 494.8,
+    "mean": 328.3,
+    "min": 210.1,
+    "max": 641.8
+   },
+   "batchServerMs": {
+    "n": 40,
+    "median": 94.2,
+    "p95": 304.2,
+    "mean": 124.7,
+    "min": 56.8,
+    "max": 371
+   },
+   "readyMs": {
+    "n": 40,
+    "median": 481.3,
+    "p95": 641.4,
+    "mean": 508.4,
+    "min": 443.3,
+    "max": 772.8
+   },
+   "framesPerAnswer": {
+    "n": 40,
+    "median": 2,
+    "p95": 6,
+    "mean": 2.8,
+    "min": 2,
+    "max": 6
+   }
+  },
+  "heart": {
+   "answers": 17,
+   "words": {
+    "n": 17,
+    "median": 14,
+    "p95": 20,
+    "mean": 14,
+    "min": 10,
+    "max": 20
+   },
+   "settleMsFromLastAppend": {
+    "n": 17,
+    "median": -3362.1,
+    "p95": -413.8,
+    "mean": -3318.9,
+    "min": -5383.6,
+    "max": -413.8
+   },
+   "settledBeforeEnd": 17,
+   "settledAfterEnd": 0,
+   "settleAfterEndMs": null,
+   "wordsAtSettlePctOfAnswer": {
+    "n": 17,
+    "median": 40,
+    "p95": 80,
+    "mean": 36.6,
+    "min": 7.1,
+    "max": 80
+   },
+   "finalEqualsBatch": 17,
+   "finalDiffersFromBatch": 0,
+   "batchClientMs": {
+    "n": 17,
+    "median": 252.4,
+    "p95": 682.6,
+    "mean": 326.1,
+    "min": 206.9,
+    "max": 682.6
+   },
+   "batchServerMs": {
+    "n": 17,
+    "median": 88.8,
+    "p95": 284.8,
+    "mean": 107.9,
+    "min": 56,
+    "max": 284.8
+   },
+   "readyMs": {
+    "n": 17,
+    "median": 479,
+    "p95": 659.9,
+    "mean": 515.7,
+    "min": 449.8,
+    "max": 659.9
+   },
+   "framesPerAnswer": {
+    "n": 17,
+    "median": 2,
+    "p95": 6,
+    "mean": 2.4,
+    "min": 1,
+    "max": 6
+   }
+  },
+  "failed": 0,
+  "withErrors": 0
+ },
+ "differs": [],
+ "rows": [
+  {
+   "step": "origin",
+   "answer": "I am from Kyoto, an old city of temples and quiet lanes.",
+   "words": 12,
+   "ok": true,
+   "finalPick": "deepwood",
+   "finalLeadP": 0.7825,
+   "frames": 2,
+   "readyMs": 472.3,
+   "errors": [],
+   "settleMsFromLastAppend": -2956.5,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 4,
+   "settleFractionPct": 33.3,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 111.1,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1444.6,
+     "chars": 54,
+     "pick": "deepwood",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.7,
+     "chars": 39
+    },
+    {
+     "t": 400.3,
+     "chars": 42
+    },
+    {
+     "t": 800.4,
+     "chars": 47
+    },
+    {
+     "t": 1200.8,
+     "chars": 54
+    },
+    {
+     "t": 1599.5,
+     "chars": 57
+    },
+    {
+     "t": 2001.1,
+     "chars": 61
+    },
+    {
+     "t": 2400.4,
+     "chars": 66
+    },
+    {
+     "t": 2800.5,
+     "chars": 69
+    },
+    {
+     "t": 3200.9,
+     "chars": 77
+    },
+    {
+     "t": 3600.9,
+     "chars": 81
+    },
+    {
+     "t": 4000.5,
+     "chars": 87
+    },
+    {
+     "t": 4401.1,
+     "chars": 94
+    }
+   ],
+   "batchPick": "deepwood",
+   "batchClientMs": 362.5,
+   "batchServerMs": 103.5,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Nara, Japan. The deer walk in the streets.",
+   "words": 8,
+   "ok": true,
+   "finalPick": "deepwood",
+   "finalLeadP": 0.8925,
+   "frames": 2,
+   "readyMs": 445.6,
+   "errors": [],
+   "settleMsFromLastAppend": -2470.4,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 12.5,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 123,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 330.7,
+     "chars": 43,
+     "pick": "deepwood",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.5,
+     "chars": 43
+    },
+    {
+     "t": 401.1,
+     "chars": 50
+    },
+    {
+     "t": 801.3,
+     "chars": 54
+    },
+    {
+     "t": 1200.6,
+     "chars": 59
+    },
+    {
+     "t": 1601.1,
+     "chars": 64
+    },
+    {
+     "t": 2000.7,
+     "chars": 67
+    },
+    {
+     "t": 2401,
+     "chars": 71
+    },
+    {
+     "t": 2801.2,
+     "chars": 80
+    }
+   ],
+   "batchPick": "deepwood",
+   "batchClientMs": 361.7,
+   "batchServerMs": 145.6,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "A small town on Shikoku island in Japan. Mild and green.",
+   "words": 11,
+   "ok": true,
+   "finalPick": "deepwood",
+   "finalLeadP": 0.6723,
+   "frames": 6,
+   "readyMs": 472,
+   "errors": [],
+   "settleMsFromLastAppend": 244.7,
+   "settledBeforeEnd": false,
+   "wordsAtSettle": 11,
+   "settleFractionPct": 100,
+   "framesAfterLastAppend": 1,
+   "frameTimes": [
+    {
+     "t": 96,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 685.5,
+     "chars": 45,
+     "pick": "deepwood",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 2230.1,
+     "chars": 68,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 2603.2,
+     "chars": 71,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 3804.8,
+     "chars": 87,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 4244.4,
+     "chars": 94,
+     "pick": "deepwood",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.9,
+     "chars": 39
+    },
+    {
+     "t": 400.4,
+     "chars": 45
+    },
+    {
+     "t": 800.3,
+     "chars": 50
+    },
+    {
+     "t": 1200.9,
+     "chars": 53
+    },
+    {
+     "t": 1600.4,
+     "chars": 61
+    },
+    {
+     "t": 2000.2,
+     "chars": 68
+    },
+    {
+     "t": 2400.1,
+     "chars": 71
+    },
+    {
+     "t": 2800.5,
+     "chars": 78
+    },
+    {
+     "t": 3200.3,
+     "chars": 83
+    },
+    {
+     "t": 3600.1,
+     "chars": 87
+    },
+    {
+     "t": 3999.7,
+     "chars": 94
+    }
+   ],
+   "batchPick": "deepwood",
+   "batchClientMs": 252.2,
+   "batchServerMs": 124.8,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Kanazawa, Japan, a castle town by the sea.",
+   "words": 8,
+   "ok": true,
+   "finalPick": "stormcoast",
+   "finalLeadP": 0.6771,
+   "frames": 2,
+   "readyMs": 474.7,
+   "errors": [],
+   "settleMsFromLastAppend": -2572.8,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 12.5,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 227.5,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 2248,
+     "chars": 71,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.9,
+     "chars": 47
+    },
+    {
+     "t": 401.2,
+     "chars": 54
+    },
+    {
+     "t": 800.8,
+     "chars": 56
+    },
+    {
+     "t": 1201.5,
+     "chars": 63
+    },
+    {
+     "t": 1599.9,
+     "chars": 68
+    },
+    {
+     "t": 2000.5,
+     "chars": 71
+    },
+    {
+     "t": 2400,
+     "chars": 75
+    },
+    {
+     "t": 2800.3,
+     "chars": 80
+    }
+   ],
+   "batchPick": "stormcoast",
+   "batchClientMs": 404.7,
+   "batchServerMs": 116,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Kagoshima, in the south of Japan. Warm, with a volcano across the bay.",
+   "words": 13,
+   "ok": true,
+   "finalPick": "ashlands",
+   "finalLeadP": 0.9371,
+   "frames": 4,
+   "readyMs": 537.8,
+   "errors": [],
+   "settleMsFromLastAppend": -4529.1,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 7.7,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 61.7,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 271.6,
+     "chars": 48,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 3025.3,
+     "chars": 82,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 3825.3,
+     "chars": 92,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.4,
+     "chars": 48
+    },
+    {
+     "t": 401,
+     "chars": 51
+    },
+    {
+     "t": 800.9,
+     "chars": 55
+    },
+    {
+     "t": 1200.5,
+     "chars": 61
+    },
+    {
+     "t": 1600.6,
+     "chars": 64
+    },
+    {
+     "t": 2000.1,
+     "chars": 71
+    },
+    {
+     "t": 2400.3,
+     "chars": 77
+    },
+    {
+     "t": 2800.3,
+     "chars": 82
+    },
+    {
+     "t": 3200.2,
+     "chars": 84
+    },
+    {
+     "t": 3600.6,
+     "chars": 92
+    },
+    {
+     "t": 4001.7,
+     "chars": 99
+    },
+    {
+     "t": 4400.5,
+     "chars": 103
+    },
+    {
+     "t": 4800.7,
+     "chars": 108
+    }
+   ],
+   "batchPick": "ashlands",
+   "batchClientMs": 251.9,
+   "batchServerMs": 92.3,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "A fishing port on the coast of Hokkaido, Japan.",
+   "words": 9,
+   "ok": true,
+   "finalPick": "stormcoast",
+   "finalLeadP": 0.9463,
+   "frames": 2,
+   "readyMs": 465.2,
+   "errors": [],
+   "settleMsFromLastAppend": -3119.3,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 11.1,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 80.7,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 662.4,
+     "chars": 47,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.2,
+     "chars": 39
+    },
+    {
+     "t": 399.7,
+     "chars": 47
+    },
+    {
+     "t": 799.4,
+     "chars": 52
+    },
+    {
+     "t": 1199.7,
+     "chars": 55
+    },
+    {
+     "t": 1600.5,
+     "chars": 59
+    },
+    {
+     "t": 2000.6,
+     "chars": 65
+    },
+    {
+     "t": 2400.6,
+     "chars": 68
+    },
+    {
+     "t": 2800.9,
+     "chars": 78
+    },
+    {
+     "t": 3200,
+     "chars": 85
+    }
+   ],
+   "batchPick": "stormcoast",
+   "batchClientMs": 347.7,
+   "batchServerMs": 76,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Hiroshima, Japan, on a bay with seven rivers.",
+   "words": 8,
+   "ok": true,
+   "finalPick": "stormcoast",
+   "finalLeadP": 0.7754,
+   "frames": 2,
+   "readyMs": 481.8,
+   "errors": [],
+   "settleMsFromLastAppend": -2718.5,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 12.5,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 81,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 284.3,
+     "chars": 48,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.3,
+     "chars": 48
+    },
+    {
+     "t": 400.4,
+     "chars": 55
+    },
+    {
+     "t": 800.1,
+     "chars": 58
+    },
+    {
+     "t": 1200.3,
+     "chars": 60
+    },
+    {
+     "t": 1600.8,
+     "chars": 64
+    },
+    {
+     "t": 1999.2,
+     "chars": 69
+    },
+    {
+     "t": 2400.9,
+     "chars": 75
+    },
+    {
+     "t": 2799.5,
+     "chars": 83
+    }
+   ],
+   "batchPick": "stormcoast",
+   "batchClientMs": 258.9,
+   "batchServerMs": 129.1,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Fukuoka, Japan, a port city on the west coast.",
+   "words": 9,
+   "ok": true,
+   "finalPick": "stormcoast",
+   "finalLeadP": 0.7862,
+   "frames": 2,
+   "readyMs": 449.7,
+   "errors": [],
+   "settleMsFromLastAppend": -3137.9,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 11.1,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 62.4,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 550.5,
+     "chars": 46,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.7,
+     "chars": 46
+    },
+    {
+     "t": 400.5,
+     "chars": 53
+    },
+    {
+     "t": 801,
+     "chars": 55
+    },
+    {
+     "t": 1200.4,
+     "chars": 60
+    },
+    {
+     "t": 1600.3,
+     "chars": 65
+    },
+    {
+     "t": 2000.7,
+     "chars": 68
+    },
+    {
+     "t": 2400,
+     "chars": 72
+    },
+    {
+     "t": 2800.4,
+     "chars": 77
+    },
+    {
+     "t": 3200.3,
+     "chars": 84
+    }
+   ],
+   "batchPick": "stormcoast",
+   "batchClientMs": 380.6,
+   "batchServerMs": 253.5,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Hong Kong. Towers, rain and lights all night.",
+   "words": 8,
+   "ok": true,
+   "finalPick": "stormcoast",
+   "finalLeadP": 0.907,
+   "frames": 2,
+   "readyMs": 499.9,
+   "errors": [],
+   "settleMsFromLastAppend": -2721.7,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 12.5,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 78.2,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1413.1,
+     "chars": 61,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.5,
+     "chars": 42
+    },
+    {
+     "t": 400.7,
+     "chars": 48
+    },
+    {
+     "t": 800.7,
+     "chars": 56
+    },
+    {
+     "t": 1200.9,
+     "chars": 61
+    },
+    {
+     "t": 1600.3,
+     "chars": 65
+    },
+    {
+     "t": 2000.6,
+     "chars": 72
+    },
+    {
+     "t": 2400.9,
+     "chars": 76
+    },
+    {
+     "t": 2799.9,
+     "chars": 83
+    }
+   ],
+   "batchPick": "stormcoast",
+   "batchClientMs": 229.7,
+   "batchServerMs": 76.2,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Shanghai, a huge city of glass towers.",
+   "words": 7,
+   "ok": true,
+   "finalPick": "stormcoast",
+   "finalLeadP": 0.7788,
+   "frames": 2,
+   "readyMs": 630.1,
+   "errors": [],
+   "settleMsFromLastAppend": -2331.2,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 14.3,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 68.6,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 2217.5,
+     "chars": 68,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.5,
+     "chars": 47
+    },
+    {
+     "t": 400.7,
+     "chars": 49
+    },
+    {
+     "t": 800.2,
+     "chars": 54
+    },
+    {
+     "t": 1200.4,
+     "chars": 59
+    },
+    {
+     "t": 1601.5,
+     "chars": 62
+    },
+    {
+     "t": 2001,
+     "chars": 68
+    },
+    {
+     "t": 2399.8,
+     "chars": 76
+    }
+   ],
+   "batchPick": "stormcoast",
+   "batchClientMs": 244.3,
+   "batchServerMs": 86.8,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Singapore. Hot, wet and full of skyscrapers.",
+   "words": 7,
+   "ok": true,
+   "finalPick": "vinewild",
+   "finalLeadP": 0.9516,
+   "frames": 2,
+   "readyMs": 443.3,
+   "errors": [],
+   "settleMsFromLastAppend": -2126.1,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 14.3,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 60.6,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 275.4,
+     "chars": 48,
+     "pick": "vinewild",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.8,
+     "chars": 48
+    },
+    {
+     "t": 401.6,
+     "chars": 53
+    },
+    {
+     "t": 801.2,
+     "chars": 57
+    },
+    {
+     "t": 1200.7,
+     "chars": 61
+    },
+    {
+     "t": 1601.7,
+     "chars": 66
+    },
+    {
+     "t": 2001.7,
+     "chars": 69
+    },
+    {
+     "t": 2401.6,
+     "chars": 82
+    }
+   ],
+   "batchPick": "vinewild",
+   "batchClientMs": 297,
+   "batchServerMs": 171,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Manhattan, New York. Towers, steam and traffic.",
+   "words": 7,
+   "ok": true,
+   "finalPick": "stormcoast",
+   "finalLeadP": 0.9579,
+   "frames": 2,
+   "readyMs": 641.4,
+   "errors": [],
+   "settleMsFromLastAppend": -2340.5,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 14.3,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 60.5,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 320,
+     "chars": 48,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.1,
+     "chars": 48
+    },
+    {
+     "t": 400.3,
+     "chars": 52
+    },
+    {
+     "t": 801.1,
+     "chars": 58
+    },
+    {
+     "t": 1201.2,
+     "chars": 66
+    },
+    {
+     "t": 1601,
+     "chars": 72
+    },
+    {
+     "t": 2000.4,
+     "chars": 76
+    },
+    {
+     "t": 2401,
+     "chars": 85
+    }
+   ],
+   "batchPick": "stormcoast",
+   "batchClientMs": 330.7,
+   "batchServerMs": 74.9,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Tokyo. I live among the towers of Shinjuku, neon on every wall.",
+   "words": 12,
+   "ok": true,
+   "finalPick": "stormcoast",
+   "finalLeadP": 0.9051,
+   "frames": 2,
+   "readyMs": 470.6,
+   "errors": [],
+   "settleMsFromLastAppend": -4238.4,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 8.3,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 162.3,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 249.5,
+     "chars": 44,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.7,
+     "chars": 44
+    },
+    {
+     "t": 400.9,
+     "chars": 46
+    },
+    {
+     "t": 801.6,
+     "chars": 51
+    },
+    {
+     "t": 1200.2,
+     "chars": 57
+    },
+    {
+     "t": 1600.9,
+     "chars": 61
+    },
+    {
+     "t": 2000.7,
+     "chars": 68
+    },
+    {
+     "t": 2400.6,
+     "chars": 71
+    },
+    {
+     "t": 2800.7,
+     "chars": 81
+    },
+    {
+     "t": 3199.7,
+     "chars": 86
+    },
+    {
+     "t": 3600.5,
+     "chars": 89
+    },
+    {
+     "t": 4001.1,
+     "chars": 95
+    },
+    {
+     "t": 4400.7,
+     "chars": 101
+    }
+   ],
+   "batchPick": "stormcoast",
+   "batchClientMs": 641.8,
+   "batchServerMs": 79.2,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Shenzhen, a wall of glass skyscrapers on the bay.",
+   "words": 9,
+   "ok": true,
+   "finalPick": "stormcoast",
+   "finalLeadP": 0.5827,
+   "frames": 2,
+   "readyMs": 484.8,
+   "errors": [],
+   "settleMsFromLastAppend": -3141.1,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 11.1,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 59.9,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 616.9,
+     "chars": 49,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.5,
+     "chars": 47
+    },
+    {
+     "t": 401.4,
+     "chars": 49
+    },
+    {
+     "t": 800.8,
+     "chars": 54
+    },
+    {
+     "t": 1200.9,
+     "chars": 57
+    },
+    {
+     "t": 1600.5,
+     "chars": 63
+    },
+    {
+     "t": 2001.1,
+     "chars": 75
+    },
+    {
+     "t": 2400,
+     "chars": 78
+    },
+    {
+     "t": 2800.5,
+     "chars": 82
+    },
+    {
+     "t": 3201,
+     "chars": 87
+    }
+   ],
+   "batchPick": "stormcoast",
+   "batchClientMs": 244.2,
+   "batchServerMs": 120.2,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "A city whose skyline is a wall of glass towers, lit up all night.",
+   "words": 14,
+   "ok": true,
+   "finalPick": "stormcoast",
+   "finalLeadP": 0.6244,
+   "frames": 4,
+   "readyMs": 446.1,
+   "errors": [],
+   "settleMsFromLastAppend": -5034.4,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 7.1,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 166.4,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1413,
+     "chars": 58,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1851.2,
+     "chars": 61,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 3418.7,
+     "chars": 77,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.1,
+     "chars": 39
+    },
+    {
+     "t": 400.6,
+     "chars": 44
+    },
+    {
+     "t": 800,
+     "chars": 50
+    },
+    {
+     "t": 1199.8,
+     "chars": 58
+    },
+    {
+     "t": 1600.4,
+     "chars": 61
+    },
+    {
+     "t": 2000.4,
+     "chars": 63
+    },
+    {
+     "t": 2400.5,
+     "chars": 68
+    },
+    {
+     "t": 2800.3,
+     "chars": 71
+    },
+    {
+     "t": 3200.5,
+     "chars": 77
+    },
+    {
+     "t": 3601.1,
+     "chars": 85
+    },
+    {
+     "t": 4000.3,
+     "chars": 89
+    },
+    {
+     "t": 4400.6,
+     "chars": 92
+    },
+    {
+     "t": 4800.1,
+     "chars": 96
+    },
+    {
+     "t": 5200.7,
+     "chars": 103
+    }
+   ],
+   "batchPick": "stormcoast",
+   "batchClientMs": 310.5,
+   "batchServerMs": 56.8,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Kowloon, in Hong Kong. Dense towers on every side.",
+   "words": 9,
+   "ok": true,
+   "finalPick": "stormcoast",
+   "finalLeadP": 0.6451,
+   "frames": 6,
+   "readyMs": 467.7,
+   "errors": [],
+   "settleMsFromLastAppend": -2964,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 11.1,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 236.9,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1546.6,
+     "chars": 60,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1846.8,
+     "chars": 66,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 2317.3,
+     "chars": 73,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 2656,
+     "chars": 76,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 3046.1,
+     "chars": 82,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.1,
+     "chars": 46
+    },
+    {
+     "t": 400.6,
+     "chars": 49
+    },
+    {
+     "t": 800.5,
+     "chars": 54
+    },
+    {
+     "t": 1200.7,
+     "chars": 60
+    },
+    {
+     "t": 1600.2,
+     "chars": 66
+    },
+    {
+     "t": 1999.8,
+     "chars": 73
+    },
+    {
+     "t": 2399.8,
+     "chars": 76
+    },
+    {
+     "t": 2800.2,
+     "chars": 82
+    },
+    {
+     "t": 3201,
+     "chars": 88
+    }
+   ],
+   "batchPick": "stormcoast",
+   "batchClientMs": 259.3,
+   "batchServerMs": 135.9,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "West Texas. Flat, dry and hot.",
+   "words": 6,
+   "ok": true,
+   "finalPick": "ashlands",
+   "finalLeadP": 0.972,
+   "frames": 5,
+   "readyMs": 518.6,
+   "errors": [],
+   "settleMsFromLastAppend": -535.9,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 4,
+   "settleFractionPct": 66.7,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 82.4,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 342,
+     "chars": 42,
+     "pick": "dusksteppe",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 669.5,
+     "chars": 49,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1057.7,
+     "chars": 55,
+     "pick": "dusksteppe",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1464.7,
+     "chars": 59,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.3,
+     "chars": 42
+    },
+    {
+     "t": 399.9,
+     "chars": 49
+    },
+    {
+     "t": 800.1,
+     "chars": 55
+    },
+    {
+     "t": 1201.4,
+     "chars": 59
+    },
+    {
+     "t": 1600.8,
+     "chars": 63
+    },
+    {
+     "t": 2000.5,
+     "chars": 68
+    }
+   ],
+   "batchPick": "ashlands",
+   "batchClientMs": 226.9,
+   "batchServerMs": 93.1,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "A ranch outside Tucson, Arizona. Cactus all around.",
+   "words": 8,
+   "ok": true,
+   "finalPick": "ashlands",
+   "finalLeadP": 0.788,
+   "frames": 4,
+   "readyMs": 548.2,
+   "errors": [],
+   "settleMsFromLastAppend": -1368.7,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 4,
+   "settleFractionPct": 50,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 79.1,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 624.4,
+     "chars": 45,
+     "pick": "dusksteppe",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1432.1,
+     "chars": 61,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1820.6,
+     "chars": 70,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.7,
+     "chars": 39
+    },
+    {
+     "t": 401.4,
+     "chars": 45
+    },
+    {
+     "t": 800.6,
+     "chars": 53
+    },
+    {
+     "t": 1201,
+     "chars": 61
+    },
+    {
+     "t": 1600.3,
+     "chars": 70
+    },
+    {
+     "t": 2000.9,
+     "chars": 77
+    },
+    {
+     "t": 2400.9,
+     "chars": 81
+    },
+    {
+     "t": 2800.8,
+     "chars": 89
+    }
+   ],
+   "batchPick": "ashlands",
+   "batchClientMs": 313.4,
+   "batchServerMs": 58.4,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "The outback of Western Australia. Red dirt and heat.",
+   "words": 9,
+   "ok": true,
+   "finalPick": "ashlands",
+   "finalLeadP": 0.9759,
+   "frames": 2,
+   "readyMs": 502,
+   "errors": [],
+   "settleMsFromLastAppend": -2587.4,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 2,
+   "settleFractionPct": 22.2,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 58.8,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 612.9,
+     "chars": 49,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.9,
+     "chars": 41
+    },
+    {
+     "t": 401,
+     "chars": 49
+    },
+    {
+     "t": 800.9,
+     "chars": 52
+    },
+    {
+     "t": 1201.1,
+     "chars": 60
+    },
+    {
+     "t": 1600.8,
+     "chars": 71
+    },
+    {
+     "t": 1999.5,
+     "chars": 75
+    },
+    {
+     "t": 2399.9,
+     "chars": 80
+    },
+    {
+     "t": 2800.8,
+     "chars": 84
+    },
+    {
+     "t": 3200.3,
+     "chars": 90
+    }
+   ],
+   "batchPick": "ashlands",
+   "batchClientMs": 302.6,
+   "batchServerMs": 176.2,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Sonora, Mexico. Desert heat and dust.",
+   "words": 6,
+   "ok": true,
+   "finalPick": "ashlands",
+   "finalLeadP": 0.9227,
+   "frames": 2,
+   "readyMs": 635.8,
+   "errors": [],
+   "settleMsFromLastAppend": -1738.7,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 16.7,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 67,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 261,
+     "chars": 45,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.5,
+     "chars": 45
+    },
+    {
+     "t": 401.3,
+     "chars": 53
+    },
+    {
+     "t": 800.2,
+     "chars": 60
+    },
+    {
+     "t": 1201.3,
+     "chars": 65
+    },
+    {
+     "t": 1600.1,
+     "chars": 69
+    },
+    {
+     "t": 1999.7,
+     "chars": 75
+    }
+   ],
+   "batchPick": "ashlands",
+   "batchClientMs": 417.2,
+   "batchServerMs": 159.2,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "New Mexico. Mesas and open sky.",
+   "words": 6,
+   "ok": true,
+   "finalPick": "ashlands",
+   "finalLeadP": 0.9846,
+   "frames": 2,
+   "readyMs": 451.9,
+   "errors": [],
+   "settleMsFromLastAppend": -1385.5,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 2,
+   "settleFractionPct": 33.3,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 55,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 615.9,
+     "chars": 49,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.5,
+     "chars": 41
+    },
+    {
+     "t": 400.8,
+     "chars": 49
+    },
+    {
+     "t": 801.2,
+     "chars": 55
+    },
+    {
+     "t": 1200.1,
+     "chars": 59
+    },
+    {
+     "t": 1599.8,
+     "chars": 64
+    },
+    {
+     "t": 2001.4,
+     "chars": 69
+    }
+   ],
+   "batchPick": "ashlands",
+   "batchClientMs": 358.8,
+   "batchServerMs": 113.9,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Chihuahua, in the north of Mexico. Dry plains and mountains.",
+   "words": 10,
+   "ok": true,
+   "finalPick": "ashlands",
+   "finalLeadP": 0.7417,
+   "frames": 6,
+   "readyMs": 772.8,
+   "errors": [],
+   "settleMsFromLastAppend": 257.6,
+   "settledBeforeEnd": false,
+   "wordsAtSettle": 10,
+   "settleFractionPct": 100,
+   "framesAfterLastAppend": 1,
+   "frameTimes": [
+    {
+     "t": 64.3,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 316.1,
+     "chars": 48,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1418,
+     "chars": 61,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1815.8,
+     "chars": 64,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 3045,
+     "chars": 83,
+     "pick": "dusksteppe",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 3858.2,
+     "chars": 98,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.3,
+     "chars": 48
+    },
+    {
+     "t": 400.2,
+     "chars": 51
+    },
+    {
+     "t": 800.6,
+     "chars": 55
+    },
+    {
+     "t": 1201.2,
+     "chars": 61
+    },
+    {
+     "t": 1600.4,
+     "chars": 64
+    },
+    {
+     "t": 2000,
+     "chars": 72
+    },
+    {
+     "t": 2400.7,
+     "chars": 76
+    },
+    {
+     "t": 2800.9,
+     "chars": 83
+    },
+    {
+     "t": 3201.2,
+     "chars": 87
+    },
+    {
+     "t": 3600.6,
+     "chars": 98
+    }
+   ],
+   "batchPick": "ashlands",
+   "batchClientMs": 260.1,
+   "batchServerMs": 133.8,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "A small town in the Nevada desert.",
+   "words": 7,
+   "ok": true,
+   "finalPick": "ashlands",
+   "finalLeadP": 0.9894,
+   "frames": 3,
+   "readyMs": 453.8,
+   "errors": [],
+   "settleMsFromLastAppend": -184.1,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 6,
+   "settleFractionPct": 85.7,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 74.3,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 619.2,
+     "chars": 45,
+     "pick": "deepwood",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 2217.4,
+     "chars": 64,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.7,
+     "chars": 39
+    },
+    {
+     "t": 400.9,
+     "chars": 45
+    },
+    {
+     "t": 800.4,
+     "chars": 50
+    },
+    {
+     "t": 1200,
+     "chars": 53
+    },
+    {
+     "t": 1600.2,
+     "chars": 57
+    },
+    {
+     "t": 1999.7,
+     "chars": 64
+    },
+    {
+     "t": 2401.5,
+     "chars": 72
+    }
+   ],
+   "batchPick": "ashlands",
+   "batchClientMs": 217.7,
+   "batchServerMs": 91.3,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Alice Springs, in the Australian outback.",
+   "words": 6,
+   "ok": true,
+   "finalPick": "ashlands",
+   "finalLeadP": 0.9895,
+   "frames": 2,
+   "readyMs": 483.3,
+   "errors": [],
+   "settleMsFromLastAppend": -1393.6,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 2,
+   "settleFractionPct": 33.3,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 81.7,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 607.1,
+     "chars": 52,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.5,
+     "chars": 43
+    },
+    {
+     "t": 400.8,
+     "chars": 52
+    },
+    {
+     "t": 800.4,
+     "chars": 55
+    },
+    {
+     "t": 1201.2,
+     "chars": 59
+    },
+    {
+     "t": 1608.7,
+     "chars": 70
+    },
+    {
+     "t": 2000.8,
+     "chars": 79
+    }
+   ],
+   "batchPick": "ashlands",
+   "batchClientMs": 359.8,
+   "batchServerMs": 102.8,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "A village in the Swiss Alps. Green meadows and cows with bells.",
+   "words": 12,
+   "ok": true,
+   "finalPick": "frostpass",
+   "finalLeadP": 0.9459,
+   "frames": 3,
+   "readyMs": 471.6,
+   "errors": [],
+   "settleMsFromLastAppend": -2591.9,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 5,
+   "settleFractionPct": 41.7,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 184.7,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 696.3,
+     "chars": 47,
+     "pick": "deepwood",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1809.2,
+     "chars": 60,
+     "pick": "frostpass",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.6,
+     "chars": 39
+    },
+    {
+     "t": 401.4,
+     "chars": 47
+    },
+    {
+     "t": 800.6,
+     "chars": 50
+    },
+    {
+     "t": 1201,
+     "chars": 54
+    },
+    {
+     "t": 1600.4,
+     "chars": 60
+    },
+    {
+     "t": 2001.2,
+     "chars": 66
+    },
+    {
+     "t": 2400.7,
+     "chars": 72
+    },
+    {
+     "t": 2800.3,
+     "chars": 80
+    },
+    {
+     "t": 3200.9,
+     "chars": 84
+    },
+    {
+     "t": 3601.3,
+     "chars": 89
+    },
+    {
+     "t": 4001.2,
+     "chars": 94
+    },
+    {
+     "t": 4401.1,
+     "chars": 101
+    }
+   ],
+   "batchPick": "frostpass",
+   "batchClientMs": 242.7,
+   "batchServerMs": 76.9,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Tyrol, Austria. Mountain meadows and wooden farmhouses.",
+   "words": 7,
+   "ok": true,
+   "finalPick": "frostpass",
+   "finalLeadP": 0.996,
+   "frames": 2,
+   "readyMs": 474.7,
+   "errors": [],
+   "settleMsFromLastAppend": -2078.4,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 14.3,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 88.3,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 321.7,
+     "chars": 44,
+     "pick": "frostpass",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.8,
+     "chars": 44
+    },
+    {
+     "t": 400.8,
+     "chars": 53
+    },
+    {
+     "t": 801.4,
+     "chars": 62
+    },
+    {
+     "t": 1200,
+     "chars": 70
+    },
+    {
+     "t": 1600,
+     "chars": 74
+    },
+    {
+     "t": 2000.7,
+     "chars": 81
+    },
+    {
+     "t": 2400.1,
+     "chars": 93
+    }
+   ],
+   "batchPick": "frostpass",
+   "batchClientMs": 395.1,
+   "batchServerMs": 98.6,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Rolling green hills in Devon, England. Sheep and hedgerows.",
+   "words": 9,
+   "ok": true,
+   "finalPick": "deepwood",
+   "finalLeadP": 0.9924,
+   "frames": 2,
+   "readyMs": 488.4,
+   "errors": [],
+   "settleMsFromLastAppend": -2142.5,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 3,
+   "settleFractionPct": 33.3,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 194.7,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1058.4,
+     "chars": 57,
+     "pick": "deepwood",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.5,
+     "chars": 45
+    },
+    {
+     "t": 401.3,
+     "chars": 51
+    },
+    {
+     "t": 800.5,
+     "chars": 57
+    },
+    {
+     "t": 1201.4,
+     "chars": 60
+    },
+    {
+     "t": 1600.6,
+     "chars": 67
+    },
+    {
+     "t": 2001.3,
+     "chars": 76
+    },
+    {
+     "t": 2400.9,
+     "chars": 82
+    },
+    {
+     "t": 2801.3,
+     "chars": 86
+    },
+    {
+     "t": 3200.9,
+     "chars": 97
+    }
+   ],
+   "batchPick": "deepwood",
+   "batchClientMs": 466.9,
+   "batchServerMs": 304.2,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "A farm in Vermont. Green hills in summer.",
+   "words": 8,
+   "ok": true,
+   "finalPick": "deepwood",
+   "finalLeadP": 0.9299,
+   "frames": 2,
+   "readyMs": 470.2,
+   "errors": [],
+   "settleMsFromLastAppend": -2189.8,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 2,
+   "settleFractionPct": 25,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 152.3,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 610.2,
+     "chars": 44,
+     "pick": "deepwood",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.4,
+     "chars": 39
+    },
+    {
+     "t": 400.8,
+     "chars": 44
+    },
+    {
+     "t": 801.8,
+     "chars": 47
+    },
+    {
+     "t": 1201.2,
+     "chars": 56
+    },
+    {
+     "t": 1600.7,
+     "chars": 62
+    },
+    {
+     "t": 2001.3,
+     "chars": 68
+    },
+    {
+     "t": 2400.5,
+     "chars": 71
+    },
+    {
+     "t": 2800.1,
+     "chars": 79
+    }
+   ],
+   "batchPick": "deepwood",
+   "batchClientMs": 481.5,
+   "batchServerMs": 81.4,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Bavaria, Germany. Villages under the Alps.",
+   "words": 6,
+   "ok": true,
+   "finalPick": "frostpass",
+   "finalLeadP": 0.9106,
+   "frames": 3,
+   "readyMs": 460.8,
+   "errors": [],
+   "settleMsFromLastAppend": 274.8,
+   "settledBeforeEnd": false,
+   "wordsAtSettle": 6,
+   "settleFractionPct": 100,
+   "framesAfterLastAppend": 1,
+   "frameTimes": [
+    {
+     "t": 139.1,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1109.8,
+     "chars": 64,
+     "pick": "deepwood",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 2275.1,
+     "chars": 80,
+     "pick": "frostpass",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.4,
+     "chars": 46
+    },
+    {
+     "t": 400.3,
+     "chars": 55
+    },
+    {
+     "t": 799.8,
+     "chars": 64
+    },
+    {
+     "t": 1199.9,
+     "chars": 70
+    },
+    {
+     "t": 1600.9,
+     "chars": 74
+    },
+    {
+     "t": 2000.3,
+     "chars": 80
+    }
+   ],
+   "batchPick": "frostpass",
+   "batchClientMs": 451.4,
+   "batchServerMs": 79.4,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "The Dutch countryside, with green fields and windmills.",
+   "words": 8,
+   "ok": true,
+   "finalPick": "deepwood",
+   "finalLeadP": 0.9139,
+   "frames": 3,
+   "readyMs": 613.3,
+   "errors": [],
+   "settleMsFromLastAppend": -1787,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 3,
+   "settleFractionPct": 37.5,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 59.7,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 729.4,
+     "chars": 47,
+     "pick": "drownedfen",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1013.6,
+     "chars": 60,
+     "pick": "deepwood",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.4,
+     "chars": 41
+    },
+    {
+     "t": 401,
+     "chars": 47
+    },
+    {
+     "t": 800.1,
+     "chars": 60
+    },
+    {
+     "t": 1199.7,
+     "chars": 65
+    },
+    {
+     "t": 1601.3,
+     "chars": 71
+    },
+    {
+     "t": 2000.8,
+     "chars": 78
+    },
+    {
+     "t": 2401.5,
+     "chars": 82
+    },
+    {
+     "t": 2800.6,
+     "chars": 93
+    }
+   ],
+   "batchPick": "deepwood",
+   "batchClientMs": 218.8,
+   "batchServerMs": 92.6,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "A valley in Slovenia. Alpine meadows and a lake.",
+   "words": 9,
+   "ok": true,
+   "finalPick": "frostpass",
+   "finalLeadP": 0.9569,
+   "frames": 3,
+   "readyMs": 537.5,
+   "errors": [],
+   "settleMsFromLastAppend": -1350.9,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 5,
+   "settleFractionPct": 55.6,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 240.4,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 716.6,
+     "chars": 46,
+     "pick": "deepwood",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1848.7,
+     "chars": 66,
+     "pick": "frostpass",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.8,
+     "chars": 39
+    },
+    {
+     "t": 400,
+     "chars": 46
+    },
+    {
+     "t": 799.7,
+     "chars": 49
+    },
+    {
+     "t": 1199,
+     "chars": 59
+    },
+    {
+     "t": 1599.3,
+     "chars": 66
+    },
+    {
+     "t": 1999.9,
+     "chars": 74
+    },
+    {
+     "t": 2400.4,
+     "chars": 78
+    },
+    {
+     "t": 2800.5,
+     "chars": 80
+    },
+    {
+     "t": 3199.6,
+     "chars": 86
+    }
+   ],
+   "batchPick": "frostpass",
+   "batchClientMs": 259.3,
+   "batchServerMs": 92.4,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "The Cotswolds in England. Gentle green hills and stone villages.",
+   "words": 10,
+   "ok": true,
+   "finalPick": "deepwood",
+   "finalLeadP": 0.9746,
+   "frames": 2,
+   "readyMs": 470.5,
+   "errors": [],
+   "settleMsFromLastAppend": -2880.1,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 2,
+   "settleFractionPct": 20,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 241.4,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 720.4,
+     "chars": 51,
+     "pick": "deepwood",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.6,
+     "chars": 41
+    },
+    {
+     "t": 401.1,
+     "chars": 51
+    },
+    {
+     "t": 799.6,
+     "chars": 54
+    },
+    {
+     "t": 1201.5,
+     "chars": 63
+    },
+    {
+     "t": 1601.2,
+     "chars": 70
+    },
+    {
+     "t": 1999.3,
+     "chars": 76
+    },
+    {
+     "t": 2401.1,
+     "chars": 82
+    },
+    {
+     "t": 2799.7,
+     "chars": 86
+    },
+    {
+     "t": 3200.1,
+     "chars": 92
+    },
+    {
+     "t": 3600.5,
+     "chars": 102
+    }
+   ],
+   "batchPick": "deepwood",
+   "batchClientMs": 215.1,
+   "batchServerMs": 87.9,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Northern Norway, deep in a fjord. The winter is long and dark.",
+   "words": 12,
+   "ok": true,
+   "finalPick": "frostpass",
+   "finalLeadP": 0.9905,
+   "frames": 2,
+   "readyMs": 485.6,
+   "errors": [],
+   "settleMsFromLastAppend": -4113.2,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 8.3,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 86.5,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 286.8,
+     "chars": 46,
+     "pick": "frostpass",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.8,
+     "chars": 46
+    },
+    {
+     "t": 401,
+     "chars": 54
+    },
+    {
+     "t": 800.2,
+     "chars": 59
+    },
+    {
+     "t": 1200,
+     "chars": 62
+    },
+    {
+     "t": 1600.8,
+     "chars": 64
+    },
+    {
+     "t": 2000.6,
+     "chars": 71
+    },
+    {
+     "t": 2401.6,
+     "chars": 75
+    },
+    {
+     "t": 2801.5,
+     "chars": 82
+    },
+    {
+     "t": 3201.4,
+     "chars": 85
+    },
+    {
+     "t": 3599.8,
+     "chars": 90
+    },
+    {
+     "t": 4001.2,
+     "chars": 94
+    },
+    {
+     "t": 4400,
+     "chars": 100
+    }
+   ],
+   "batchPick": "frostpass",
+   "batchClientMs": 210.1,
+   "batchServerMs": 86.4,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "The north of Scotland. Moor and fog by the sea.",
+   "words": 10,
+   "ok": true,
+   "finalPick": "barrowmoor",
+   "finalLeadP": 0.9452,
+   "frames": 4,
+   "readyMs": 507,
+   "errors": [],
+   "settleMsFromLastAppend": -1731.3,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 5,
+   "settleFractionPct": 50,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 101.6,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 818.1,
+     "chars": 47,
+     "pick": "frostpass",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1411.7,
+     "chars": 60,
+     "pick": "frostpass",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1869.7,
+     "chars": 65,
+     "pick": "barrowmoor",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.1,
+     "chars": 41
+    },
+    {
+     "t": 400.5,
+     "chars": 47
+    },
+    {
+     "t": 800.4,
+     "chars": 50
+    },
+    {
+     "t": 1200.2,
+     "chars": 60
+    },
+    {
+     "t": 1600.6,
+     "chars": 65
+    },
+    {
+     "t": 2001,
+     "chars": 69
+    },
+    {
+     "t": 2400.7,
+     "chars": 73
+    },
+    {
+     "t": 2800.4,
+     "chars": 76
+    },
+    {
+     "t": 3200.9,
+     "chars": 80
+    },
+    {
+     "t": 3600.9,
+     "chars": 85
+    }
+   ],
+   "batchPick": "barrowmoor",
+   "batchClientMs": 328.5,
+   "batchServerMs": 79,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Siberia. Endless pine forest and cold.",
+   "words": 6,
+   "ok": true,
+   "finalPick": "frostpass",
+   "finalLeadP": 0.9029,
+   "frames": 4,
+   "readyMs": 481.7,
+   "errors": [],
+   "settleMsFromLastAppend": -1511.9,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 16.7,
+   "framesAfterLastAppend": 1,
+   "frameTimes": [
+    {
+     "t": 49.7,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 489.5,
+     "chars": 46,
+     "pick": "frostpass",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1431.1,
+     "chars": 66,
+     "pick": "frostpass",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 2270.3,
+     "chars": 76,
+     "pick": "frostpass",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.7,
+     "chars": 46
+    },
+    {
+     "t": 401.1,
+     "chars": 54
+    },
+    {
+     "t": 800,
+     "chars": 59
+    },
+    {
+     "t": 1200.2,
+     "chars": 66
+    },
+    {
+     "t": 1600.6,
+     "chars": 70
+    },
+    {
+     "t": 2001.4,
+     "chars": 76
+    }
+   ],
+   "batchPick": "frostpass",
+   "batchClientMs": 459.3,
+   "batchServerMs": 332.1,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Iceland. Black sand and storms off the sea.",
+   "words": 8,
+   "ok": true,
+   "finalPick": "stormcoast",
+   "finalLeadP": 0.9276,
+   "frames": 4,
+   "readyMs": 480.9,
+   "errors": [],
+   "settleMsFromLastAppend": -993.4,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 5,
+   "settleFractionPct": 62.5,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 78,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 337.3,
+     "chars": 46,
+     "pick": "frostpass",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1133.7,
+     "chars": 57,
+     "pick": "frostpass",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 1806.7,
+     "chars": 68,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.4,
+     "chars": 46
+    },
+    {
+     "t": 400.4,
+     "chars": 52
+    },
+    {
+     "t": 800.3,
+     "chars": 57
+    },
+    {
+     "t": 1200.9,
+     "chars": 61
+    },
+    {
+     "t": 1601.3,
+     "chars": 68
+    },
+    {
+     "t": 2000.2,
+     "chars": 72
+    },
+    {
+     "t": 2400.4,
+     "chars": 76
+    },
+    {
+     "t": 2800.1,
+     "chars": 81
+    }
+   ],
+   "batchPick": "stormcoast",
+   "batchClientMs": 316.7,
+   "batchServerMs": 190.7,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "The fens of eastern England. Flat, grey and wet.",
+   "words": 9,
+   "ok": true,
+   "finalPick": "drownedfen",
+   "finalLeadP": 0.9949,
+   "frames": 2,
+   "readyMs": 671.4,
+   "errors": [],
+   "settleMsFromLastAppend": -2580.8,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 2,
+   "settleFractionPct": 22.2,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 60,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 619.2,
+     "chars": 46,
+     "pick": "drownedfen",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.7,
+     "chars": 41
+    },
+    {
+     "t": 400.9,
+     "chars": 46
+    },
+    {
+     "t": 799.8,
+     "chars": 49
+    },
+    {
+     "t": 1200.7,
+     "chars": 57
+    },
+    {
+     "t": 1600.6,
+     "chars": 66
+    },
+    {
+     "t": 2001,
+     "chars": 72
+    },
+    {
+     "t": 2400.1,
+     "chars": 77
+    },
+    {
+     "t": 2800.5,
+     "chars": 81
+    },
+    {
+     "t": 3199.9,
+     "chars": 86
+    }
+   ],
+   "batchPick": "drownedfen",
+   "batchClientMs": 228.6,
+   "batchServerMs": 71.5,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Kamchatka. Volcanoes and ash.",
+   "words": 4,
+   "ok": true,
+   "finalPick": "ashlands",
+   "finalLeadP": 0.9619,
+   "frames": 3,
+   "readyMs": 470.5,
+   "errors": [],
+   "settleMsFromLastAppend": -488.3,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 2,
+   "settleFractionPct": 50,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 88.7,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 292.3,
+     "chars": 48,
+     "pick": "frostpass",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 712.3,
+     "chars": 58,
+     "pick": "ashlands",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.5,
+     "chars": 48
+    },
+    {
+     "t": 400.7,
+     "chars": 58
+    },
+    {
+     "t": 800.6,
+     "chars": 62
+    },
+    {
+     "t": 1200.6,
+     "chars": 67
+    }
+   ],
+   "batchPick": "ashlands",
+   "batchClientMs": 509.4,
+   "batchServerMs": 78,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "Lapland in Finland. Snow forest and the polar night.",
+   "words": 9,
+   "ok": true,
+   "finalPick": "frostpass",
+   "finalLeadP": 0.9986,
+   "frames": 2,
+   "readyMs": 522.5,
+   "errors": [],
+   "settleMsFromLastAppend": -2924.1,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 11.1,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 111.3,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 276.1,
+     "chars": 45,
+     "pick": "frostpass",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.6,
+     "chars": 45
+    },
+    {
+     "t": 401.3,
+     "chars": 48
+    },
+    {
+     "t": 799.9,
+     "chars": 57
+    },
+    {
+     "t": 1200.2,
+     "chars": 62
+    },
+    {
+     "t": 1600.1,
+     "chars": 69
+    },
+    {
+     "t": 2000.4,
+     "chars": 73
+    },
+    {
+     "t": 2400.9,
+     "chars": 77
+    },
+    {
+     "t": 2801,
+     "chars": 83
+    },
+    {
+     "t": 3200.2,
+     "chars": 90
+    }
+   ],
+   "batchPick": "frostpass",
+   "batchClientMs": 219.2,
+   "batchServerMs": 95.3,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "origin",
+   "answer": "A storm-battered coast in western Ireland. Grey sea and black cliffs.",
+   "words": 11,
+   "ok": true,
+   "finalPick": "stormcoast",
+   "finalLeadP": 0.9977,
+   "frames": 2,
+   "readyMs": 478.9,
+   "errors": [],
+   "settleMsFromLastAppend": -3868,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 9.1,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 132.5,
+     "chars": 38,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    },
+    {
+     "t": 659.3,
+     "chars": 54,
+     "pick": "stormcoast",
+     "changed": [
+      "biome"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.7,
+     "chars": 39
+    },
+    {
+     "t": 401.4,
+     "chars": 54
+    },
+    {
+     "t": 800.7,
+     "chars": 60
+    },
+    {
+     "t": 1201.3,
+     "chars": 63
+    },
+    {
+     "t": 1600.2,
+     "chars": 71
+    },
+    {
+     "t": 2000.9,
+     "chars": 80
+    },
+    {
+     "t": 2400.3,
+     "chars": 85
+    },
+    {
+     "t": 2800.7,
+     "chars": 89
+    },
+    {
+     "t": 3201.3,
+     "chars": 93
+    },
+    {
+     "t": 3600.4,
+     "chars": 99
+    },
+    {
+     "t": 4000.5,
+     "chars": 107
+    }
+   ],
+   "batchPick": "stormcoast",
+   "batchClientMs": 494.8,
+   "batchServerMs": 371,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "My brother Wren. He is all I have left, and I keep him safe.",
+   "words": 14,
+   "ok": true,
+   "finalPick": "protect",
+   "finalLeadP": 0.8917,
+   "frames": 1,
+   "readyMs": 477.1,
+   "errors": [],
+   "settleMsFromLastAppend": -5134,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 7.1,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 65.5,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.5,
+     "chars": 42
+    },
+    {
+     "t": 400.7,
+     "chars": 50
+    },
+    {
+     "t": 800.7,
+     "chars": 56
+    },
+    {
+     "t": 1200.5,
+     "chars": 59
+    },
+    {
+     "t": 1600.4,
+     "chars": 62
+    },
+    {
+     "t": 2000.3,
+     "chars": 66
+    },
+    {
+     "t": 2400.3,
+     "chars": 68
+    },
+    {
+     "t": 2801.3,
+     "chars": 73
+    },
+    {
+     "t": 3200.3,
+     "chars": 79
+    },
+    {
+     "t": 3600.4,
+     "chars": 83
+    },
+    {
+     "t": 4000.8,
+     "chars": 85
+    },
+    {
+     "t": 4400.4,
+     "chars": 90
+    },
+    {
+     "t": 4800.8,
+     "chars": 94
+    },
+    {
+     "t": 5199.5,
+     "chars": 100
+    }
+   ],
+   "batchPick": "protect",
+   "batchClientMs": 309.4,
+   "batchServerMs": 56,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "My little girl Ada. Nobody touches her while I am around.",
+   "words": 11,
+   "ok": true,
+   "finalPick": "protect",
+   "finalLeadP": 0.8917,
+   "frames": 1,
+   "readyMs": 449.8,
+   "errors": [],
+   "settleMsFromLastAppend": -3938.9,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 9.1,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 61.2,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.7,
+     "chars": 42
+    },
+    {
+     "t": 400.5,
+     "chars": 49
+    },
+    {
+     "t": 800.1,
+     "chars": 54
+    },
+    {
+     "t": 1201.1,
+     "chars": 59
+    },
+    {
+     "t": 1600.9,
+     "chars": 66
+    },
+    {
+     "t": 1999.3,
+     "chars": 74
+    },
+    {
+     "t": 2400.9,
+     "chars": 78
+    },
+    {
+     "t": 2799.9,
+     "chars": 84
+    },
+    {
+     "t": 3199.3,
+     "chars": 86
+    },
+    {
+     "t": 3601.3,
+     "chars": 89
+    },
+    {
+     "t": 4000.1,
+     "chars": 97
+    }
+   ],
+   "batchPick": "protect",
+   "batchClientMs": 249.3,
+   "batchServerMs": 126.8,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "My mom. She is sick and somebody has to look after her.",
+   "words": 12,
+   "ok": true,
+   "finalPick": "protect",
+   "finalLeadP": 0.8917,
+   "frames": 1,
+   "readyMs": 485.4,
+   "errors": [],
+   "settleMsFromLastAppend": -4296.3,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 8.3,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 103.4,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.1,
+     "chars": 42
+    },
+    {
+     "t": 400.7,
+     "chars": 47
+    },
+    {
+     "t": 800.8,
+     "chars": 51
+    },
+    {
+     "t": 1200.6,
+     "chars": 54
+    },
+    {
+     "t": 1600.4,
+     "chars": 59
+    },
+    {
+     "t": 2000.4,
+     "chars": 63
+    },
+    {
+     "t": 2400.7,
+     "chars": 72
+    },
+    {
+     "t": 2801.3,
+     "chars": 76
+    },
+    {
+     "t": 3200.5,
+     "chars": 79
+    },
+    {
+     "t": 3600.7,
+     "chars": 84
+    },
+    {
+     "t": 3999.2,
+     "chars": 90
+    },
+    {
+     "t": 4399.7,
+     "chars": 95
+    }
+   ],
+   "batchPick": "protect",
+   "batchClientMs": 682.6,
+   "batchServerMs": 68.5,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "My brother Wren. They took everything from him and I want them to pay.",
+   "words": 14,
+   "ok": true,
+   "finalPick": "revenge",
+   "finalLeadP": 0.9956,
+   "frames": 2,
+   "readyMs": 473.2,
+   "errors": [],
+   "settleMsFromLastAppend": -3187.2,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 5,
+   "settleFractionPct": 35.7,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 94.7,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 2013.2,
+     "chars": 66,
+     "pick": "revenge",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.4,
+     "chars": 42
+    },
+    {
+     "t": 400.9,
+     "chars": 50
+    },
+    {
+     "t": 800.3,
+     "chars": 56
+    },
+    {
+     "t": 1201.8,
+     "chars": 61
+    },
+    {
+     "t": 1600.4,
+     "chars": 66
+    },
+    {
+     "t": 2000.7,
+     "chars": 77
+    },
+    {
+     "t": 2401,
+     "chars": 82
+    },
+    {
+     "t": 2800.1,
+     "chars": 86
+    },
+    {
+     "t": 3200.3,
+     "chars": 90
+    },
+    {
+     "t": 3600.3,
+     "chars": 92
+    },
+    {
+     "t": 4000.4,
+     "chars": 97
+    },
+    {
+     "t": 4399.9,
+     "chars": 102
+    },
+    {
+     "t": 4800.4,
+     "chars": 105
+    },
+    {
+     "t": 5200.5,
+     "chars": 110
+    }
+   ],
+   "batchPick": "revenge",
+   "batchClientMs": 342.9,
+   "batchServerMs": 221,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "My dad. The man who hurt him is still out there walking free.",
+   "words": 13,
+   "ok": true,
+   "finalPick": "revenge",
+   "finalLeadP": 0.9896,
+   "frames": 2,
+   "readyMs": 504.6,
+   "errors": [],
+   "settleMsFromLastAppend": -2478.2,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 6,
+   "settleFractionPct": 46.2,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 43.8,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 2323.1,
+     "chars": 64,
+     "pick": "revenge",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.7,
+     "chars": 42
+    },
+    {
+     "t": 400.8,
+     "chars": 47
+    },
+    {
+     "t": 801.4,
+     "chars": 51
+    },
+    {
+     "t": 1201.3,
+     "chars": 55
+    },
+    {
+     "t": 1600.6,
+     "chars": 59
+    },
+    {
+     "t": 2000.9,
+     "chars": 64
+    },
+    {
+     "t": 2400.3,
+     "chars": 68
+    },
+    {
+     "t": 2801.2,
+     "chars": 71
+    },
+    {
+     "t": 3201,
+     "chars": 77
+    },
+    {
+     "t": 3599,
+     "chars": 81
+    },
+    {
+     "t": 4000,
+     "chars": 87
+    },
+    {
+     "t": 4400.4,
+     "chars": 95
+    },
+    {
+     "t": 4801.3,
+     "chars": 101
+    }
+   ],
+   "batchPick": "revenge",
+   "batchClientMs": 366,
+   "batchServerMs": 125,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "For Mara. She was betrayed by people she trusted and I will settle it.",
+   "words": 14,
+   "ok": true,
+   "finalPick": "revenge",
+   "finalLeadP": 0.9982,
+   "frames": 2,
+   "readyMs": 454.7,
+   "errors": [],
+   "settleMsFromLastAppend": -3362.1,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 5,
+   "settleFractionPct": 35.7,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 56.9,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 1838.9,
+     "chars": 66,
+     "pick": "revenge",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.2,
+     "chars": 43
+    },
+    {
+     "t": 400.7,
+     "chars": 49
+    },
+    {
+     "t": 800.6,
+     "chars": 53
+    },
+    {
+     "t": 1200.3,
+     "chars": 57
+    },
+    {
+     "t": 1600,
+     "chars": 66
+    },
+    {
+     "t": 2000.8,
+     "chars": 69
+    },
+    {
+     "t": 2401.2,
+     "chars": 76
+    },
+    {
+     "t": 2800.5,
+     "chars": 80
+    },
+    {
+     "t": 3200.1,
+     "chars": 88
+    },
+    {
+     "t": 3600.7,
+     "chars": 92
+    },
+    {
+     "t": 4000,
+     "chars": 94
+    },
+    {
+     "t": 4399.7,
+     "chars": 99
+    },
+    {
+     "t": 4800.5,
+     "chars": 106
+    },
+    {
+     "t": 5201,
+     "chars": 110
+    }
+   ],
+   "batchPick": "revenge",
+   "batchClientMs": 252.4,
+   "batchServerMs": 88.8,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "For my dad. I want him to see me win, just once.",
+   "words": 12,
+   "ok": true,
+   "finalPick": "glory",
+   "finalLeadP": 0.952,
+   "frames": 2,
+   "readyMs": 659.9,
+   "errors": [],
+   "settleMsFromLastAppend": -1384.1,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 8,
+   "settleFractionPct": 66.7,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 65,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 3016.4,
+     "chars": 69,
+     "pick": "glory",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.4,
+     "chars": 43
+    },
+    {
+     "t": 399.3,
+     "chars": 46
+    },
+    {
+     "t": 799.8,
+     "chars": 51
+    },
+    {
+     "t": 1200.9,
+     "chars": 53
+    },
+    {
+     "t": 1601.5,
+     "chars": 58
+    },
+    {
+     "t": 2000.5,
+     "chars": 62
+    },
+    {
+     "t": 2399.9,
+     "chars": 65
+    },
+    {
+     "t": 2799.3,
+     "chars": 69
+    },
+    {
+     "t": 3200.6,
+     "chars": 72
+    },
+    {
+     "t": 3600.7,
+     "chars": 77
+    },
+    {
+     "t": 4000.2,
+     "chars": 82
+    },
+    {
+     "t": 4400.5,
+     "chars": 88
+    }
+   ],
+   "batchPick": "glory",
+   "batchClientMs": 217,
+   "batchServerMs": 92.9,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "My coach Vic. I want to be the best there is and make him proud.",
+   "words": 15,
+   "ok": true,
+   "finalPick": "glory",
+   "finalLeadP": 0.9069,
+   "frames": 3,
+   "readyMs": 623.9,
+   "errors": [],
+   "settleMsFromLastAppend": -2974.5,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 7,
+   "settleFractionPct": 46.7,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 98.5,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 1814.7,
+     "chars": 60,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 2625.9,
+     "chars": 66,
+     "pick": "glory",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.4,
+     "chars": 42
+    },
+    {
+     "t": 400.1,
+     "chars": 48
+    },
+    {
+     "t": 800.2,
+     "chars": 53
+    },
+    {
+     "t": 1200.3,
+     "chars": 55
+    },
+    {
+     "t": 1601,
+     "chars": 60
+    },
+    {
+     "t": 1999.6,
+     "chars": 63
+    },
+    {
+     "t": 2400.4,
+     "chars": 66
+    },
+    {
+     "t": 2801.1,
+     "chars": 70
+    },
+    {
+     "t": 3201.1,
+     "chars": 75
+    },
+    {
+     "t": 3599.9,
+     "chars": 81
+    },
+    {
+     "t": 3999.8,
+     "chars": 84
+    },
+    {
+     "t": 4399.5,
+     "chars": 88
+    },
+    {
+     "t": 4800.5,
+     "chars": 93
+    },
+    {
+     "t": 5200.4,
+     "chars": 97
+    },
+    {
+     "t": 5600.4,
+     "chars": 104
+    }
+   ],
+   "batchPick": "glory",
+   "batchClientMs": 206.9,
+   "batchServerMs": 86.7,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "My sister Lou. Everyone back home will know my name.",
+   "words": 10,
+   "ok": true,
+   "finalPick": "glory",
+   "finalLeadP": 0.8734,
+   "frames": 2,
+   "readyMs": 477.2,
+   "errors": [],
+   "settleMsFromLastAppend": -413.8,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 8,
+   "settleFractionPct": 80,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 88.9,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 3186.7,
+     "chars": 83,
+     "pick": "glory",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.8,
+     "chars": 42
+    },
+    {
+     "t": 400.6,
+     "chars": 49
+    },
+    {
+     "t": 801.1,
+     "chars": 54
+    },
+    {
+     "t": 1201,
+     "chars": 63
+    },
+    {
+     "t": 1600.2,
+     "chars": 68
+    },
+    {
+     "t": 2001.1,
+     "chars": 73
+    },
+    {
+     "t": 2400.3,
+     "chars": 78
+    },
+    {
+     "t": 2800.2,
+     "chars": 83
+    },
+    {
+     "t": 3200.9,
+     "chars": 86
+    },
+    {
+     "t": 3600.5,
+     "chars": 92
+    }
+   ],
+   "batchPick": "glory",
+   "batchClientMs": 209.9,
+   "batchServerMs": 87.3,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "For Wren. We are getting out of this town and nobody will own us again.",
+   "words": 15,
+   "ok": true,
+   "finalPick": "freedom",
+   "finalLeadP": 0.9872,
+   "frames": 3,
+   "readyMs": 636.9,
+   "errors": [],
+   "settleMsFromLastAppend": -3389.5,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 6,
+   "settleFractionPct": 40,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 60.7,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 1808.2,
+     "chars": 64,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 2211.3,
+     "chars": 68,
+     "pick": "freedom",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.5,
+     "chars": 43
+    },
+    {
+     "t": 399.6,
+     "chars": 49
+    },
+    {
+     "t": 800.1,
+     "chars": 52
+    },
+    {
+     "t": 1200.4,
+     "chars": 56
+    },
+    {
+     "t": 1599.3,
+     "chars": 64
+    },
+    {
+     "t": 2000.8,
+     "chars": 68
+    },
+    {
+     "t": 2401,
+     "chars": 71
+    },
+    {
+     "t": 2800.9,
+     "chars": 76
+    },
+    {
+     "t": 3200.9,
+     "chars": 81
+    },
+    {
+     "t": 3601.3,
+     "chars": 85
+    },
+    {
+     "t": 4000.6,
+     "chars": 92
+    },
+    {
+     "t": 4400.5,
+     "chars": 97
+    },
+    {
+     "t": 4799.5,
+     "chars": 101
+    },
+    {
+     "t": 5200.1,
+     "chars": 104
+    },
+    {
+     "t": 5600.9,
+     "chars": 111
+    }
+   ],
+   "batchPick": "freedom",
+   "batchClientMs": 232.4,
+   "batchServerMs": 95.8,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "My wife Noor. We quit, sell everything and take the open road.",
+   "words": 12,
+   "ok": true,
+   "finalPick": "freedom",
+   "finalLeadP": 0.9203,
+   "frames": 2,
+   "readyMs": 479,
+   "errors": [],
+   "settleMsFromLastAppend": -2592.4,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 5,
+   "settleFractionPct": 41.7,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 205.5,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 1807.9,
+     "chars": 62,
+     "pick": "freedom",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.3,
+     "chars": 42
+    },
+    {
+     "t": 399.9,
+     "chars": 47
+    },
+    {
+     "t": 800.6,
+     "chars": 53
+    },
+    {
+     "t": 1200.1,
+     "chars": 56
+    },
+    {
+     "t": 1599.8,
+     "chars": 62
+    },
+    {
+     "t": 2000.4,
+     "chars": 67
+    },
+    {
+     "t": 2400.4,
+     "chars": 78
+    },
+    {
+     "t": 2800.5,
+     "chars": 82
+    },
+    {
+     "t": 3200.9,
+     "chars": 87
+    },
+    {
+     "t": 3600.7,
+     "chars": 91
+    },
+    {
+     "t": 4001.2,
+     "chars": 96
+    },
+    {
+     "t": 4400.3,
+     "chars": 102
+    }
+   ],
+   "batchPick": "freedom",
+   "batchClientMs": 506.4,
+   "batchServerMs": 73.2,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "For my friend Eli. He is stuck in a job that is killing him and I want us both free.",
+   "words": 20,
+   "ok": true,
+   "finalPick": "freedom",
+   "finalLeadP": 0.9833,
+   "frames": 2,
+   "readyMs": 514.2,
+   "errors": [],
+   "settleMsFromLastAppend": -4845.9,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 7,
+   "settleFractionPct": 35,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 125.8,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 2755,
+     "chars": 70,
+     "pick": "freedom",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.5,
+     "chars": 43
+    },
+    {
+     "t": 400.4,
+     "chars": 46
+    },
+    {
+     "t": 800.7,
+     "chars": 53
+    },
+    {
+     "t": 1201,
+     "chars": 58
+    },
+    {
+     "t": 1599.9,
+     "chars": 61
+    },
+    {
+     "t": 2001.4,
+     "chars": 64
+    },
+    {
+     "t": 2400.7,
+     "chars": 70
+    },
+    {
+     "t": 2800.2,
+     "chars": 73
+    },
+    {
+     "t": 3199.9,
+     "chars": 75
+    },
+    {
+     "t": 3600.7,
+     "chars": 79
+    },
+    {
+     "t": 4001.1,
+     "chars": 84
+    },
+    {
+     "t": 4400,
+     "chars": 87
+    },
+    {
+     "t": 4800.5,
+     "chars": 95
+    },
+    {
+     "t": 5200,
+     "chars": 99
+    },
+    {
+     "t": 5600.5,
+     "chars": 103
+    },
+    {
+     "t": 6000.4,
+     "chars": 105
+    },
+    {
+     "t": 6400.1,
+     "chars": 110
+    },
+    {
+     "t": 6800.4,
+     "chars": 113
+    },
+    {
+     "t": 7200.6,
+     "chars": 118
+    },
+    {
+     "t": 7600.9,
+     "chars": 124
+    }
+   ],
+   "batchPick": "freedom",
+   "batchClientMs": 236.7,
+   "batchServerMs": 80.8,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "For Wren. I want to show him what is past the edge of the map.",
+   "words": 15,
+   "ok": true,
+   "finalPick": "wonder",
+   "finalLeadP": 0.9433,
+   "frames": 4,
+   "readyMs": 477.3,
+   "errors": [],
+   "settleMsFromLastAppend": -2207.3,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 8,
+   "settleFractionPct": 53.3,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 117.7,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 2235.4,
+     "chars": 64,
+     "pick": "glory",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 3393.3,
+     "chars": 73,
+     "pick": "wonder",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 3556.3,
+     "chars": 76,
+     "pick": "wonder",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.6,
+     "chars": 43
+    },
+    {
+     "t": 400.6,
+     "chars": 49
+    },
+    {
+     "t": 800.3,
+     "chars": 51
+    },
+    {
+     "t": 1200.9,
+     "chars": 56
+    },
+    {
+     "t": 1601.1,
+     "chars": 59
+    },
+    {
+     "t": 2000.7,
+     "chars": 64
+    },
+    {
+     "t": 2401.9,
+     "chars": 68
+    },
+    {
+     "t": 2800.4,
+     "chars": 73
+    },
+    {
+     "t": 3200.3,
+     "chars": 76
+    },
+    {
+     "t": 3600,
+     "chars": 81
+    },
+    {
+     "t": 4000.7,
+     "chars": 85
+    },
+    {
+     "t": 4401.3,
+     "chars": 90
+    },
+    {
+     "t": 4800.9,
+     "chars": 93
+    },
+    {
+     "t": 5201.4,
+     "chars": 97
+    },
+    {
+     "t": 5600.6,
+     "chars": 102
+    }
+   ],
+   "batchPick": "wonder",
+   "batchClientMs": 212.7,
+   "batchServerMs": 86,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "My daughter Bea. We want to see every strange place out there and learn how it works.",
+   "words": 17,
+   "ok": true,
+   "finalPick": "wonder",
+   "finalLeadP": 0.9843,
+   "frames": 2,
+   "readyMs": 492.7,
+   "errors": [],
+   "settleMsFromLastAppend": -3760.7,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 7,
+   "settleFractionPct": 41.2,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 79.8,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 2639.5,
+     "chars": 71,
+     "pick": "wonder",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 0.2,
+     "chars": 42
+    },
+    {
+     "t": 400.8,
+     "chars": 51
+    },
+    {
+     "t": 800.5,
+     "chars": 56
+    },
+    {
+     "t": 1200.7,
+     "chars": 59
+    },
+    {
+     "t": 1600.4,
+     "chars": 64
+    },
+    {
+     "t": 2000.2,
+     "chars": 67
+    },
+    {
+     "t": 2400.7,
+     "chars": 71
+    },
+    {
+     "t": 2801,
+     "chars": 77
+    },
+    {
+     "t": 3201.1,
+     "chars": 85
+    },
+    {
+     "t": 3600.2,
+     "chars": 91
+    },
+    {
+     "t": 4000.6,
+     "chars": 95
+    },
+    {
+     "t": 4400.2,
+     "chars": 101
+    },
+    {
+     "t": 4800.6,
+     "chars": 105
+    },
+    {
+     "t": 5200.9,
+     "chars": 111
+    },
+    {
+     "t": 5600.5,
+     "chars": 115
+    },
+    {
+     "t": 6000.3,
+     "chars": 118
+    },
+    {
+     "t": 6400.2,
+     "chars": 125
+    }
+   ],
+   "batchPick": "wonder",
+   "batchClientMs": 352.1,
+   "batchServerMs": 101,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "For my grandpa. He taught me to wonder what is beyond the stars and I want to find out.",
+   "words": 19,
+   "ok": true,
+   "finalPick": "wonder",
+   "finalLeadP": 0.885,
+   "frames": 2,
+   "readyMs": 625.6,
+   "errors": [],
+   "settleMsFromLastAppend": -5383.6,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 5,
+   "settleFractionPct": 26.3,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 95.3,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 1817.1,
+     "chars": 65,
+     "pick": "wonder",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.5,
+     "chars": 43
+    },
+    {
+     "t": 400.5,
+     "chars": 46
+    },
+    {
+     "t": 800.2,
+     "chars": 55
+    },
+    {
+     "t": 1200.3,
+     "chars": 58
+    },
+    {
+     "t": 1600.2,
+     "chars": 65
+    },
+    {
+     "t": 2000.7,
+     "chars": 68
+    },
+    {
+     "t": 2401.5,
+     "chars": 71
+    },
+    {
+     "t": 2800,
+     "chars": 78
+    },
+    {
+     "t": 3199.5,
+     "chars": 83
+    },
+    {
+     "t": 3600.2,
+     "chars": 86
+    },
+    {
+     "t": 3999.8,
+     "chars": 93
+    },
+    {
+     "t": 4401.1,
+     "chars": 97
+    },
+    {
+     "t": 4800.2,
+     "chars": 103
+    },
+    {
+     "t": 5203.5,
+     "chars": 107
+    },
+    {
+     "t": 5600.3,
+     "chars": 109
+    },
+    {
+     "t": 6000.5,
+     "chars": 114
+    },
+    {
+     "t": 6400.4,
+     "chars": 117
+    },
+    {
+     "t": 6799.9,
+     "chars": 122
+    },
+    {
+     "t": 7200.7,
+     "chars": 127
+    }
+   ],
+   "batchPick": "wonder",
+   "batchClientMs": 213.9,
+   "batchServerMs": 91.6,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "Nobody. Just the open road and no one telling me what to do.",
+   "words": 13,
+   "ok": true,
+   "finalPick": "freedom",
+   "finalLeadP": 0.6149,
+   "frames": 4,
+   "readyMs": 467.5,
+   "errors": [],
+   "settleMsFromLastAppend": -4470.6,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 1,
+   "settleFractionPct": 7.7,
+   "framesAfterLastAppend": 0,
+   "frameTimes": [
+    {
+     "t": 74.8,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 329.9,
+     "chars": 47,
+     "pick": "freedom",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 720.5,
+     "chars": 52,
+     "pick": "freedom",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 1004.5,
+     "chars": 56,
+     "pick": "freedom",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.5,
+     "chars": 47
+    },
+    {
+     "t": 400.1,
+     "chars": 52
+    },
+    {
+     "t": 799.7,
+     "chars": 56
+    },
+    {
+     "t": 1199.9,
+     "chars": 61
+    },
+    {
+     "t": 1600.6,
+     "chars": 66
+    },
+    {
+     "t": 2000.7,
+     "chars": 70
+    },
+    {
+     "t": 2401.7,
+     "chars": 73
+    },
+    {
+     "t": 2801.2,
+     "chars": 77
+    },
+    {
+     "t": 3200.5,
+     "chars": 85
+    },
+    {
+     "t": 3599.9,
+     "chars": 88
+    },
+    {
+     "t": 3999.9,
+     "chars": 93
+    },
+    {
+     "t": 4399.9,
+     "chars": 96
+    },
+    {
+     "t": 4800.5,
+     "chars": 100
+    }
+   ],
+   "batchPick": "freedom",
+   "batchClientMs": 448.2,
+   "batchServerMs": 284.8,
+   "finalEqualsBatch": true
+  },
+  {
+   "step": "heart",
+   "answer": "Myself, I guess. I want to see how far I can go.",
+   "words": 12,
+   "ok": true,
+   "finalPick": "wonder",
+   "finalLeadP": 0.6189,
+   "frames": 6,
+   "readyMs": 467.9,
+   "errors": [],
+   "settleMsFromLastAppend": -2601.4,
+   "settledBeforeEnd": true,
+   "wordsAtSettle": 5,
+   "settleFractionPct": 41.7,
+   "framesAfterLastAppend": 1,
+   "frameTimes": [
+    {
+     "t": 201.8,
+     "chars": 40,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 1062.9,
+     "chars": 56,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 1400.6,
+     "chars": 58,
+     "pick": "protect",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 1799.4,
+     "chars": 63,
+     "pick": "wonder",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 2643.4,
+     "chars": 70,
+     "pick": "wonder",
+     "changed": [
+      "motive"
+     ]
+    },
+    {
+     "t": 4601.8,
+     "chars": 88,
+     "pick": "wonder",
+     "changed": [
+      "motive"
+     ]
+    }
+   ],
+   "appendTimes": [
+    {
+     "t": 1.6,
+     "chars": 47
+    },
+    {
+     "t": 401,
+     "chars": 49
+    },
+    {
+     "t": 800.5,
+     "chars": 56
+    },
+    {
+     "t": 1201.2,
+     "chars": 58
+    },
+    {
+     "t": 1599.3,
+     "chars": 63
+    },
+    {
+     "t": 1999.8,
+     "chars": 66
+    },
+    {
+     "t": 2400.9,
+     "chars": 70
+    },
+    {
+     "t": 2800.7,
+     "chars": 74
+    },
+    {
+     "t": 3200.5,
+     "chars": 78
+    },
+    {
+     "t": 3600.9,
+     "chars": 80
+    },
+    {
+     "t": 3999.9,
+     "chars": 84
+    },
+    {
+     "t": 4400.8,
+     "chars": 88
+    }
+   ],
+   "batchPick": "wonder",
+   "batchClientMs": 504.8,
+   "batchServerMs": 67.3,
+   "finalEqualsBatch": true
+  }
+ ]
+}

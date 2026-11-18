@@ -1,0 +1,8 @@
+wrote bench/measurements/step-latency-2026-11-18.json
+name    n=8 failed=0 step ms median 548.7 p95 691.6 max 691.6 | sage2 calls 1 in 166.3 out 139.25 cost 0.000148
+origin  n=8 failed=0 step ms median 374.6 p95 877.6 max 877.6 | sage2 calls 2 in 1235.5 out 134 cost 0.000196
+born    n=8 failed=0 step ms median 355.9 p95 791.6 max 791.6 | sage2 calls 1 in 185 out 216.25 cost 0.000225
+body    n=8 failed=0 step ms median 481.7 p95 1120.5 max 1120.5 | sage2 calls 2 in 582.5 out 140.75 cost 0.000170
+heart   n=8 failed=0 step ms median 437.8 p95 1305.6 max 1305.6 | sage2 calls 2 in 596.5 out 176.63 cost 0.000206
+enemy   n=8 failed=0 step ms median 385.9 p95 1634.8 max 1634.8 | sage2 calls 2 in 957 out 150.5 cost 0.000198
+all: median 406.2 p95 1120.5; sum of step medians 2584.6

@@ -1,0 +1,9 @@
+wrote bench/measurements/cost-2026-11-18.json
+tactics call: 324 in, 0 out, $0.0000162 mean
+name: 1 calls, in 166.3, out 139.25, $0.000148
+origin: 2 calls, in 1235.5, out 134, $0.000196
+born: 1 calls, in 185, out 216.25, $0.000225
+body: 2 calls, in 582.5, out 140.75, $0.000170
+heart: 2 calls, in 596.5, out 176.63, $0.000206
+enemy: 2 calls, in 957, out 150.5, $0.000198
+six onboarding steps: $0.001144

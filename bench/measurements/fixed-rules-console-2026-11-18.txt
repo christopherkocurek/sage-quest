@@ -1,0 +1,4 @@
+wrote bench/measurements/fixed-rules-2026-11-18.json
+source web/src/fight.js:906-910  cases 256 illegal 0 distinct tactics 3
+spread {"call":48,"charge":176,"flank":32}
+same pick as Sage2 on 156/240 (65%)
